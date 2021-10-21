@@ -10,4 +10,6 @@
 
 ## Verkostoanalyysi
 
+[Luento](./14-verkostoanalyysi/14-verkostoanalyysi.md)
+
 ## Teemakartat
