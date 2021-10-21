@@ -2,11 +2,11 @@
 
 ## Komentorivi ja Tekstinlouhinta
 
-[Luento](./13-komentorivi-ja-tekstinlouhinta/13-komentorivi.md)
+[Luento](./13-komentorivi/13-komentorivi.md)
 
-[Demot](./13-komentorivi-ja-tekstinlouhinta/demot.md)
+[Demot](./13-komentorivi/demot.md)
 
-[Harjoitukset](./13-komentorivi-ja-tekstinlouhinta/harjoitukset.md)
+[Harjoitukset](./13-komentorivi/harjoitukset.md)
 
 ## Verkostoanalyysi
 
