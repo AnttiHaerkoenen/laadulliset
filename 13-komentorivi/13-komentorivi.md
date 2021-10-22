@@ -20,9 +20,11 @@
 # UNIX-filosofia
 
 - yksi ohjelma tekee yhden asian hyvin
+- GNU/Linux noudattaa tätä periaatetta
+- Windowsin ohjelmistot ovat sen sijaan monoliittisia
 
 #
 
-![Unix](pipeline.png)
+![Unix](../img/pipeline.png)
 
 # Komentoriviputki
