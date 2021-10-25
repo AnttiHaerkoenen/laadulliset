@@ -28,3 +28,21 @@
 ![Unix](../img/pipeline.png)
 
 # Komentoriviputki
+
+# Powershell-komennot
+
+| Täysi komento | Lyhenne | UNIX-vastine (karkeasti) |
+|-----|------|-----|
+| Get-Help   | help | man |
+| Set-Location | sl | ch / chdir (kansio) |
+| Get-Location | gl | pwd |
+| Get-Content | gc | cat |
+| Get-ChildItem | gci | dir/ls |
+| Rename-Item | rni | mv |
+| Copy-Item | copy, cpi | cp |
+| New-Item | ni | touch / mkdir (kansio) |
+| Write-Output | write | echo |
+| Select-String | sls | grep |
+| For-Each | foreach | for ... in |
+| Measure-Object | measure | grep / wc / lc |
+| Select-Object | select |  |
