@@ -1,6 +1,6 @@
 % Komentorivi ja tekstinlouhinta
 % Antti Härkönen
-% 2021-10-14
+% 2021-11-09
 
 # Tutkimusdatan organisointi
 

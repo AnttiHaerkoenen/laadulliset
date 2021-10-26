@@ -10,6 +10,10 @@
 
 ## Verkostoanalyysi
 
-[Luento](./14-verkostoanalyysi/14-verkostoanalyysi.md)
+[Luento](./14-verkostoanalyysi/14-verkostoanalyysi.html) ([tulostettava](./14-verkostoanalyysi/14-verkostoanalyysi_print.html))
+
+[verkosto](./14-verkostoanalyysi/data/verkosto.csv)
 
 ## Teemakartat
+
+[Luento](./15-teemakartat/15-teemakartat.html) ([tulostettava](./15-teemakartat/15-teemakartat_print.html))
