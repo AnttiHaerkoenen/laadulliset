@@ -12,7 +12,11 @@
 
 [Luento](./14-verkostoanalyysi/14-verkostoanalyysi.html) ([tulostettava](./14-verkostoanalyysi/14-verkostoanalyysi_print.html))
 
-[verkosto](./14-verkostoanalyysi/data/verkosto.csv)
+Verkosto 1 ([Lataa](./14-verkostoanalyysi/data/verkosto.csv))
+
+Verkosto 2 ([Lataa](./14-verkostoanalyysi/data/verkosto2.csv))
+
+[Koodi verkoston 1 analysointiin](./14-verkostoanalyysi/koodit.md) 
 
 ## Teemakartat
 
