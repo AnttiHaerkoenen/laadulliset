@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Antti Härkönen" />
+  <meta name="dcterms.date" content="2021-10-14" />
+  <title>Komentorivi ja tekstinlouhinta</title>
+  <style>
+    html {
+      line-height: 1.7;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 40em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin-top: 1.7em;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.7em;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1.7em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1.7em 0 1.7em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      font-style: italic;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      background-color: #f0f0f0;
+      font-size: 85%;
+      margin: 0;
+      padding: .2em .4em;
+    }
+    pre {
+      line-height: 1.5em;
+      padding: 1em;
+      background-color: #f0f0f0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin-top: 1.7em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+    th, td {
+      border-bottom: 1px solid lightgray;
+      padding: 1em 3em 1em 0;
+    }
+    header {
+      margin-bottom: 6em;
+      text-align: center;
+    }
+    nav a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Komentorivi ja tekstinlouhinta</h1>
+<p class="author">Antti Härkönen</p>
+<p class="date">2021-10-14</p>
+</header>
+<h1 id="tutkimusdatan-organisointi">Tutkimusdatan organisointi</h1>
+<h1 id="datan-muoto">Datan muoto</h1>
+<ul>
+<li>data tiedostossa: onko koneen luettavissa -&gt; silloin yleensä myös saavutettava ja helpommin muunnettavissa formaatista toiseen</li>
+<li>avoimet ja ”agnostiset” (platform agnostic) formaatit suositeltavia</li>
+<li>esimerkki: <a href="https://www.youtube.com/watch?v=MijmeoH9LT4">utf-8</a> ja mojibake (korjattavissa pythonilla: ftfy)</li>
+</ul>
+<h1 id="tekstidata">Tekstidata</h1>
+<ul>
+<li>jos data on pelkkää tekstiä ja numeroita, kannattaa käyttää tekstipohjaisia formaatteja (md, txt, csv)</li>
+<li>binäärimuotoinen tekstidata (docx) on vaikeampaa käyttää</li>
+</ul>
+<h1 id="datan-tallennus">Datan tallennus</h1>
+<ul>
+<li>merkityksellinen ja looginen kansiorakenne</li>
+<li>kansiorakenne voi sisältää informaatiota datan keskinäisistä suhteista</li>
+</ul>
+<h1 id="tiedostojen-nimeäminen">Tiedostojen nimeäminen</h1>
+<ul>
+<li>erottava tieto nimen loppuun</li>
+<li>välilyönnit ovat esim. komentorivillä merkitseviä erottajia, siksi niitä kannattaa välttää</li>
+</ul>
+<h1 id="section"></h1>
+<table>
+<thead>
+<tr class="header">
+<th>nimikonventio</th>
+<th>esimerkki</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>camel case</td>
+<td>suurtenMuinaistenAika</td>
+</tr>
+<tr class="even">
+<td>snake case</td>
+<td>suurten_muinaisten_aika</td>
+</tr>
+<tr class="odd">
+<td>kebab case</td>
+<td>suurten-muinaisten-aika</td>
+</tr>
+</tbody>
+</table>
+<h1 id="päivämäärät">Päivämäärät</h1>
+<ul>
+<li><a href="https://fi.wikipedia.org/wiki/ISO_8601">ISO-standardin 8601</a> mukainen pvm: vvvv-kk-pp</li>
+<li>pvm alussa, vvvv-kk-pp -&gt; tietokone laittaa tiedostot automaattisesti kronologiseen järjestykseen</li>
+</ul>
+<h1 id="section-1"></h1>
+<ul>
+<li><code>/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun.csv</code></li>
+<li><code>/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun_raty.csv</code></li>
+</ul>
+<h1 id="tekstinlouhinta">Tekstinlouhinta</h1>
+<ul>
+<li><a href="https://voyant-tools.org/">Voyant</a>: OS-työkalu, yleisesti käytetty digitaalisen humanismin projekteissa</li>
+<li><a href="https://agricolaverkko.fi/tietosanomat/milta-ursula-von-der-leyenin-puhe-nayttaa-etaalta-luettuna">von der Leyenin puhe</a></li>
+</ul>
+<h1 id="korpus">Korpus</h1>
+<ul>
+<li>kokoelma tekstejä</li>
+<li>suurehko aineisto</li>
+<li><a href="https://hfroehli.ch/2014/05/11/intro-bibliography-corpus-linguistics/">Johdatus korpuslingvistiikkaan</a></li>
+</ul>
+<h1 id="big-data">Big data</h1>
+<ul>
+<li>liian suuri aineisto perinteisille analyysimenetelmille</li>
+</ul>
+<h1 id="siisti-data">Siisti data</h1>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">tidy data</a></li>
+<li>sarake on muuttuja</li>
+<li>rivi on havainto</li>
+<li>solussa vain yksi arvo</li>
+<li>ei poikkeuksia!</li>
+</ul>
+<h1 id="unix-filosofia">UNIX-filosofia</h1>
+<ul>
+<li>yksi ohjelma tekee yhden asian hyvin</li>
+<li>GNU/Linux noudattaa tätä periaatetta</li>
+<li>Windowsin ohjelmistot ovat sen sijaan monoliittisia</li>
+</ul>
+<h1 id="komentoriviputki">Komentoriviputki</h1>
+<p><img src="../img/pipeline.png" /></p>
+<h1 id="vertauskuva">Vertauskuva</h1>
+<p><img src="../img/leikkurit.png" /></p>
+<p>Kuvat: Wikimedia Commons</p>
+<h1 id="navigointi">Navigointi</h1>
+<table>
+<thead>
+<tr class="header">
+<th>navigointikomennot</th>
+<th>merkki</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>koti</td>
+<td><code>~</code></td>
+</tr>
+<tr class="even">
+<td>nykyinen kansio</td>
+<td><code>.</code></td>
+</tr>
+<tr class="odd">
+<td>ylempi kansio</td>
+<td><code>..</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="tärkeitä-työkaluja">Tärkeitä työkaluja</h1>
+<ul>
+<li>putkioperaattori <code>|</code></li>
+<li>uudelleenohjausoperaattori, <code>&gt;</code> ja <code>&gt;&gt;</code></li>
+<li>ohjelman keskeytys <strong>CTRL-C</strong></li>
+</ul>
+<h1 id="kopioiminen">Kopioiminen</h1>
+<p><code>cp ./tiedosto/polku/teksti1.txt ./toinen/tiedosto/polku/teksti2.txt</code></p>
+<h1 id="toisto">Toisto</h1>
+<ul>
+<li>iterointi: <code>for</code></li>
+<li>rekursio: hyödyllistä mutta vaarallista</li>
+</ul>
+<h1 id="section-2"></h1>
+<table>
+<thead>
+<tr class="header">
+<th>PS-komento</th>
+<th>Lyhenne</th>
+<th>UNIX-vastine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Get-Help</td>
+<td>help</td>
+<td>man</td>
+</tr>
+<tr class="even">
+<td>Set-Location</td>
+<td>sl</td>
+<td>ch / chdir (kansio)</td>
+</tr>
+<tr class="odd">
+<td>Get-Location</td>
+<td>gl</td>
+<td>pwd</td>
+</tr>
+<tr class="even">
+<td>Get-Content</td>
+<td>gc</td>
+<td>cat</td>
+</tr>
+<tr class="odd">
+<td>Get-ChildItem</td>
+<td>gci</td>
+<td>dir/ls</td>
+</tr>
+<tr class="even">
+<td>Rename-Item</td>
+<td>rni</td>
+<td>mv</td>
+</tr>
+<tr class="odd">
+<td>Copy-Item</td>
+<td>copy, cpi</td>
+<td>cp</td>
+</tr>
+</tbody>
+</table>
+<h1 id="section-3"></h1>
+<table>
+<thead>
+<tr class="header">
+<th>PS-komento</th>
+<th>Lyhenne</th>
+<th>UNIX-vastine</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>New-Item</td>
+<td>ni</td>
+<td>touch / mkdir (kansio)</td>
+</tr>
+<tr class="even">
+<td>Write-Output</td>
+<td>write</td>
+<td>echo</td>
+</tr>
+<tr class="odd">
+<td>Select-String</td>
+<td>sls</td>
+<td>grep</td>
+</tr>
+<tr class="even">
+<td>For-Each</td>
+<td>foreach</td>
+<td>for … in</td>
+</tr>
+<tr class="odd">
+<td>Measure-Object</td>
+<td>measure</td>
+<td>wc / lc</td>
+</tr>
+<tr class="even">
+<td>Select-Object</td>
+<td>select</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

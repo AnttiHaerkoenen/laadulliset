@@ -2,7 +2,7 @@
 
 ## Komentorivi ja Tekstinlouhinta
 
-[Luento](./13-komentorivi/13-komentorivi.md)
+[Luento](./13-komentorivi/13-komentorivi.html) ([tulostettava](./13-komentorivi/13-komentorivi_print.html))
 
 [Demot](./13-komentorivi/demot.md)
 

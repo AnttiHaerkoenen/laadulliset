@@ -37,7 +37,7 @@ ja helpommin muunnettavissa formaatista toiseen
 # Päivämäärät
 
 - [ISO-standardin 8601](https://fi.wikipedia.org/wiki/ISO_8601) mukainen pvm: vvvv-kk-pp
-- pvm alussa, vuosi-kk-pp -> tietokone laittaa tiedostot automaattisesti kronologiseen järjestykseen
+- pvm alussa, vvvv-kk-pp -> tietokone laittaa tiedostot automaattisesti kronologiseen järjestykseen
 
 #
 
@@ -46,17 +46,14 @@ ja helpommin muunnettavissa formaatista toiseen
 
 # Tekstinlouhinta
 
-
 - [Voyant](https://voyant-tools.org/): OS-työkalu, yleisesti käytetty digitaalisen humanismin projekteissa
 - [von der Leyenin puhe](https://agricolaverkko.fi/tietosanomat/milta-ursula-von-der-leyenin-puhe-nayttaa-etaalta-luettuna)
-
 
 # Korpus
 
 - kokoelma tekstejä
 - suurehko aineisto
 - [Johdatus korpuslingvistiikkaan](https://hfroehli.ch/2014/05/11/intro-bibliography-corpus-linguistics/)
-
 
 # Big data
 
@@ -76,11 +73,9 @@ ja helpommin muunnettavissa formaatista toiseen
 - GNU/Linux noudattaa tätä periaatetta
 - Windowsin ohjelmistot ovat sen sijaan monoliittisia
 
-#
-
-![Unix](../img/pipeline.png)
-
 # Komentoriviputki
+
+![](../img/pipeline.png)
 
 # Vertauskuva
 
@@ -110,7 +105,6 @@ Kuvat: Wikimedia Commons
 
 - iterointi: `for`
 - rekursio: hyödyllistä mutta vaarallista
-
 
 #
 
