@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Antti Härkönen">
-  <meta name="dcterms.date" content="2021-10-14">
+  <meta name="dcterms.date" content="2021-11-09">
   <title>Komentorivi ja tekstinlouhinta</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -29,7 +29,7 @@
 <section id="title-slide">
   <h1 class="title">Komentorivi ja tekstinlouhinta</h1>
   <p class="author">Antti Härkönen</p>
-  <p class="date">2021-10-14</p>
+  <p class="date">2021-11-09</p>
 </section>
 
 <section id="tutkimusdatan-organisointi" class="slide level1">
@@ -103,6 +103,13 @@
 <li class="fragment"><code>/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun_raty.csv</code></li>
 </ul>
 </section>
+<section id="kaukoluenta" class="slide level1">
+<h1>Kaukoluenta</h1>
+<ul>
+<li class="fragment">makroskooppinen katsaus tekstiin</li>
+<li class="fragment">Suomessa käyttänyt mm. Risto Turunen (<a href="https://trepo.tuni.fi/handle/10024/130891">väitöskirja</a>)</li>
+</ul>
+</section>
 <section id="tekstinlouhinta" class="slide level1">
 <h1>Tekstinlouhinta</h1>
 <ul>
@@ -134,6 +141,11 @@
 <li class="fragment">ei poikkeuksia!</li>
 </ul>
 </section>
+<section id="vertauskuva" class="slide level1">
+<h1>Vertauskuva</h1>
+<p><img data-src="../img/leikkurit.png" /></p>
+<p>Kuvat: Wikimedia Commons</p>
+</section>
 <section id="unix-filosofia" class="slide level1">
 <h1>UNIX-filosofia</h1>
 <ul>
@@ -145,11 +157,6 @@
 <section id="komentoriviputki" class="slide level1">
 <h1>Komentoriviputki</h1>
 <p><img data-src="../img/pipeline.png" /></p>
-</section>
-<section id="vertauskuva" class="slide level1">
-<h1>Vertauskuva</h1>
-<p><img data-src="../img/leikkurit.png" /></p>
-<p>Kuvat: Wikimedia Commons</p>
 </section>
 <section id="navigointi" class="slide level1">
 <h1>Navigointi</h1>
@@ -191,8 +198,9 @@
 <section id="toisto" class="slide level1">
 <h1>Toisto</h1>
 <ul>
-<li class="fragment">iterointi: <code>for</code></li>
+<li class="fragment">silmukka: <code>for</code></li>
 <li class="fragment">rekursio: hyödyllistä mutta vaarallista</li>
+<li class="fragment">Monte Carlo -simulaatio (iteroidaan kunnes malli näyttää tarpeeksi hyvältä)</li>
 </ul>
 </section>
 <section id="section-2" class="slide level1">
@@ -287,6 +295,40 @@
 </tr>
 </tbody>
 </table>
+</section>
+<section id="regex-haku" class="slide level1">
+<h1>Regex-haku</h1>
+<ul>
+<li class="fragment">säännölliset lausekkeet (regex) mahdollistavat sumeat haut</li>
+<li class="fragment">esimerkiksi <code>1991*</code> löytää kaikki tiedostot, joiden nimessä 4 ensimmäistä merkkiä ovat 1991</li>
+</ul>
+</section>
+<section id="topic-modelling" class="slide level1">
+<h1>Topic modelling</h1>
+<ul>
+<li class="fragment">samanlaisissa yhteyksissä esiintyvät sanat ovat todennäköisimmin osa samaa diskurssia</li>
+<li class="fragment">puoliksi ohjattua (semi-supervised) oppimista</li>
+</ul>
+</section>
+<section id="latentti-dirichlet-allokaatio-lda" class="slide level1">
+<h1>Latentti Dirichlet-allokaatio (LDA)</h1>
+<ul>
+<li class="fragment">optimaalinen malli lasketaan Monte Carlo -menetelmällä</li>
+<li class="fragment">tulokset voivat siis vaihdella!</li>
+</ul>
+</section>
+<section id="section-4" class="slide level1">
+<h1></h1>
+<figure>
+<img data-src="../img/Smoothed_LDA.png" alt="laattakaavio LDA-mallista" /><figcaption aria-hidden="true">laattakaavio LDA-mallista</figcaption>
+</figure>
+</section>
+<section id="mallet" class="slide level1">
+<h1>MALLET</h1>
+<ul>
+<li class="fragment">komentorivipohjainen työkalu</li>
+<li class="fragment">Programming historian -sivustolla on aiheesta <a href="https://programminghistorian.org/en/lessons/topic-modeling-and-mallet">artikkeli</a></li>
+</ul>
 </section>
     </div>
   </div>

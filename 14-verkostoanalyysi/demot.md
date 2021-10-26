@@ -18,7 +18,8 @@ Tämän harjoituksen tarkoituksena on tehdä yksinkertainen visualisointi Pallad
 3) Tee PX-Webin kautta haku, jossa valitset tuloalueeksi kaikki kunnat ja lähtöalueeksi Tohmajärven. 
 4) Lataa data excel-tiedostona. 
 5) Käytä Excelin etsi ja korvaa –työkaluja kuntien nimien yksinkertaistamiseen. 
-6) Hankkikaa kuntakeskusten koordinaatit muodossa `lat,lon` (piste desimaalierottimena). Lisää ne dataan sarakkeisiin Lähtöpaikka ja Tulopaikka. 
+6) Hankkikaa kuntakeskusten koordinaatit muodossa `lat,lon` (piste desimaalierottimena). 
+Lisää ne dataan sarakkeisiin Lähtöpaikka ja Tulopaikka. 
 7) Mene Palladion sivulle ja aloita uusi projekti. 
 8) Kopio data ja lataa se Palladio-sovellukseen. Anna datalle nimeksi *Muutto*. 
 9) Tee graafi, jossa esitetään muuttoliike Tohmajärveltä. Painota solmujen koko *Yhteensä*-sarakkeen mukaan.

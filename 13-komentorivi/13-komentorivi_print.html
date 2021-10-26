@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Antti Härkönen" />
-  <meta name="dcterms.date" content="2021-10-14" />
+  <meta name="dcterms.date" content="2021-11-09" />
   <title>Komentorivi ja tekstinlouhinta</title>
   <style>
     html {
@@ -130,7 +130,7 @@
 <header id="title-block-header">
 <h1 class="title">Komentorivi ja tekstinlouhinta</h1>
 <p class="author">Antti Härkönen</p>
-<p class="date">2021-10-14</p>
+<p class="date">2021-11-09</p>
 </header>
 <h1 id="tutkimusdatan-organisointi">Tutkimusdatan organisointi</h1>
 <h1 id="datan-muoto">Datan muoto</h1>
@@ -187,6 +187,11 @@
 <li><code>/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun.csv</code></li>
 <li><code>/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun_raty.csv</code></li>
 </ul>
+<h1 id="kaukoluenta">Kaukoluenta</h1>
+<ul>
+<li>makroskooppinen katsaus tekstiin</li>
+<li>Suomessa käyttänyt mm. Risto Turunen (<a href="https://trepo.tuni.fi/handle/10024/130891">väitöskirja</a>)</li>
+</ul>
 <h1 id="tekstinlouhinta">Tekstinlouhinta</h1>
 <ul>
 <li><a href="https://voyant-tools.org/">Voyant</a>: OS-työkalu, yleisesti käytetty digitaalisen humanismin projekteissa</li>
@@ -210,6 +215,9 @@
 <li>solussa vain yksi arvo</li>
 <li>ei poikkeuksia!</li>
 </ul>
+<h1 id="vertauskuva">Vertauskuva</h1>
+<p><img src="../img/leikkurit.png" /></p>
+<p>Kuvat: Wikimedia Commons</p>
 <h1 id="unix-filosofia">UNIX-filosofia</h1>
 <ul>
 <li>yksi ohjelma tekee yhden asian hyvin</li>
@@ -218,9 +226,6 @@
 </ul>
 <h1 id="komentoriviputki">Komentoriviputki</h1>
 <p><img src="../img/pipeline.png" /></p>
-<h1 id="vertauskuva">Vertauskuva</h1>
-<p><img src="../img/leikkurit.png" /></p>
-<p>Kuvat: Wikimedia Commons</p>
 <h1 id="navigointi">Navigointi</h1>
 <table>
 <thead>
@@ -254,8 +259,9 @@
 <p><code>cp ./tiedosto/polku/teksti1.txt ./toinen/tiedosto/polku/teksti2.txt</code></p>
 <h1 id="toisto">Toisto</h1>
 <ul>
-<li>iterointi: <code>for</code></li>
+<li>silmukka: <code>for</code></li>
 <li>rekursio: hyödyllistä mutta vaarallista</li>
+<li>Monte Carlo -simulaatio (iteroidaan kunnes malli näyttää tarpeeksi hyvältä)</li>
 </ul>
 <h1 id="section-2"></h1>
 <table>
@@ -346,5 +352,29 @@
 </tr>
 </tbody>
 </table>
+<h1 id="regex-haku">Regex-haku</h1>
+<ul>
+<li>säännölliset lausekkeet (regex) mahdollistavat sumeat haut</li>
+<li>esimerkiksi <code>1991*</code> löytää kaikki tiedostot, joiden nimessä 4 ensimmäistä merkkiä ovat 1991</li>
+</ul>
+<h1 id="topic-modelling">Topic modelling</h1>
+<ul>
+<li>samanlaisissa yhteyksissä esiintyvät sanat ovat todennäköisimmin osa samaa diskurssia</li>
+<li>puoliksi ohjattua (semi-supervised) oppimista</li>
+</ul>
+<h1 id="latentti-dirichlet-allokaatio-lda">Latentti Dirichlet-allokaatio (LDA)</h1>
+<ul>
+<li>optimaalinen malli lasketaan Monte Carlo -menetelmällä</li>
+<li>tulokset voivat siis vaihdella!</li>
+</ul>
+<h1 id="section-4"></h1>
+<figure>
+<img src="../img/Smoothed_LDA.png" alt="laattakaavio LDA-mallista" /><figcaption aria-hidden="true">laattakaavio LDA-mallista</figcaption>
+</figure>
+<h1 id="mallet">MALLET</h1>
+<ul>
+<li>komentorivipohjainen työkalu</li>
+<li>Programming historian -sivustolla on aiheesta <a href="https://programminghistorian.org/en/lessons/topic-modeling-and-mallet">artikkeli</a></li>
+</ul>
 </body>
 </html>

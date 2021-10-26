@@ -36,13 +36,18 @@ ja helpommin muunnettavissa formaatista toiseen
 
 # Päivämäärät
 
-- [ISO-standardin 8601](https://fi.wikipedia.org/wiki/ISO_8601) mukainen pvm: vvvv-kk-pp
+- [ISO-standardin 8601](https://fi.wikipedia.org/wiki/ISO_8601) mukainen päivämäärä: vvvv-kk-pp
 - pvm alussa, vvvv-kk-pp -> tietokone laittaa tiedostot automaattisesti kronologiseen järjestykseen
 
 #
 
 - `/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun.csv`
 - `/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun_raty.csv`
+
+# Kaukoluenta
+
+- makroskooppinen katsaus tekstiin
+- Suomessa käyttänyt mm. Risto Turunen ([väitöskirja](https://trepo.tuni.fi/handle/10024/130891))
 
 # Tekstinlouhinta
 
@@ -67,6 +72,12 @@ ja helpommin muunnettavissa formaatista toiseen
 - solussa vain yksi arvo
 - ei poikkeuksia!
 
+# Vertauskuva
+
+![](../img/leikkurit.png)
+
+Kuvat: Wikimedia Commons
+
 # UNIX-filosofia
 
 - yksi ohjelma tekee yhden asian hyvin
@@ -76,12 +87,6 @@ ja helpommin muunnettavissa formaatista toiseen
 # Komentoriviputki
 
 ![](../img/pipeline.png)
-
-# Vertauskuva
-
-![](../img/leikkurit.png)
-
-Kuvat: Wikimedia Commons
 
 # Navigointi
 
@@ -103,8 +108,9 @@ Kuvat: Wikimedia Commons
 
 # Toisto
 
-- iterointi: `for`
+- silmukka: `for`
 - rekursio: hyödyllistä mutta vaarallista
+- Monte Carlo -simulaatio (iteroidaan kunnes malli näyttää tarpeeksi hyvältä)
 
 #
 
@@ -128,3 +134,33 @@ Kuvat: Wikimedia Commons
 | For-Each | foreach | for ... in |
 | Measure-Object | measure | wc / lc |
 | Select-Object | select |  |
+
+# Regex-haku
+
+- säännölliset lausekkeet (regex) mahdollistavat sumeat haut
+- esimerkiksi `1991*` löytää kaikki tiedostot, joiden nimessä 4 ensimmäistä merkkiä ovat 1991
+
+# Koneoppiminen
+
+- "tekoäly" koostuu yleensä melko yksinkertaisista algoritmeista, mutta vaatii paljon laskutehoa
+- ohjattu ja ohjaamaton oppiminen
+
+# Topic modelling
+
+- samanlaisissa yhteyksissä esiintyvät sanat ovat todennäköisimmin osa samaa diskurssia
+- ohjaamatonta oppimista
+
+# Latentti Dirichlet-allokaatio (LDA)
+
+- yleisin topic modelling -malli
+- optimaalinen malli lasketaan Monte Carlo -menetelmällä
+- tulokset voivat siis vaihdella!
+
+#
+
+![laattakaavio LDA-mallista](../img/Smoothed_LDA.png)
+
+# MALLET
+
+- komentorivipohjainen työkalu
+- Programming historian -sivustolla on aiheesta [artikkeli](https://programminghistorian.org/en/lessons/topic-modeling-and-mallet)
