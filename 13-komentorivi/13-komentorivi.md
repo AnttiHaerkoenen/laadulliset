@@ -51,6 +51,7 @@ ja helpommin muunnettavissa formaatista toiseen
 
 # Tekstinlouhinta
 
+- tekstimassojen automaattista lukemista (esim. hakuja)
 - [Voyant](https://voyant-tools.org/): OS-työkalu, yleisesti käytetty digitaalisen humanismin projekteissa
 - [von der Leyenin puhe](https://agricolaverkko.fi/tietosanomat/milta-ursula-von-der-leyenin-puhe-nayttaa-etaalta-luettuna)
 
@@ -59,6 +60,11 @@ ja helpommin muunnettavissa formaatista toiseen
 - kokoelma tekstejä
 - suurehko aineisto
 - [Johdatus korpuslingvistiikkaan](https://hfroehli.ch/2014/05/11/intro-bibliography-corpus-linguistics/)
+
+# Regex-haku
+
+- säännölliset lausekkeet (regex) mahdollistavat sumeat haut
+- esimerkiksi `1991*` löytää kaikki tiedostot, joiden nimessä 4 ensimmäistä merkkiä ovat 1991
 
 # Big data
 
@@ -135,11 +141,6 @@ Kuvat: Wikimedia Commons
 | Measure-Object | measure | wc / lc |
 | Select-Object | select |  |
 
-# Regex-haku
-
-- säännölliset lausekkeet (regex) mahdollistavat sumeat haut
-- esimerkiksi `1991*` löytää kaikki tiedostot, joiden nimessä 4 ensimmäistä merkkiä ovat 1991
-
 # Koneoppiminen
 
 - "tekoäly" koostuu yleensä melko yksinkertaisista algoritmeista, mutta vaatii paljon laskutehoa
@@ -163,4 +164,5 @@ Kuvat: Wikimedia Commons
 # MALLET
 
 - komentorivipohjainen työkalu
-- Programming historian -sivustolla on aiheesta [artikkeli](https://programminghistorian.org/en/lessons/topic-modeling-and-mallet)
+- Programming historian -sivustolla on aiheesta 
+[artikkeli](https://programminghistorian.org/en/lessons/topic-modeling-and-mallet)

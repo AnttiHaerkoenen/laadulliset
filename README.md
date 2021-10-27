@@ -12,12 +12,18 @@
 
 [Luento](./14-verkostoanalyysi/14-verkostoanalyysi.html) ([tulostettava](./14-verkostoanalyysi/14-verkostoanalyysi_print.html))
 
-Verkosto 1 ([Lataa](./14-verkostoanalyysi/data/verkosto.csv))
+Esimerkkiverkosto ([Lataa](./14-verkostoanalyysi/data/verkosto.csv))
 
-Verkosto 2 ([Lataa](./14-verkostoanalyysi/data/verkosto2.csv))
+[Koodi verkoston analysointiin](./14-verkostoanalyysi/koodit.md)
 
-[Koodi verkoston 1 analysointiin](./14-verkostoanalyysi/koodit.md) 
+[Demot](./14-verkostoanalyysi/demot.md)
+
+[Harjoitukset](./14-verkostoanalyysi/harjoitukset.md)
 
 ## Teemakartat
 
 [Luento](./15-teemakartat/15-teemakartat.html) ([tulostettava](./15-teemakartat/15-teemakartat_print.html))
+
+[Demot](./15-teemakartat/demot.md)
+
+[Harjoitukset](./15-teemakartat/harjoitukset.md)
