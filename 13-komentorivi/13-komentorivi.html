@@ -32,40 +32,42 @@
   <p class="date">2021-11-09</p>
 </section>
 
-<section id="tutkimusdatan-organisointi" class="slide level1">
+<section>
+<section id="tutkimusdatan-organisointi" class="title-slide slide level1">
 <h1>Tutkimusdatan organisointi</h1>
+
 </section>
-<section id="datan-muoto" class="slide level1">
-<h1>Datan muoto</h1>
+<section id="datan-muoto" class="slide level2">
+<h2>Datan muoto</h2>
 <ul>
 <li class="fragment">data tiedostossa: onko koneen luettavissa -&gt; silloin yleensä myös saavutettava ja helpommin muunnettavissa formaatista toiseen</li>
 <li class="fragment">avoimet ja ”agnostiset” (platform agnostic) formaatit suositeltavia</li>
 <li class="fragment">esimerkki: <a href="https://www.youtube.com/watch?v=MijmeoH9LT4">utf-8</a> ja mojibake (korjattavissa pythonilla: ftfy)</li>
 </ul>
 </section>
-<section id="tekstidata" class="slide level1">
-<h1>Tekstidata</h1>
+<section id="tekstidata" class="slide level2">
+<h2>Tekstidata</h2>
 <ul>
 <li class="fragment">jos data on pelkkää tekstiä ja numeroita, kannattaa käyttää tekstipohjaisia formaatteja (md, txt, csv)</li>
 <li class="fragment">binäärimuotoinen tekstidata (docx) on vaikeampaa käyttää</li>
 </ul>
 </section>
-<section id="datan-tallennus" class="slide level1">
-<h1>Datan tallennus</h1>
+<section id="datan-tallennus" class="slide level2">
+<h2>Datan tallennus</h2>
 <ul>
 <li class="fragment">merkityksellinen ja looginen kansiorakenne</li>
 <li class="fragment">kansiorakenne voi sisältää informaatiota datan keskinäisistä suhteista</li>
 </ul>
 </section>
-<section id="tiedostojen-nimeäminen" class="slide level1">
-<h1>Tiedostojen nimeäminen</h1>
+<section id="tiedostojen-nimeäminen" class="slide level2">
+<h2>Tiedostojen nimeäminen</h2>
 <ul>
 <li class="fragment">erottava tieto nimen loppuun</li>
 <li class="fragment">välilyönnit ovat esim. komentorivillä merkitseviä erottajia, siksi niitä kannattaa välttää</li>
 </ul>
 </section>
-<section id="section" class="slide level1">
-<h1></h1>
+<section id="section" class="slide level2">
+<h2></h2>
 <table>
 <thead>
 <tr class="header">
@@ -89,50 +91,63 @@
 </tbody>
 </table>
 </section>
-<section id="päivämäärät" class="slide level1">
-<h1>Päivämäärät</h1>
+<section id="päivämäärät" class="slide level2">
+<h2>Päivämäärät</h2>
 <ul>
-<li class="fragment"><a href="https://fi.wikipedia.org/wiki/ISO_8601">ISO-standardin 8601</a> mukainen pvm: vvvv-kk-pp</li>
+<li class="fragment"><a href="https://fi.wikipedia.org/wiki/ISO_8601">ISO-standardin 8601</a> mukainen päivämäärä: vvvv-kk-pp</li>
 <li class="fragment">pvm alussa, vvvv-kk-pp -&gt; tietokone laittaa tiedostot automaattisesti kronologiseen järjestykseen</li>
 </ul>
 </section>
-<section id="section-1" class="slide level1">
-<h1></h1>
+<section id="section-1" class="slide level2">
+<h2></h2>
 <ul>
 <li class="fragment"><code>/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun.csv</code></li>
 <li class="fragment"><code>/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun_raty.csv</code></li>
 </ul>
+</section></section>
+<section>
+<section id="tekstinlouhinta" class="title-slide slide level1">
+<h1>Tekstinlouhinta</h1>
+
 </section>
-<section id="kaukoluenta" class="slide level1">
-<h1>Kaukoluenta</h1>
+<section id="kaukoluenta" class="slide level2">
+<h2>Kaukoluenta</h2>
 <ul>
 <li class="fragment">makroskooppinen katsaus tekstiin</li>
 <li class="fragment">Suomessa käyttänyt mm. Risto Turunen (<a href="https://trepo.tuni.fi/handle/10024/130891">väitöskirja</a>)</li>
 </ul>
 </section>
-<section id="tekstinlouhinta" class="slide level1">
-<h1>Tekstinlouhinta</h1>
+<section id="tekstinlouhinta-1" class="slide level2">
+<h2>Tekstinlouhinta</h2>
 <ul>
+<li class="fragment">tekstimassojen automaattista lukemista (esim. hakuja)</li>
 <li class="fragment"><a href="https://voyant-tools.org/">Voyant</a>: OS-työkalu, yleisesti käytetty digitaalisen humanismin projekteissa</li>
 <li class="fragment"><a href="https://agricolaverkko.fi/tietosanomat/milta-ursula-von-der-leyenin-puhe-nayttaa-etaalta-luettuna">von der Leyenin puhe</a></li>
 </ul>
 </section>
-<section id="korpus" class="slide level1">
-<h1>Korpus</h1>
+<section id="korpus" class="slide level2">
+<h2>Korpus</h2>
 <ul>
 <li class="fragment">kokoelma tekstejä</li>
 <li class="fragment">suurehko aineisto</li>
 <li class="fragment"><a href="https://hfroehli.ch/2014/05/11/intro-bibliography-corpus-linguistics/">Johdatus korpuslingvistiikkaan</a></li>
 </ul>
 </section>
-<section id="big-data" class="slide level1">
-<h1>Big data</h1>
+<section id="regex-haut" class="slide level2">
+<h2>Regex-haut</h2>
+<ul>
+<li class="fragment">säännölliset lausekkeet (regex) mahdollistavat sumeat haut</li>
+<li class="fragment">esimerkiksi <code>1991*</code> löytää kaikki tiedostot, joiden nimessä 4 ensimmäistä merkkiä ovat 1991</li>
+</ul>
+</section>
+<section id="big-data" class="slide level2">
+<h2>Big data</h2>
 <ul>
 <li class="fragment">liian suuri aineisto perinteisille analyysimenetelmille</li>
 </ul>
 </section>
-<section id="siisti-data" class="slide level1">
-<h1>Siisti data</h1>
+<section id="siisti-data" class="slide level2">
+<h2>Siisti data</h2>
 <ul>
 <li class="fragment"><a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">tidy data</a></li>
 <li class="fragment">sarake on muuttuja</li>
@@ -140,26 +155,40 @@
 <li class="fragment">solussa vain yksi arvo</li>
 <li class="fragment">ei poikkeuksia!</li>
 </ul>
+</section></section>
+<section>
+<section id="terminaali" class="title-slide slide level1">
+<h1>Terminaali</h1>
+
 </section>
-<section id="vertauskuva" class="slide level1">
-<h1>Vertauskuva</h1>
-<p><img data-src="../img/leikkurit.png" /></p>
-<p>Kuvat: Wikimedia Commons</p>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<figure>
+<img data-src="../img/leikkurit.png" alt="Vertauskuva" /><figcaption aria-hidden="true">Vertauskuva</figcaption>
+</figure>
+<p style="font-size: small">
+Wikimedia Commons
+</p>
 </section>
-<section id="unix-filosofia" class="slide level1">
-<h1>UNIX-filosofia</h1>
+<section id="unix-filosofia" class="slide level2">
+<h2>UNIX-filosofia</h2>
 <ul>
 <li class="fragment">yksi ohjelma tekee yhden asian hyvin</li>
 <li class="fragment">GNU/Linux noudattaa tätä periaatetta</li>
 <li class="fragment">Windowsin ohjelmistot ovat sen sijaan monoliittisia</li>
 </ul>
 </section>
-<section id="komentoriviputki" class="slide level1">
-<h1>Komentoriviputki</h1>
-<p><img data-src="../img/pipeline.png" /></p>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<figure>
+<img data-src="../img/pipeline.png" alt="Komentoriviputki" /><figcaption aria-hidden="true">Komentoriviputki</figcaption>
+</figure>
+<p style="font-size: small">
+TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
+</p>
 </section>
-<section id="navigointi" class="slide level1">
-<h1>Navigointi</h1>
+<section id="navigointi" class="slide level2">
+<h2>Navigointi</h2>
 <table>
 <thead>
 <tr class="header">
@@ -183,28 +212,28 @@
 </tbody>
 </table>
 </section>
-<section id="tärkeitä-työkaluja" class="slide level1">
-<h1>Tärkeitä työkaluja</h1>
+<section id="tärkeitä-työkaluja" class="slide level2">
+<h2>Tärkeitä työkaluja</h2>
 <ul>
 <li class="fragment">putkioperaattori <code>|</code></li>
 <li class="fragment">uudelleenohjausoperaattori, <code>&gt;</code> ja <code>&gt;&gt;</code></li>
 <li class="fragment">ohjelman keskeytys <strong>CTRL-C</strong></li>
 </ul>
 </section>
-<section id="kopioiminen" class="slide level1">
-<h1>Kopioiminen</h1>
+<section id="kopioiminen" class="slide level2">
+<h2>Kopioiminen</h2>
 <p><code>cp ./tiedosto/polku/teksti1.txt ./toinen/tiedosto/polku/teksti2.txt</code></p>
 </section>
-<section id="toisto" class="slide level1">
-<h1>Toisto</h1>
+<section id="toisto" class="slide level2">
+<h2>Toisto</h2>
 <ul>
 <li class="fragment">silmukka: <code>for</code></li>
 <li class="fragment">rekursio: hyödyllistä mutta vaarallista</li>
 <li class="fragment">Monte Carlo -simulaatio (iteroidaan kunnes malli näyttää tarpeeksi hyvältä)</li>
 </ul>
 </section>
-<section id="section-2" class="slide level1">
-<h1></h1>
+<section id="section-4" class="slide level2">
+<h2></h2>
 <table>
 <thead>
 <tr class="header">
@@ -252,8 +281,8 @@
 </tbody>
 </table>
 </section>
-<section id="section-3" class="slide level1">
-<h1></h1>
+<section id="section-5" class="slide level2">
+<h2></h2>
 <table>
 <thead>
 <tr class="header">
@@ -295,39 +324,66 @@
 </tr>
 </tbody>
 </table>
+</section></section>
+<section>
+<section id="tekoäly" class="title-slide slide level1">
+<h1>Tekoäly</h1>
+
 </section>
-<section id="regex-haku" class="slide level1">
-<h1>Regex-haku</h1>
+<section id="koneoppiminen" class="slide level2">
+<h2>Koneoppiminen</h2>
 <ul>
-<li class="fragment">säännölliset lausekkeet (regex) mahdollistavat sumeat haut</li>
-<li class="fragment">esimerkiksi <code>1991*</code> löytää kaikki tiedostot, joiden nimessä 4 ensimmäistä merkkiä ovat 1991</li>
+<li class="fragment">“tekoäly” koostuu yleensä melko yksinkertaisista algoritmeista, mutta vaatii paljon laskutehoa</li>
+<li class="fragment">koneoppiminen vaatii suuria aineistoja</li>
+<li class="fragment">esim. Transcribuksessa käytetyt HTR-mallit vaativat 500 sivua ihmisen tunnistamaa tekstiä opetusdataksi</li>
 </ul>
 </section>
-<section id="topic-modelling" class="slide level1">
-<h1>Topic modelling</h1>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<figure>
+<img data-src="../img/597px-Task-guidance.png" alt="Ohjattu ja ohjaamaton oppiminen" /><figcaption aria-hidden="true">Ohjattu ja ohjaamaton oppiminen</figcaption>
+</figure>
+<p style="font-size: small">
+Numiri, jaettu Wikimedia Commonsissa
+</p>
+</section>
+<section id="topic-modelling" class="slide level2">
+<h2>Topic modelling</h2>
 <ul>
 <li class="fragment">samanlaisissa yhteyksissä esiintyvät sanat ovat todennäköisimmin osa samaa diskurssia</li>
-<li class="fragment">puoliksi ohjattua (semi-supervised) oppimista</li>
+<li class="fragment">ohjaamatonta oppimista</li>
 </ul>
 </section>
-<section id="latentti-dirichlet-allokaatio-lda" class="slide level1">
-<h1>Latentti Dirichlet-allokaatio (LDA)</h1>
+<section id="latentti-dirichlet-allokaatio-lda" class="slide level2">
+<h2>Latentti Dirichlet-allokaatio (LDA)</h2>
 <ul>
+<li class="fragment">yleisin topic modelling -malli</li>
 <li class="fragment">optimaalinen malli lasketaan Monte Carlo -menetelmällä</li>
 <li class="fragment">tulokset voivat siis vaihdella!</li>
 </ul>
 </section>
-<section id="section-4" class="slide level1">
-<h1></h1>
+<section id="section-7" class="slide level2">
+<h2></h2>
 <figure>
-<img data-src="../img/Smoothed_LDA.png" alt="laattakaavio LDA-mallista" /><figcaption aria-hidden="true">laattakaavio LDA-mallista</figcaption>
+<img data-src="../img/Smoothed_LDA.png" alt="Laattakaavio LDA-mallista" /><figcaption aria-hidden="true">Laattakaavio LDA-mallista</figcaption>
 </figure>
+<p style="font-size: small">
+Slxu.public, jaettu Wikimedia Commonsissa
+</p>
 </section>
-<section id="mallet" class="slide level1">
-<h1>MALLET</h1>
+<section id="mallet" class="slide level2">
+<h2>MALLET</h2>
 <ul>
-<li class="fragment">komentorivipohjainen työkalu</li>
+<li class="fragment">Komentorivipohjainen työkalu</li>
 <li class="fragment">Programming historian -sivustolla on aiheesta <a href="https://programminghistorian.org/en/lessons/topic-modeling-and-mallet">artikkeli</a></li>
+<li class="fragment">Korpus on ensin muutettava Malletin ymmärtämään muotoon</li>
+<li class="fragment">Tämän jälkeen aineiston avulla voi kouluttaa LDA-mallin</li>
+</ul>
+</section></section>
+<section id="lopuksi" class="title-slide slide level1">
+<h1>Lopuksi</h1>
+<ul>
+<li class="fragment">Tietokone on työkalu. Se ei tunne totuutta sen enempää kuin ruohonleikkuri.</li>
 </ul>
 </section>
     </div>

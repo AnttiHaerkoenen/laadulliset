@@ -133,28 +133,28 @@
 <p class="date">2021-11-09</p>
 </header>
 <h1 id="tutkimusdatan-organisointi">Tutkimusdatan organisointi</h1>
-<h1 id="datan-muoto">Datan muoto</h1>
+<h2 id="datan-muoto">Datan muoto</h2>
 <ul>
 <li>data tiedostossa: onko koneen luettavissa -&gt; silloin yleensä myös saavutettava ja helpommin muunnettavissa formaatista toiseen</li>
 <li>avoimet ja ”agnostiset” (platform agnostic) formaatit suositeltavia</li>
 <li>esimerkki: <a href="https://www.youtube.com/watch?v=MijmeoH9LT4">utf-8</a> ja mojibake (korjattavissa pythonilla: ftfy)</li>
 </ul>
-<h1 id="tekstidata">Tekstidata</h1>
+<h2 id="tekstidata">Tekstidata</h2>
 <ul>
 <li>jos data on pelkkää tekstiä ja numeroita, kannattaa käyttää tekstipohjaisia formaatteja (md, txt, csv)</li>
 <li>binäärimuotoinen tekstidata (docx) on vaikeampaa käyttää</li>
 </ul>
-<h1 id="datan-tallennus">Datan tallennus</h1>
+<h2 id="datan-tallennus">Datan tallennus</h2>
 <ul>
 <li>merkityksellinen ja looginen kansiorakenne</li>
 <li>kansiorakenne voi sisältää informaatiota datan keskinäisistä suhteista</li>
 </ul>
-<h1 id="tiedostojen-nimeäminen">Tiedostojen nimeäminen</h1>
+<h2 id="tiedostojen-nimeäminen">Tiedostojen nimeäminen</h2>
 <ul>
 <li>erottava tieto nimen loppuun</li>
 <li>välilyönnit ovat esim. komentorivillä merkitseviä erottajia, siksi niitä kannattaa välttää</li>
 </ul>
-<h1 id="section"></h1>
+<h2 id="section"></h2>
 <table>
 <thead>
 <tr class="header">
@@ -177,37 +177,44 @@
 </tr>
 </tbody>
 </table>
-<h1 id="päivämäärät">Päivämäärät</h1>
+<h2 id="päivämäärät">Päivämäärät</h2>
 <ul>
-<li><a href="https://fi.wikipedia.org/wiki/ISO_8601">ISO-standardin 8601</a> mukainen pvm: vvvv-kk-pp</li>
+<li><a href="https://fi.wikipedia.org/wiki/ISO_8601">ISO-standardin 8601</a> mukainen päivämäärä: vvvv-kk-pp</li>
 <li>pvm alussa, vvvv-kk-pp -&gt; tietokone laittaa tiedostot automaattisesti kronologiseen järjestykseen</li>
 </ul>
-<h1 id="section-1"></h1>
+<h2 id="section-1"></h2>
 <ul>
 <li><code>/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun.csv</code></li>
 <li><code>/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun_raty.csv</code></li>
 </ul>
-<h1 id="kaukoluenta">Kaukoluenta</h1>
+<h1 id="tekstinlouhinta">Tekstinlouhinta</h1>
+<h2 id="kaukoluenta">Kaukoluenta</h2>
 <ul>
 <li>makroskooppinen katsaus tekstiin</li>
 <li>Suomessa käyttänyt mm. Risto Turunen (<a href="https://trepo.tuni.fi/handle/10024/130891">väitöskirja</a>)</li>
 </ul>
-<h1 id="tekstinlouhinta">Tekstinlouhinta</h1>
+<h2 id="tekstinlouhinta-1">Tekstinlouhinta</h2>
 <ul>
+<li>tekstimassojen automaattista lukemista (esim. hakuja)</li>
 <li><a href="https://voyant-tools.org/">Voyant</a>: OS-työkalu, yleisesti käytetty digitaalisen humanismin projekteissa</li>
 <li><a href="https://agricolaverkko.fi/tietosanomat/milta-ursula-von-der-leyenin-puhe-nayttaa-etaalta-luettuna">von der Leyenin puhe</a></li>
 </ul>
-<h1 id="korpus">Korpus</h1>
+<h2 id="korpus">Korpus</h2>
 <ul>
 <li>kokoelma tekstejä</li>
 <li>suurehko aineisto</li>
 <li><a href="https://hfroehli.ch/2014/05/11/intro-bibliography-corpus-linguistics/">Johdatus korpuslingvistiikkaan</a></li>
 </ul>
-<h1 id="big-data">Big data</h1>
+<h2 id="regex-haut">Regex-haut</h2>
+<ul>
+<li>säännölliset lausekkeet (regex) mahdollistavat sumeat haut</li>
+<li>esimerkiksi <code>1991*</code> löytää kaikki tiedostot, joiden nimessä 4 ensimmäistä merkkiä ovat 1991</li>
+</ul>
+<h2 id="big-data">Big data</h2>
 <ul>
 <li>liian suuri aineisto perinteisille analyysimenetelmille</li>
 </ul>
-<h1 id="siisti-data">Siisti data</h1>
+<h2 id="siisti-data">Siisti data</h2>
 <ul>
 <li><a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">tidy data</a></li>
 <li>sarake on muuttuja</li>
@@ -215,18 +222,28 @@
 <li>solussa vain yksi arvo</li>
 <li>ei poikkeuksia!</li>
 </ul>
-<h1 id="vertauskuva">Vertauskuva</h1>
-<p><img src="../img/leikkurit.png" /></p>
-<p>Kuvat: Wikimedia Commons</p>
-<h1 id="unix-filosofia">UNIX-filosofia</h1>
+<h1 id="terminaali">Terminaali</h1>
+<h2 id="section-2"></h2>
+<figure>
+<img src="../img/leikkurit.png" alt="Vertauskuva" /><figcaption aria-hidden="true">Vertauskuva</figcaption>
+</figure>
+<p style="font-size: small">
+Wikimedia Commons
+</p>
+<h2 id="unix-filosofia">UNIX-filosofia</h2>
 <ul>
 <li>yksi ohjelma tekee yhden asian hyvin</li>
 <li>GNU/Linux noudattaa tätä periaatetta</li>
 <li>Windowsin ohjelmistot ovat sen sijaan monoliittisia</li>
 </ul>
-<h1 id="komentoriviputki">Komentoriviputki</h1>
-<p><img src="../img/pipeline.png" /></p>
-<h1 id="navigointi">Navigointi</h1>
+<h2 id="section-3"></h2>
+<figure>
+<img src="../img/pipeline.png" alt="Komentoriviputki" /><figcaption aria-hidden="true">Komentoriviputki</figcaption>
+</figure>
+<p style="font-size: small">
+TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
+</p>
+<h2 id="navigointi">Navigointi</h2>
 <table>
 <thead>
 <tr class="header">
@@ -249,21 +266,21 @@
 </tr>
 </tbody>
 </table>
-<h1 id="tärkeitä-työkaluja">Tärkeitä työkaluja</h1>
+<h2 id="tärkeitä-työkaluja">Tärkeitä työkaluja</h2>
 <ul>
 <li>putkioperaattori <code>|</code></li>
 <li>uudelleenohjausoperaattori, <code>&gt;</code> ja <code>&gt;&gt;</code></li>
 <li>ohjelman keskeytys <strong>CTRL-C</strong></li>
 </ul>
-<h1 id="kopioiminen">Kopioiminen</h1>
+<h2 id="kopioiminen">Kopioiminen</h2>
 <p><code>cp ./tiedosto/polku/teksti1.txt ./toinen/tiedosto/polku/teksti2.txt</code></p>
-<h1 id="toisto">Toisto</h1>
+<h2 id="toisto">Toisto</h2>
 <ul>
 <li>silmukka: <code>for</code></li>
 <li>rekursio: hyödyllistä mutta vaarallista</li>
 <li>Monte Carlo -simulaatio (iteroidaan kunnes malli näyttää tarpeeksi hyvältä)</li>
 </ul>
-<h1 id="section-2"></h1>
+<h2 id="section-4"></h2>
 <table>
 <thead>
 <tr class="header">
@@ -310,7 +327,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="section-3"></h1>
+<h2 id="section-5"></h2>
 <table>
 <thead>
 <tr class="header">
@@ -352,29 +369,48 @@
 </tr>
 </tbody>
 </table>
-<h1 id="regex-haku">Regex-haku</h1>
+<h1 id="tekoäly">Tekoäly</h1>
+<h2 id="koneoppiminen">Koneoppiminen</h2>
 <ul>
-<li>säännölliset lausekkeet (regex) mahdollistavat sumeat haut</li>
-<li>esimerkiksi <code>1991*</code> löytää kaikki tiedostot, joiden nimessä 4 ensimmäistä merkkiä ovat 1991</li>
+<li>“tekoäly” koostuu yleensä melko yksinkertaisista algoritmeista, mutta vaatii paljon laskutehoa</li>
+<li>koneoppiminen vaatii suuria aineistoja</li>
+<li>esim. Transcribuksessa käytetyt HTR-mallit vaativat 500 sivua ihmisen tunnistamaa tekstiä opetusdataksi</li>
 </ul>
-<h1 id="topic-modelling">Topic modelling</h1>
+<h2 id="section-6"></h2>
+<figure>
+<img src="../img/597px-Task-guidance.png" alt="Ohjattu ja ohjaamaton oppiminen" /><figcaption aria-hidden="true">Ohjattu ja ohjaamaton oppiminen</figcaption>
+</figure>
+<p style="font-size: small">
+Numiri, jaettu Wikimedia Commonsissa
+</p>
+<h2 id="topic-modelling">Topic modelling</h2>
 <ul>
 <li>samanlaisissa yhteyksissä esiintyvät sanat ovat todennäköisimmin osa samaa diskurssia</li>
-<li>puoliksi ohjattua (semi-supervised) oppimista</li>
+<li>ohjaamatonta oppimista</li>
 </ul>
-<h1 id="latentti-dirichlet-allokaatio-lda">Latentti Dirichlet-allokaatio (LDA)</h1>
+<h2 id="latentti-dirichlet-allokaatio-lda">Latentti Dirichlet-allokaatio (LDA)</h2>
 <ul>
+<li>yleisin topic modelling -malli</li>
 <li>optimaalinen malli lasketaan Monte Carlo -menetelmällä</li>
 <li>tulokset voivat siis vaihdella!</li>
 </ul>
-<h1 id="section-4"></h1>
+<h2 id="section-7"></h2>
 <figure>
-<img src="../img/Smoothed_LDA.png" alt="laattakaavio LDA-mallista" /><figcaption aria-hidden="true">laattakaavio LDA-mallista</figcaption>
+<img src="../img/Smoothed_LDA.png" alt="Laattakaavio LDA-mallista" /><figcaption aria-hidden="true">Laattakaavio LDA-mallista</figcaption>
 </figure>
-<h1 id="mallet">MALLET</h1>
+<p style="font-size: small">
+Slxu.public, jaettu Wikimedia Commonsissa
+</p>
+<h2 id="mallet">MALLET</h2>
 <ul>
-<li>komentorivipohjainen työkalu</li>
+<li>Komentorivipohjainen työkalu</li>
 <li>Programming historian -sivustolla on aiheesta <a href="https://programminghistorian.org/en/lessons/topic-modeling-and-mallet">artikkeli</a></li>
+<li>Korpus on ensin muutettava Malletin ymmärtämään muotoon</li>
+<li>Tämän jälkeen aineiston avulla voi kouluttaa LDA-mallin</li>
+</ul>
+<h1 id="lopuksi">Lopuksi</h1>
+<ul>
+<li>Tietokone on työkalu. Se ei tunne totuutta sen enempää kuin ruohonleikkuri.</li>
 </ul>
 </body>
 </html>

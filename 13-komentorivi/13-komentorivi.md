@@ -4,29 +4,29 @@
 
 # Tutkimusdatan organisointi
 
-# Datan muoto
+## Datan muoto
 
 - data tiedostossa: onko koneen luettavissa -> silloin yleensä myös saavutettava 
 ja helpommin muunnettavissa formaatista toiseen
 - avoimet ja ”agnostiset” (platform agnostic) formaatit suositeltavia
 - esimerkki: [utf-8](https://www.youtube.com/watch?v=MijmeoH9LT4) ja mojibake (korjattavissa pythonilla: ftfy)
 
-# Tekstidata
+## Tekstidata
 
 - jos data on pelkkää tekstiä ja numeroita, kannattaa käyttää tekstipohjaisia formaatteja (md, txt, csv)
 - binäärimuotoinen tekstidata (docx) on vaikeampaa käyttää
 
-# Datan tallennus
+## Datan tallennus
 
 - merkityksellinen ja looginen kansiorakenne
 - kansiorakenne voi sisältää informaatiota datan keskinäisistä suhteista
 
-# Tiedostojen nimeäminen
+## Tiedostojen nimeäminen
 
 - erottava tieto nimen loppuun
 - välilyönnit ovat esim. komentorivillä merkitseviä erottajia, siksi niitä kannattaa välttää
 
-#
+##
 
 | nimikonventio | esimerkki |
 |---|---|
@@ -34,43 +34,45 @@ ja helpommin muunnettavissa formaatista toiseen
 | snake case | suurten_muinaisten_aika |
 | kebab case | suurten-muinaisten-aika |
 
-# Päivämäärät
+## Päivämäärät
 
 - [ISO-standardin 8601](https://fi.wikipedia.org/wiki/ISO_8601) mukainen päivämäärä: vvvv-kk-pp
 - pvm alussa, vvvv-kk-pp -> tietokone laittaa tiedostot automaattisesti kronologiseen järjestykseen
 
-#
+##
 
 - `/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun.csv`
 - `/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun_raty.csv`
 
-# Kaukoluenta
+# Tekstinlouhinta
+
+## Kaukoluenta
 
 - makroskooppinen katsaus tekstiin
 - Suomessa käyttänyt mm. Risto Turunen ([väitöskirja](https://trepo.tuni.fi/handle/10024/130891))
 
-# Tekstinlouhinta
+## Tekstinlouhinta
 
 - tekstimassojen automaattista lukemista (esim. hakuja)
 - [Voyant](https://voyant-tools.org/): OS-työkalu, yleisesti käytetty digitaalisen humanismin projekteissa
 - [von der Leyenin puhe](https://agricolaverkko.fi/tietosanomat/milta-ursula-von-der-leyenin-puhe-nayttaa-etaalta-luettuna)
 
-# Korpus
+## Korpus
 
 - kokoelma tekstejä
 - suurehko aineisto
 - [Johdatus korpuslingvistiikkaan](https://hfroehli.ch/2014/05/11/intro-bibliography-corpus-linguistics/)
 
-# Regex-haku
+## Regex-haut
 
 - säännölliset lausekkeet (regex) mahdollistavat sumeat haut
 - esimerkiksi `1991*` löytää kaikki tiedostot, joiden nimessä 4 ensimmäistä merkkiä ovat 1991
 
-# Big data
+## Big data
 
 - liian suuri aineisto perinteisille analyysimenetelmille
 
-# Siisti data
+## Siisti data
 
 - [tidy data](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html)
 - sarake on muuttuja
@@ -78,23 +80,27 @@ ja helpommin muunnettavissa formaatista toiseen
 - solussa vain yksi arvo
 - ei poikkeuksia!
 
-# Vertauskuva
+# Terminaali
 
-![](../img/leikkurit.png)
+##
 
-Kuvat: Wikimedia Commons
+![Vertauskuva](../img/leikkurit.png)
 
-# UNIX-filosofia
+<p style="font-size: small"> Wikimedia Commons </p>
+
+## UNIX-filosofia
 
 - yksi ohjelma tekee yhden asian hyvin
 - GNU/Linux noudattaa tätä periaatetta
 - Windowsin ohjelmistot ovat sen sijaan monoliittisia
 
-# Komentoriviputki
+##
 
-![](../img/pipeline.png)
+![Komentoriviputki](../img/pipeline.png)
 
-# Navigointi
+<p style="font-size: small"> TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa </p>
+
+## Navigointi
 
 | navigointikomennot | merkki |
 |-----|----|
@@ -102,23 +108,23 @@ Kuvat: Wikimedia Commons
 | nykyinen kansio | `.` |
 | ylempi kansio | `..` |
 
-# Tärkeitä työkaluja
+## Tärkeitä työkaluja
 
 - putkioperaattori `|`
 - uudelleenohjausoperaattori, `>` ja `>>`
 - ohjelman keskeytys **CTRL-C**
 
-# Kopioiminen
+## Kopioiminen
 
 `cp ./tiedosto/polku/teksti1.txt ./toinen/tiedosto/polku/teksti2.txt`
 
-# Toisto
+## Toisto
 
 - silmukka: `for`
 - rekursio: hyödyllistä mutta vaarallista
 - Monte Carlo -simulaatio (iteroidaan kunnes malli näyttää tarpeeksi hyvältä)
 
-#
+##
 
 | PS-komento | Lyhenne | UNIX-vastine |
 |-----|------|-----|
@@ -130,7 +136,7 @@ Kuvat: Wikimedia Commons
 | Rename-Item | rni | mv |
 | Copy-Item | copy, cpi | cp |
 
-#
+##
 
 | PS-komento | Lyhenne | UNIX-vastine |
 |-----|------|-----|
@@ -141,28 +147,45 @@ Kuvat: Wikimedia Commons
 | Measure-Object | measure | wc / lc |
 | Select-Object | select |  |
 
-# Koneoppiminen
+# Tekoäly
+
+## Koneoppiminen
 
 - "tekoäly" koostuu yleensä melko yksinkertaisista algoritmeista, mutta vaatii paljon laskutehoa
-- ohjattu ja ohjaamaton oppiminen
+- koneoppiminen vaatii suuria aineistoja
+- esim. Transcribuksessa käytetyt HTR-mallit vaativat 500 sivua ihmisen tunnistamaa tekstiä opetusdataksi
 
-# Topic modelling
+## 
+
+![Ohjattu ja ohjaamaton oppiminen](../img/597px-Task-guidance.png)
+
+<p style="font-size: small"> Numiri, jaettu Wikimedia Commonsissa </p>
+
+## Topic modelling
 
 - samanlaisissa yhteyksissä esiintyvät sanat ovat todennäköisimmin osa samaa diskurssia
 - ohjaamatonta oppimista
 
-# Latentti Dirichlet-allokaatio (LDA)
+## Latentti Dirichlet-allokaatio (LDA)
 
 - yleisin topic modelling -malli
 - optimaalinen malli lasketaan Monte Carlo -menetelmällä
 - tulokset voivat siis vaihdella!
 
-#
+##
 
-![laattakaavio LDA-mallista](../img/Smoothed_LDA.png)
+![Laattakaavio LDA-mallista](../img/Smoothed_LDA.png)
 
-# MALLET
+<p style="font-size: small"> Slxu.public, jaettu Wikimedia Commonsissa </p>
 
-- komentorivipohjainen työkalu
+## MALLET
+
+- Komentorivipohjainen työkalu
 - Programming historian -sivustolla on aiheesta 
 [artikkeli](https://programminghistorian.org/en/lessons/topic-modeling-and-mallet)
+- Korpus on ensin muutettava Malletin ymmärtämään muotoon
+- Tämän jälkeen aineiston avulla voi kouluttaa LDA-mallin
+
+# Lopuksi
+
+- Tietokone on työkalu. Se ei tunne totuutta sen enempää kuin ruohonleikkuri.
