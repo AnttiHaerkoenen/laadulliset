@@ -5,6 +5,7 @@
 # Sosiaalinen verkostoanalyysi
 
 - joukko lähestymistapoja
+- laadullisia, määrällisiä, tai jotain siltä väliltä
 
 #
 
@@ -12,12 +13,26 @@
 
 # Graafiteoria
 
-- solmu, piste, aktori
-- linkki, side, kaari, yhteys
-- suunnattu tai suuntaamaton yhteys
-- yhteyksillä voi olla eri painoarvo
+- solmu
+- yhteys
 
-# Keskeisyys
+## Solmut
+
+- eivät ole aina ihmisiä
+- solmu, piste, aktori
+
+## Yhteydet
+
+- kaari, linkki, side, yhteys
+- suunnattu tai suuntaamaton yhteys
+- yhteyksillä voi olla eri painoarvoja
+- yhteydet voivat olla laadullisesti erilaisia
+
+## Visualisointi
+
+- graafi piirretään yleensä palloina ja viivoina
+
+## Keskeisyys
 
 - keskeisyys
 - keskeisyyden ominaisvektori (Eigenvector centrality)
@@ -25,17 +40,34 @@
 - läheisyyskeskeisyys
 - tiheys
 
-# Sosiaaliset verkostot
+# Verkostoanalyysi ihmisillä
+
+## Sosiaaliset verkostot
 
 - välillisyyden avulla voidaan löytää yllättäviä vallankäyttäjiä verkostojen sisällä
 - keskeisyyden avulla voi löytää verkoston rakenteesta asioita, jotka eivät ole ilmiselviä
 
-# Historiassa
+## Historiassa
 
 - poliittiset verkostot
 - [Journal of Historical Network Research](https://jhnr.uni.lu/index.php/jhnr/index) 
 - esim. Itä-Saksan opposition verkostot (Kimmo Elo)
 
-# Solmut
+## Esimerkkejä
 
-- eivät ole aina ihmisiä
+- sukupuut
+- solmut voivat olla ihmisiä, kaupunkeja tai muita organisaatioita
+- yhteydet voivat olla muuttoliikettä, kirjeenvaihtoa, luotonantoa, kummisuhteita
+
+# Palladio
+
+## Taustaa
+
+- selainpohjainen [sovellus](https://hdlab.stanford.edu/palladio-app)
+- Stanfordin yliopiston _Humanities + Design_ -keskuksen työkalu
+- tarkoitettu avaamaan verkostot, kartat ja aikajanat humanisteille
+
+## Data
+
+- näissä harjoituksissa käytetään vain csv-muotoisia aineistoja
+- saman datan voi esittää graafina, karttana, aikajanana tai näiden yhdistelmänä

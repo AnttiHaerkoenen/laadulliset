@@ -161,14 +161,14 @@ ja helpommin muunnettavissa formaatista toiseen
 
 <p style="font-size: small"> Numiri, jaettu Wikimedia Commonsissa </p>
 
-## Topic modelling
+## Aihemallinnus
 
 - samanlaisissa yhteyksissä esiintyvät sanat ovat todennäköisimmin osa samaa diskurssia
 - ohjaamatonta oppimista
 
 ## Latentti Dirichlet-allokaatio (LDA)
 
-- yleisin topic modelling -malli
+- yleisin aihemalli
 - optimaalinen malli lasketaan Monte Carlo -menetelmällä
 - tulokset voivat siis vaihdella!
 
