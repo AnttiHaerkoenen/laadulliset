@@ -92,10 +92,34 @@
 
 # Teemakartat
 
-#
+##
 
 ![Teemakarttojen visuaaliset muuttujat ja tiedon mitta-asteikot](../img/teemakartat.png)
 
 <p style="font-size: small">Helsingin yliopisto. Kvalitatiiviset ja kvantitatiiviset esitystavat</p>
 
 ## Koropleettikartat
+
+- tod. näk. yleisin tilastoteemakarttatyyppi
+- näitä näkyy mm. sanomalehdissä viikoittain
+- värillä kuvataan tilastointialueen muuttujan arvoa
+
+# Karttojen tulkinta
+
+## Kartan luonne
+
+- kaikki kartat ja muut visualisoinnit ovat valetta
+- sekä nykyiset että historialliset kartat on tehty palvelemaan tiettyä tarkoitusta
+- lähdekritiikki on äärimmäisen tärkeää
+
+## MAUP
+
+- muunnettavien alueyksiköiden ongelma
+- aluerajaus vaikuttaa tilastointiin, samoin käytettyjen alueiden koko!
+- USAn vaalipiirien gerrymanderointi on tästä erityisen härski esimerkki
+
+## Syy-yhteydet
+
+- ekologinen harha
+- pelkästään kahden teemakartan vertaamisella ei voi löytää kausaalisia suhteita
+- esimerkki: Pähkinäsaaren rauhan raja ___ei___ vaikuta suomalaisten terveyteen

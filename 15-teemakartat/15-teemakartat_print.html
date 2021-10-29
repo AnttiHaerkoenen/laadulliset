@@ -132,9 +132,123 @@
 <p class="author">Antti Härkönen</p>
 <p class="date">2021-11-23</p>
 </header>
-<h1 id="paikkatieto">Paikkatieto</h1>
+<h1 id="geoinformatiikka">Geoinformatiikka</h1>
+<h2 id="gis">GIS</h2>
 <ul>
-<li>data, joka sisältää</li>
+<li>Geographic Information Systems</li>
+<li>yleensä myös kuvaa nykyistä spatiaalista tiedettä laajemmin</li>
+</ul>
+<h2 id="paikkatieto">Paikkatieto</h2>
+<ul>
+<li>sijaintitieto</li>
+<li>ominaisuustieto</li>
+<li>data yleensä SQL-tietokannoissa</li>
+<li>paikkatietokanta on spatiaalisen tieteen ydin</li>
+<li>perinteinen kartta on vain yksi tapa visualisoida paikkatietoa</li>
+</ul>
+<h2 id="vektori--ja-rasteridata">Vektori- ja rasteridata</h2>
+<ul>
+<li>kaksi paikkatiedon päätyyppiä</li>
+<li>rasteridata vie paljon enemmän muistia</li>
+<li>vektoridataa on helpompi käyttää</li>
+<li>vektoridata on helppo muuttaa rasteriksi, mutta rasterin muuttaminen vektoriksi vaatii joko käsityötä tai tekoälyä</li>
+</ul>
+<h2 id="rasteri">Rasteri</h2>
+<ul>
+<li>pikseleistä koostuva kuvatiedosto</li>
+<li>skannattu kartta, satelliittikuva, ilmakuva</li>
+</ul>
+<h2 id="vektori">Vektori</h2>
+<ul>
+<li>yksinkertainen formaatti</li>
+<li>piste, viiva, monikulmio, tai näiden yhdistelmä</li>
+<li>vektoreiden välisten spatiaalisten suhteiden määrittäminen on helppoa</li>
+</ul>
+<h1 id="kartografia">Kartografia</h1>
+<h2 id="historiaa">Historiaa</h2>
+<ul>
+<li>karttojen piirtäminen on vanhin tapa esittää paikkatietoa</li>
+<li>perinteisiä ongelmia: kuinka esittää maapallo kaksiulotteisella paperilla, mitä informaatiota sisällyttää</li>
+<li>geoidit, projektiot ja koordinaattijärjestelmät</li>
+</ul>
+<h2 id="moderni-kartografia">Moderni kartografia</h2>
+<ul>
+<li>geoinformatiikan ansiosta kartat voidaan vapauttaa paperin staattisuudesta</li>
+<li>interaktiiviset ja päivittyvät kartat, myös kartta-animaatiot</li>
+<li>kaukokartoitus mahdollistaa nopeat pikakartoitukset</li>
+</ul>
+<h2 id="datavisualisointi">Datavisualisointi</h2>
+<ul>
+<li>kattokäsite, johon myös kartografia kuuluu</li>
+<li>tilastolliset kaaviot ja muut esitykset</li>
+<li>esteettinen näkökulma</li>
+</ul>
+<h2 id="funktio">Funktio</h2>
+<ul>
+<li>mitä varten visualisointi tehdään?</li>
+<li>turha informaatio pois</li>
+</ul>
+<h2 id="abstraktiotaso">Abstraktiotaso</h2>
+<ul>
+<li>äärimmäisen tärkeä asia visualisoinnissa, etenkin kartoissa</li>
+<li>turha informaatio pois</li>
+</ul>
+<h1 id="qgis">QGIS</h1>
+<h2 id="taustaa">Taustaa</h2>
+<ul>
+<li>vapaa ja avoin työpöytäsovellus</li>
+<li>käytössä tutkimuksessa, yrityksissä, kansalaisjärjestöissä, julkishallinnossa ympäri maailmaa</li>
+<li>avoin lähdekoodi on tärkeää tieteen ja päätöksenteon läpinäkyvyyden kannalta!</li>
+<li>QField mobiililaitteisiin</li>
+</ul>
+<h2 id="työkalut">Työkalut</h2>
+<ul>
+<li>työkaluja on niin paljon, ettei kaikkia voi esittää samaan aikaan käyttöliittymässä</li>
+<li>paljon työkaluja saatavilla lisäosina</li>
+</ul>
+<h2 id="georeferointi">Georeferointi</h2>
+<ul>
+<li>paikkatiedon yhdistäminen oikeaan sijaintitietoon</li>
+<li>vanhojen karttojen ja asemakaavojen georeferointi vaatii oikaisupisteita (<em>Ground Control Point, gcp</em>)</li>
+<li>vaatii pisteitä, jotka sijainti tiedetään muun paikkatiedon, kuten vertailukartan, avulla</li>
+</ul>
+<h2 id="vektorointi">Vektorointi</h2>
+<ul>
+<li>rasterimuotoisen datan (vanha kartta tai ilmakuva) muuttaminen vektorimuotoon</li>
+<li>tapahtuu käytännössä luomalla joukko uusia vektoritasoja, ja piirtämällä ne kartan päälle</li>
+</ul>
+<h1 id="teemakartat">Teemakartat</h1>
+<h2 id="section"></h2>
+<figure>
+<img src="../img/teemakartat.png" alt="Teemakarttojen visuaaliset muuttujat ja tiedon mitta-asteikot" /><figcaption aria-hidden="true">Teemakarttojen visuaaliset muuttujat ja tiedon mitta-asteikot</figcaption>
+</figure>
+<p style="font-size: small">
+Helsingin yliopisto. Kvalitatiiviset ja kvantitatiiviset esitystavat
+</p>
+<h2 id="koropleettikartat">Koropleettikartat</h2>
+<ul>
+<li>tod. näk. yleisin tilastoteemakarttatyyppi</li>
+<li>näitä näkyy mm. sanomalehdissä viikoittain</li>
+<li>värillä kuvataan tilastointialueen muuttujan arvoa</li>
+</ul>
+<h1 id="karttojen-tulkinta">Karttojen tulkinta</h1>
+<h2 id="kartan-luonne">Kartan luonne</h2>
+<ul>
+<li>kaikki kartat ja muut visualisoinnit ovat valetta</li>
+<li>sekä nykyiset että historialliset kartat on tehty palvelemaan tiettyä tarkoitusta</li>
+<li>lähdekritiikki on äärimmäisen tärkeää</li>
+</ul>
+<h2 id="maup">MAUP</h2>
+<ul>
+<li>muunnettavien alueyksiköiden ongelma</li>
+<li>aluerajaus vaikuttaa tilastointiin, samoin käytettyjen alueiden koko!</li>
+<li>USAn vaalipiirien gerrymanderointi on tästä erityisen härski esimerkki</li>
+</ul>
+<h2 id="syy-yhteydet">Syy-yhteydet</h2>
+<ul>
+<li>ekologinen harha</li>
+<li>pelkästään kahden teemakartan vertaamisella ei voi löytää kausaalisia suhteita</li>
+<li>esimerkki: Pähkinäsaaren rauhan raja <strong><em>ei</em></strong> vaikuta suomalaisten terveyteen</li>
 </ul>
 </body>
 </html>

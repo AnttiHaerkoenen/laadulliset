@@ -32,12 +32,182 @@
   <p class="date">2021-11-23</p>
 </section>
 
-<section id="paikkatieto" class="title-slide slide level1">
-<h1>Paikkatieto</h1>
+<section>
+<section id="geoinformatiikka" class="title-slide slide level1">
+<h1>Geoinformatiikka</h1>
+
+</section>
+<section id="gis" class="slide level2">
+<h2>GIS</h2>
 <ul>
-<li class="fragment">data, joka sisältää</li>
+<li class="fragment">Geographic Information Systems</li>
+<li class="fragment">yleensä myös kuvaa nykyistä spatiaalista tiedettä laajemmin</li>
 </ul>
 </section>
+<section id="paikkatieto" class="slide level2">
+<h2>Paikkatieto</h2>
+<ul>
+<li class="fragment">sijaintitieto</li>
+<li class="fragment">ominaisuustieto</li>
+<li class="fragment">data yleensä SQL-tietokannoissa</li>
+<li class="fragment">paikkatietokanta on spatiaalisen tieteen ydin</li>
+<li class="fragment">perinteinen kartta on vain yksi tapa visualisoida paikkatietoa</li>
+</ul>
+</section>
+<section id="vektori--ja-rasteridata" class="slide level2">
+<h2>Vektori- ja rasteridata</h2>
+<ul>
+<li class="fragment">kaksi paikkatiedon päätyyppiä</li>
+<li class="fragment">rasteridata vie paljon enemmän muistia</li>
+<li class="fragment">vektoridataa on helpompi käyttää</li>
+<li class="fragment">vektoridata on helppo muuttaa rasteriksi, mutta rasterin muuttaminen vektoriksi vaatii joko käsityötä tai tekoälyä</li>
+</ul>
+</section>
+<section id="rasteri" class="slide level2">
+<h2>Rasteri</h2>
+<ul>
+<li class="fragment">pikseleistä koostuva kuvatiedosto</li>
+<li class="fragment">skannattu kartta, satelliittikuva, ilmakuva</li>
+</ul>
+</section>
+<section id="vektori" class="slide level2">
+<h2>Vektori</h2>
+<ul>
+<li class="fragment">yksinkertainen formaatti</li>
+<li class="fragment">piste, viiva, monikulmio, tai näiden yhdistelmä</li>
+<li class="fragment">vektoreiden välisten spatiaalisten suhteiden määrittäminen on helppoa</li>
+</ul>
+</section></section>
+<section>
+<section id="kartografia" class="title-slide slide level1">
+<h1>Kartografia</h1>
+
+</section>
+<section id="historiaa" class="slide level2">
+<h2>Historiaa</h2>
+<ul>
+<li class="fragment">karttojen piirtäminen on vanhin tapa esittää paikkatietoa</li>
+<li class="fragment">perinteisiä ongelmia: kuinka esittää maapallo kaksiulotteisella paperilla, mitä informaatiota sisällyttää</li>
+<li class="fragment">geoidit, projektiot ja koordinaattijärjestelmät</li>
+</ul>
+</section>
+<section id="moderni-kartografia" class="slide level2">
+<h2>Moderni kartografia</h2>
+<ul>
+<li class="fragment">geoinformatiikan ansiosta kartat voidaan vapauttaa paperin staattisuudesta</li>
+<li class="fragment">interaktiiviset ja päivittyvät kartat, myös kartta-animaatiot</li>
+<li class="fragment">kaukokartoitus mahdollistaa nopeat pikakartoitukset</li>
+</ul>
+</section>
+<section id="datavisualisointi" class="slide level2">
+<h2>Datavisualisointi</h2>
+<ul>
+<li class="fragment">kattokäsite, johon myös kartografia kuuluu</li>
+<li class="fragment">tilastolliset kaaviot ja muut esitykset</li>
+<li class="fragment">esteettinen näkökulma</li>
+</ul>
+</section>
+<section id="funktio" class="slide level2">
+<h2>Funktio</h2>
+<ul>
+<li class="fragment">mitä varten visualisointi tehdään?</li>
+<li class="fragment">turha informaatio pois</li>
+</ul>
+</section>
+<section id="abstraktiotaso" class="slide level2">
+<h2>Abstraktiotaso</h2>
+<ul>
+<li class="fragment">äärimmäisen tärkeä asia visualisoinnissa, etenkin kartoissa</li>
+<li class="fragment">turha informaatio pois</li>
+</ul>
+</section></section>
+<section>
+<section id="qgis" class="title-slide slide level1">
+<h1>QGIS</h1>
+
+</section>
+<section id="taustaa" class="slide level2">
+<h2>Taustaa</h2>
+<ul>
+<li class="fragment">vapaa ja avoin työpöytäsovellus</li>
+<li class="fragment">käytössä tutkimuksessa, yrityksissä, kansalaisjärjestöissä, julkishallinnossa ympäri maailmaa</li>
+<li class="fragment">avoin lähdekoodi on tärkeää tieteen ja päätöksenteon läpinäkyvyyden kannalta!</li>
+<li class="fragment">QField mobiililaitteisiin</li>
+</ul>
+</section>
+<section id="työkalut" class="slide level2">
+<h2>Työkalut</h2>
+<ul>
+<li class="fragment">työkaluja on niin paljon, ettei kaikkia voi esittää samaan aikaan käyttöliittymässä</li>
+<li class="fragment">paljon työkaluja saatavilla lisäosina</li>
+</ul>
+</section>
+<section id="georeferointi" class="slide level2">
+<h2>Georeferointi</h2>
+<ul>
+<li class="fragment">paikkatiedon yhdistäminen oikeaan sijaintitietoon</li>
+<li class="fragment">vanhojen karttojen ja asemakaavojen georeferointi vaatii oikaisupisteita (<em>Ground Control Point, gcp</em>)</li>
+<li class="fragment">vaatii pisteitä, jotka sijainti tiedetään muun paikkatiedon, kuten vertailukartan, avulla</li>
+</ul>
+</section>
+<section id="vektorointi" class="slide level2">
+<h2>Vektorointi</h2>
+<ul>
+<li class="fragment">rasterimuotoisen datan (vanha kartta tai ilmakuva) muuttaminen vektorimuotoon</li>
+<li class="fragment">tapahtuu käytännössä luomalla joukko uusia vektoritasoja, ja piirtämällä ne kartan päälle</li>
+</ul>
+</section></section>
+<section>
+<section id="teemakartat" class="title-slide slide level1">
+<h1>Teemakartat</h1>
+
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+<figure>
+<img data-src="../img/teemakartat.png" alt="Teemakarttojen visuaaliset muuttujat ja tiedon mitta-asteikot" /><figcaption aria-hidden="true">Teemakarttojen visuaaliset muuttujat ja tiedon mitta-asteikot</figcaption>
+</figure>
+<p style="font-size: small">
+Helsingin yliopisto. Kvalitatiiviset ja kvantitatiiviset esitystavat
+</p>
+</section>
+<section id="koropleettikartat" class="slide level2">
+<h2>Koropleettikartat</h2>
+<ul>
+<li class="fragment">tod. näk. yleisin tilastoteemakarttatyyppi</li>
+<li class="fragment">näitä näkyy mm. sanomalehdissä viikoittain</li>
+<li class="fragment">värillä kuvataan tilastointialueen muuttujan arvoa</li>
+</ul>
+</section></section>
+<section>
+<section id="karttojen-tulkinta" class="title-slide slide level1">
+<h1>Karttojen tulkinta</h1>
+
+</section>
+<section id="kartan-luonne" class="slide level2">
+<h2>Kartan luonne</h2>
+<ul>
+<li class="fragment">kaikki kartat ja muut visualisoinnit ovat valetta</li>
+<li class="fragment">sekä nykyiset että historialliset kartat on tehty palvelemaan tiettyä tarkoitusta</li>
+<li class="fragment">lähdekritiikki on äärimmäisen tärkeää</li>
+</ul>
+</section>
+<section id="maup" class="slide level2">
+<h2>MAUP</h2>
+<ul>
+<li class="fragment">muunnettavien alueyksiköiden ongelma</li>
+<li class="fragment">aluerajaus vaikuttaa tilastointiin, samoin käytettyjen alueiden koko!</li>
+<li class="fragment">USAn vaalipiirien gerrymanderointi on tästä erityisen härski esimerkki</li>
+</ul>
+</section>
+<section id="syy-yhteydet" class="slide level2">
+<h2>Syy-yhteydet</h2>
+<ul>
+<li class="fragment">ekologinen harha</li>
+<li class="fragment">pelkästään kahden teemakartan vertaamisella ei voi löytää kausaalisia suhteita</li>
+<li class="fragment">esimerkki: Pähkinäsaaren rauhan raja <strong><em>ei</em></strong> vaikuta suomalaisten terveyteen</li>
+</ul>
+</section></section>
     </div>
   </div>
 
