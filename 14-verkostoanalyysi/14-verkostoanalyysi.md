@@ -71,3 +71,7 @@
 
 - näissä harjoituksissa käytetään vain csv-muotoisia aineistoja
 - saman datan voi esittää graafina, karttana, aikajanana tai näiden yhdistelmänä
+
+# Lopuksi
+
+- Verkostoja löytyy kaikkialta jos jaksaa etsiä

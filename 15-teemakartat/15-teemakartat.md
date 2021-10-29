@@ -89,3 +89,13 @@
 
 - rasterimuotoisen datan (vanha kartta tai ilmakuva) muuttaminen vektorimuotoon
 - tapahtuu käytännössä luomalla joukko uusia vektoritasoja, ja piirtämällä ne kartan päälle
+
+# Teemakartat
+
+#
+
+![Teemakarttojen visuaaliset muuttujat ja tiedon mitta-asteikot](../img/teemakartat.png)
+
+<p style="font-size: small">Helsingin yliopisto. Kvalitatiiviset ja kvantitatiiviset esitystavat</p>
+
+## Koropleettikartat
