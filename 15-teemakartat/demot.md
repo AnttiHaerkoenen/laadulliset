@@ -103,9 +103,8 @@ siirtää napista ![siirrä oikaisupiste](../img/siirra_oikaisupiste.png).
 Aseta tallennuspaikaksi projektin kansio. 
 9. Tee samanlainen taso nimellä tontit. 
 10. Digitoi Pielisen itäpuolisen alueen korttelit ja tontit. Aloita valitsemalla taso ja painamalla 
-![muokkaa](../img/muokkaa.png). 
-Painikkeesta ![lisää monikulmio](../img/lisaa_polygoni.png) pääset piirtämään uusia monikulmioita. 
-Muista tallentaa tekemäsi muutokset välillä. 
+![muokkaa](../img/muokkaa.png). Painikkeesta ![lisää monikulmio](../img/lisaa_polygoni.png) pääset piirtämään 
+uusia monikulmioita. Muista tallentaa tekemäsi muutokset välillä. 
 11. Kun olet digitoinut joen itäpuolen, poista alkuperäinen kartta näkymästä,
 ja lisää karttaan Paitulin WMS:n kautta Maanmittauslaitoksen peruskartta vuodelta 2015. 
 12. Muuta korttelit ja tontit läpinäkyviksi ja vertaa niitä peruskarttaan ja OpenStreetMapin rakennuksen.

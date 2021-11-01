@@ -28,12 +28,14 @@
 
 - pikseleistä koostuva kuvatiedosto
 - skannattu kartta, satelliittikuva, ilmakuva
+- formaatit: geotiff, tavalliset kuvaformaatit
 
 ## Vektori
 
 - yksinkertainen formaatti
 - piste, viiva, monikulmio, tai näiden yhdistelmä
 - vektoreiden välisten spatiaalisten suhteiden määrittäminen on helppoa
+- formaatit: ESRI shapefile, geojson
 
 # Kartografia
 
