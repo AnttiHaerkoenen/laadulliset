@@ -8,5 +8,6 @@ include:
   - CONTRIBUTING.md
   - README.md
   - LICENSE.md
-
 theme: jekyll-theme-cayman
+title: Laadullisten aineistojen työmenetelmät historiatieteessä
+description: Antti Härkösen luennot (tekstinlouhinta, verkostoanalyysi, teemakartat)
