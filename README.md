@@ -10,9 +10,9 @@
 
 [Luento](./14-verkostoanalyysi/14-verkostoanalyysi.html) ([tulostettava](./14-verkostoanalyysi/14-verkostoanalyysi_print.html))
 
-Esimerkkiverkosto ([Lataa](./14-verkostoanalyysi/data/verkosto.csv))
+Esimerkkiverkosto ([lataa](./14-verkostoanalyysi/data/verkosto.csv))
 
-[Koodi verkoston analysointiin](./14-verkostoanalyysi/koodit.md)
+Koodi verkoston analysointiin [Python](./14-verkostoanalyysi/koodit.md)
 
 [Demot](./14-verkostoanalyysi/demot.md)
 
