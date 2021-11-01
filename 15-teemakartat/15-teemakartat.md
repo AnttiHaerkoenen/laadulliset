@@ -116,10 +116,15 @@
 
 - muunnettavien alueyksiköiden ongelma
 - aluerajaus vaikuttaa tilastointiin, samoin käytettyjen alueiden koko!
-- USAn vaalipiirien gerrymanderointi on tästä erityisen härski esimerkki
+- USAn vaalipiirien [gerrymanderointi](https://fi.wikipedia.org/wiki/Gerrymanderointi) on tästä 
+erityisen härski esimerkki
 
 ## Syy-yhteydet
 
 - ekologinen harha
 - pelkästään kahden teemakartan vertaamisella ei voi löytää kausaalisia suhteita
 - esimerkki: Pähkinäsaaren rauhan raja ___ei___ vaikuta suomalaisten terveyteen
+
+# Lopuksi
+
+- älä usko karttoja

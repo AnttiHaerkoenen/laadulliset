@@ -180,11 +180,11 @@ ja helpommin muunnettavissa formaatista toiseen
 
 ## MALLET
 
-- Komentorivipohjainen työkalu
+- komentorivipohjainen työkalu
 - Programming historian -sivustolla on aiheesta 
 [artikkeli](https://programminghistorian.org/en/lessons/topic-modeling-and-mallet)
-- Korpus on ensin muutettava Malletin ymmärtämään muotoon
-- Tämän jälkeen aineiston avulla voi kouluttaa LDA-mallin
+- korpus on ensin muutettava Malletin ymmärtämään muotoon
+- tämän jälkeen aineiston avulla voi kouluttaa LDA-mallin
 
 # Lopuksi
 

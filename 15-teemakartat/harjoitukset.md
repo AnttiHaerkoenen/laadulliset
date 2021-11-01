@@ -4,7 +4,7 @@ Valitse haluamasi kunta ja tee sen sijaintia havainnollistava kartta. Kartassa t
 
 # Harjoitus 2
 
-Tee kohdan 16 kaltainen lähestymiskartallinen kartta itse valitsemastasi maakunnasta.
+Tee kartta itse valitsemastasi maakunnasta. Kartassa on oltava lähestymiskartta.
 
 # Harjoitus 3
 
