@@ -46,17 +46,21 @@ ja säädä janan kokoa säätämällä kohtaa **kiinteä leveys**. Kun olet tyy
 23. Lisää pohjoisnuoli ![Lisää uusi kuva taittoon](../img/lisaa_uusi_kuva_taittoon.png) –painikkeesta.
 Piirrä nuolen alue ja mene kohtaan **Elementin ominaisuudet > Hakemistopolut** ja valitse sopiva nuoli. 
 24. Tallenna kartta kuvaksi kohdasta **Taitto > Vie kuvaksi**. Valmiin kartan pitäisi näyttää suunnilleen tältä:
+
 ![Tohmajärven sijainti Suomen kartalla](../img/kartta_demo_1.png)
 
 # Demo 2
 
-Tässä harjoituksessa opetellaan käyttämään WFS- ja WMS-rajapintoja sekä tekemään vektoritiedostoista valintoja eri menetelmillä. 
+Tässä harjoituksessa opetellaan käyttämään WFS- ja WMS-rajapintoja sekä tekemään vektoritiedostoista valintoja eri 
+menetelmillä.
+
 1. Avaa uusi projekti QGISillä. 
 2. Etsi ja kopioi netistä Paikkatietopalvelu Paitulin WMS-rajapinnan URL-osoite. 
 3. Paina QGISin painiketta ![lisää taso](../img/lisaa_taso.png) ja valitse **WMS/WMTS**. 
 Luo uusi tietolähde, anna sille nimeksi Paituli, ja URLiksi etsimäsi rajapinnan osoite. 
 4. Lisää Tilastokeskuksen WFS-palvelu 
-([http://geo.stat.fi/geoserver/tilastointialueet/wfs](http://geo.stat.fi/geoserver/tilastointialueet/wfs)) nimellä Tilastointialueet. 
+([http://geo.stat.fi/geoserver/tilastointialueet/wfs](http://geo.stat.fi/geoserver/tilastointialueet/wfs)) 
+nimellä Tilastointialueet. 
 5. Lisää Tilastokeskuksen WFS-palvelu 
 ([http://geo.stat.fi/geoserver/vaestoalue/wfs](http://geo.stat.fi/geoserver/vaestoalue/wfs)) nimellä Väestöalueet. 
 6. Lisää _Väestö 2017 vuoden 2018 kuntajaolla ja maakuntajaolla_ –tasot karttaan. 
@@ -99,7 +103,8 @@ siirtää napista ![siirrä oikaisupiste](../img/siirra_oikaisupiste.png).
 Aseta tallennuspaikaksi projektin kansio. 
 9. Tee samanlainen taso nimellä tontit. 
 10. Digitoi Pielisen itäpuolisen alueen korttelit ja tontit. Aloita valitsemalla taso ja painamalla 
-![muokkaa](../img/muokkaa.png). Painikkeesta ![lisää monikulmio](../img/lisaa_polygoni.png) pääset piirtämään uusia monikulmioita. 
+![muokkaa](../img/muokkaa.png). 
+Painikkeesta ![lisää monikulmio](../img/lisaa_polygoni.png) pääset piirtämään uusia monikulmioita. 
 Muista tallentaa tekemäsi muutokset välillä. 
 11. Kun olet digitoinut joen itäpuolen, poista alkuperäinen kartta näkymästä,
 ja lisää karttaan Paitulin WMS:n kautta Maanmittauslaitoksen peruskartta vuodelta 2015. 
