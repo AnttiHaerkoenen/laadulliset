@@ -1,7 +1,7 @@
 # Demo 1
 
 Tuotetaan verkosto Palladion avulla ja analysoidaan sitä.
-1. Kopioi Moodlesta tiedosto *verkosto.csv* ja liitä se Palladion datakenttään. Paina `Load`. 
+1. Kopioi tiedosto [verkosto.csv](../data/verkosto.csv) ja liitä se Palladion datakenttään. Paina `Load`. 
 2. Mene **Graph**-välilehteen ja aseta **Source**- ja **Target**-kohtiin oikeiden sarakkeiden nimet. 
 Verkoston pitäisi tulla näkyviin. 
 3. Voit muokata verkoston esitystä paremmaksi raahaamalla solmuja hiirellä. 
@@ -16,10 +16,10 @@ Tämän harjoituksen tarkoituksena on tehdä yksinkertainen visualisointi Pallad
 3. Tee PX-Webin kautta haku, jossa valitset tuloalueeksi kaikki kunnat ja lähtöalueeksi Tohmajärven. 
 4. Lataa data excel-tiedostona. 
 5. Käytä Excelin etsi ja korvaa –työkaluja kuntien nimien yksinkertaistamiseen. 
-6. Hankkikaa kuntakeskusten koordinaatit muodossa `lat,lon` (piste desimaalierottimena). 
+6. Hanki kuntakeskusten koordinaatit muodossa `lat,lon` (piste desimaalierottimena). 
 Lisää ne dataan sarakkeisiin Lähtöpaikka ja Tulopaikka. 
 7. Mene Palladion sivulle ja aloita uusi projekti. 
 8. Kopio data ja lataa se Palladio-sovellukseen. Anna datalle nimeksi *Muutto*. 
 9. Tee graafi, jossa esitetään muuttoliike Tohmajärveltä. Painota solmujen koko *Yhteensä*-sarakkeen mukaan. 
 10. Tee kartta, jonne sijoitat kunnat koon mukaan. 
-11. Lisää kuntarajat geojson-tiedostosta (Moodle), ja sijoita ne karttaan.
+11. Lisää kuntarajat [geojson-tiedostosta](../data/kunnat.geojson), ja sijoita ne karttaan.

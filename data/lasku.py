@@ -1,10 +1,3 @@
-# Verkostojen visualisoimiseen käytetty Python-koodi
-
-Alla oleva Python-koodi ei toimi ilman kolmen siinä käytetyn moduulin eli ohjelmistokirjaston asentamista.
-Tämä tapahtuu terminaalikomennolla `pip install matplotlib, pandas, networkx`. Jos asennusta ei ole tehty oikein,
-Python-tulkki antaa virheilmoituksen `ModuleNotFoundError`.
-
-```
 # -*- coding: utf-8 -*-
 
 import matplotlib.pyplot as plt
@@ -33,6 +26,3 @@ if __name__ == '__main__':
     print(f"tärkein klikki: {nx.max_weight_clique(G, weight=None)} (Huom! Näitä voi olla useita)")
     nx.draw_networkx(G, with_labels=True)
     plt.show()
-```
-
-[Lataa](../data/lasku.py)
