@@ -12,7 +12,7 @@
 
 Esimerkkiverkosto ([lataa](./14-verkostoanalyysi/data/verkosto.csv))
 
-Koodi verkoston analysointiin [Python](./14-verkostoanalyysi/koodit.md)
+[Koodi](./14-verkostoanalyysi/koodit.md) verkoston analysointiin ([lataa](./14-verkostoanalyysi/data/lasku.py))
 
 [Demot](./14-verkostoanalyysi/demot.md)
 
