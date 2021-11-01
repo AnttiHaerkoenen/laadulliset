@@ -1,6 +1,4 @@
-# Laadullisten aineistojen työmenetelmät historiatieteessä
-
-## Komentorivi ja Tekstinlouhinta
+# Komentorivi ja Tekstinlouhinta
 
 [Luento](./13-komentorivi/13-komentorivi.html) ([tulostettava](./13-komentorivi/13-komentorivi_print.html))
 
@@ -8,7 +6,7 @@
 
 [Harjoitukset](./13-komentorivi/harjoitukset.md)
 
-## Verkostoanalyysi
+# Verkostoanalyysi
 
 [Luento](./14-verkostoanalyysi/14-verkostoanalyysi.html) ([tulostettava](./14-verkostoanalyysi/14-verkostoanalyysi_print.html))
 
@@ -20,7 +18,7 @@ Esimerkkiverkosto ([Lataa](./14-verkostoanalyysi/data/verkosto.csv))
 
 [Harjoitukset](./14-verkostoanalyysi/harjoitukset.md)
 
-## Teemakartat
+# Teemakartat
 
 [Luento](./15-teemakartat/15-teemakartat.html) ([tulostettava](./15-teemakartat/15-teemakartat_print.html))
 
