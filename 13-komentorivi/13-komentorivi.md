@@ -66,7 +66,8 @@ ja helpommin muunnettavissa formaatista toiseen
 ## Regex-haut
 
 - säännölliset lausekkeet (regex) mahdollistavat sumeat haut
-- esimerkiksi `1991*` löytää kaikki tiedostot, joiden nimessä 4 ensimmäistä merkkiä ovat 1991
+- esimerkiksi `1991*` löytää kaikki sanat, joissa 4 ensimmäistä merkkiä ovat 1991
+- [Understanding Regular Expressions](https://programminghistorian.org/en/lessons/understanding-regular-expressions)
 
 ## Big data
 
@@ -100,6 +101,12 @@ ja helpommin muunnettavissa formaatista toiseen
 
 <p style="font-size: small"> TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa </p>
 
+## Powershell
+
+- Microsoftin monelle alustalle tarkoitettu komentokehote
+- omat komennot, ymmärtää myös monet bash-komennot
+- Programming historian -sivustolla [artikkeli](https://programminghistorian.org/en/lessons/intro-to-powershell)
+
 ## Navigointi
 
 | navigointikomennot | merkki |
@@ -126,26 +133,21 @@ ja helpommin muunnettavissa formaatista toiseen
 
 ##
 
+<div style="font-size: smaller">
 | PS-komento | Lyhenne | UNIX-vastine |
 |-----|------|-----|
 | Get-Help   | help | man |
-| Set-Location | sl | ch / chdir (kansio) |
+| Set-Location | sl | cd / chdir (kansio) |
 | Get-Location | gl | pwd |
 | Get-Content | gc | cat |
 | Get-ChildItem | gci | dir/ls |
 | Rename-Item | rni | mv |
 | Copy-Item | copy, cpi | cp |
-
-##
-
-| PS-komento | Lyhenne | UNIX-vastine |
-|-----|------|-----|
 | New-Item | ni | touch / mkdir (kansio) |
 | Write-Output | write | echo |
 | Select-String | sls | grep |
-| For-Each | foreach | for ... in |
-| Measure-Object | measure | wc / lc |
-| Select-Object | select |  |
+</div>
+
 
 # Tekoäly
 
