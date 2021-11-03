@@ -75,11 +75,11 @@ ja helpommin muunnettavissa formaatista toiseen
 
 ## Siisti data
 
-- [tidy data](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html)
 - sarake on muuttuja
 - rivi on havainto
 - solussa vain yksi arvo
 - ei poikkeuksia!
+- [tidy data](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html)
 
 # Terminaali
 
@@ -148,6 +148,12 @@ ja helpommin muunnettavissa formaatista toiseen
 | Select-String | sls | grep |
 </div>
 
+## Select-String
+
+- `Select-String` mahdollistaa säännöllisten hakulausekkeiden käytön
+- `sls tiedosto.txt -Pattern '\d{4}'` löytää kaikki neljän numeron ryhmät
+- myös tiedostojen nimissä voi käyttää vastaavia temppuja: `sls kansio\*.txt -Pattern '\d{4}'`
+- operaattorin `>` avulla hakutulokset voi kirjoittaa tiedostoon
 
 # Tekoäly
 

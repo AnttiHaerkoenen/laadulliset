@@ -150,11 +150,11 @@
 <section id="siisti-data" class="slide level2">
 <h2>Siisti data</h2>
 <ul>
-<li class="fragment"><a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">tidy data</a></li>
 <li class="fragment">sarake on muuttuja</li>
 <li class="fragment">rivi on havainto</li>
 <li class="fragment">solussa vain yksi arvo</li>
 <li class="fragment">ei poikkeuksia!</li>
+<li class="fragment"><a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">tidy data</a></li>
 </ul>
 </section></section>
 <section>
@@ -306,6 +306,15 @@ TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
 </tbody>
 </table>
 </div>
+</section>
+<section id="select-string" class="slide level2">
+<h2>Select-String</h2>
+<ul>
+<li class="fragment"><code>Select-String</code> mahdollistaa säännöllisten hakulausekkeiden käytön</li>
+<li class="fragment"><code>sls tiedosto.txt -Pattern '\d{4}'</code> löytää kaikki neljän numeron ryhmät</li>
+<li class="fragment">myös tiedostojen nimissä voi käyttää vastaavia temppuja: <code>sls kansio\*.txt -Pattern '\d{4}'</code></li>
+<li class="fragment">operaattorin <code>&gt;</code> avulla hakutulokset voi kirjoittaa tiedostoon</li>
+</ul>
 </section></section>
 <section>
 <section id="tekoäly" class="title-slide slide level1">
