@@ -4,9 +4,9 @@ Valitse haluamasi kunta ja tee sen sijaintia havainnollistava kartta. Kartassa t
 
 # Harjoitus 2
 
-Tee kartta itse valitsemastasi maakunnasta. Kartassa on oltava lähestymiskartta.
+Tee kartta valitsemastasi maakunnasta. Kartassa on oltava lähestymiskartta.
 
 # Harjoitus 3
 
 Tee kartta, jossa havainnollistat Niinivaaran rakennusten eroja vuoden 1923 asemakaavan 
-ja tämän päivän välillä haluamallasi tavalla.
+ja tämän päivän välillä.

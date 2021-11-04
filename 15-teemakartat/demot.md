@@ -86,7 +86,8 @@ Lisää Pirkanmaan tilastoyhteenveto Pohjois-Karjalan rinnalle ja tallenna taulu
 
 # Demo 3
 
-Tässä harjoituksessa opetellaan luomaan omaa vektorimuotoista dataa vanhoista kartoista tai ilmakuvista. 
+Tässä harjoituksessa opetellaan luomaan omaa vektorimuotoista dataa vanhoista kartoista tai ilmakuvista.
+
 1. Mene Digitaaliarkiston sivulle, tee haku sanoilla joensuu kartat ja avaa [Joensuun kaupungin asemakaava. 
 (Joensuu Ieb* 3/- -)](http://digi.narc.fi/digi/slistaus.ka?ay=225980). 
 2. Lataa asemakaava projektikansioon. 

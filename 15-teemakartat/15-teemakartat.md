@@ -104,9 +104,10 @@
 
 ## Koropleettikartat
 
-- tod. näk. yleisin tilastoteemakarttatyyppi
-- näitä näkyy mm. sanomalehdissä viikoittain
+- tod. näk. yleisin tilastoteemakarttatyyppi 
+- sanomalehdissä viikoittain
 - värillä kuvataan tilastointialueen muuttujan arvoa
+- [Suomen kuntien muuttovoitto ja -tappio 2016](https://anttihaerkoenen.github.io/muuttovoitto.html)
 
 # Karttojen tulkinta
 
