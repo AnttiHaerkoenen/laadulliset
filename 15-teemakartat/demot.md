@@ -4,7 +4,7 @@ Tämän harjoituksen tarkoituksena on tehdä yksinkertainen havainnollistava kar
 Kuvitellaan, että teet opinnäytetyötä legendaarisesta keihäänheittäjästä Seppo Rädystä ja haluat esittää hänen
 kotikuntansa Suomen kartalla.
 
-1. Tarkista, että koneelle on asennettu QGIS 3.
+1. Tarkista, että koneelle on asennettu QGIS 3.x
 2. Tee itsellesi karttaa varten projektikansio sopivaan paikkaan.
 3. Avaa QGIS ja luo uusi projekti (**Projekti** > **Uusi**). Tallenna projekti nimellä Harjoitus 1. 
 4. Mene Paituli-paikkatietopalveluun ja lataa Tilastokeskuksen _Kuntien avainluvut vuodelta 2017_. 
@@ -28,7 +28,8 @@ Suomen kartan pitäisi ilmestyä keskelle.
 13. Valitse kartta, mene **Elementin ominaisuudet** –kohtaan ja aseta mittakaavaksi _1:4 000 000_. 
 Paina sen jälkeen **Update Preview**. 
 14. Lukitse taso: **Elementin ominaisuudet > Taso > Lukitse taso**
-15. Klikkaa ![Uusi karttaelementti](../img/uusi_karttaelementti.png) ja piirrä hiirellä uusi karttaelementti Suomen kartan viereen. 
+15. Klikkaa ![Uusi karttaelementti](../img/uusi_karttaelementti.png) ja piirrä hiirellä uusi karttaelementti 
+Suomen kartan viereen. 
 16. Mene takaisin karttaikkunaan, ja laita nimiöt päälle. Käytä nimiöiden perustana NIMI-saraketta 
 (**hiiren oikea näppäin > Ominaisuudet > Nimiöt**). Aseta teksti-kohdasta nimiöiden kooksi 12. 
 17. Jotta kuntien nimet eivät näkyisi muualla kuin pienessä kartassa, asetetaan nimiöille rajoitettu mittakaava. 
@@ -91,8 +92,8 @@ Tässä harjoituksessa opetellaan luomaan omaa vektorimuotoista dataa vanhoista 
 2. Lataa asemakaava projektikansioon. 
 3. Georeferointia varten tarvitaan oikaisupisteitä. Helpointa tämä on toisen kartan avulla. 
 Lataa OSM Suomen WFS-rajapinnasta Suomen rakennukset georeferoinnin avuksi. 
-4. Avaa **Rasteri > Georeferointi** ja lisää napista ![lisää rasteri](../img/lisaa_rasteri.png) Joensuun kaava georeferoitavaksi.
-Aseta koordinaattijärjestelmäksi _ETRS 1989 TM35_. 
+4. Avaa **Rasteri > Georeferointi** ja lisää napista ![lisää rasteri](../img/lisaa_rasteri.png) Joensuun kaava 
+georeferoitavaksi. Aseta koordinaattijärjestelmäksi _ETRS 1989 TM35_. 
 5. Lisää oikaisupiste käyttämällä nappia ![lisää oikaisupiste](../img/lisaa_oikaisupiste.png). 
 Pisteitä voi poistaa napista ![poista oikaisupiste](../img/poista_oikaisupiste.png) ja 
 siirtää napista ![siirrä oikaisupiste](../img/siirra_oikaisupiste.png). 

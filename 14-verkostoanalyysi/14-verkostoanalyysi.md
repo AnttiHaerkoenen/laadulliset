@@ -2,16 +2,21 @@
 % Antti Härkönen
 % 2021-11-16
 
-# Sosiaalinen verkostoanalyysi
+# Sosiologista taustaa
 
-- joukko lähestymistapoja
-- laadullisia, määrällisiä, tai jotain siltä väliltä
+## Sosiaalinen verkostoanalyysi
+
+- joukko lähestymistapoja ihmisten välisten suhteiden tutkimiseen
+- perustuu graafiteoriaan, joka on matematiikan osa-alue
+- verkosto on graafi, toisin kuin toimijaverkkoteoriassa (ANT)
 
 #
 
 ![verkosto](../img/network_1.png)
 
 # Graafiteoria
+
+## Graafi
 
 - solmu
 - yhteys
@@ -45,8 +50,8 @@
 
 ## Sosiaaliset verkostot
 
-- välillisyyden avulla voidaan löytää yllättäviä vallankäyttäjiä verkostojen sisällä
-- keskeisyyden avulla voi löytää verkoston rakenteesta asioita, jotka eivät ole ilmiselviä
+- välillisyyden avulla voi löytyä yllättäviä vallankäyttäjiä verkostojen sisällä
+- keskeisyyksien avulla voi löytää verkoston rakenteesta asioita, jotka eivät ole ilmiselviä
 
 ## Historiassa
 
@@ -70,7 +75,8 @@
 
 ## Data
 
-- näissä harjoituksissa käytetään vain csv-muotoisia aineistoja
+- näissä harjoituksissa käytetään vain csv-muotoisia aineistoja verkostojen kuvaamiseen
+- geojson-formaatissa oleva vektoridata
 - saman datan voi esittää graafina, karttana, aikajanana tai näiden yhdistelmänä
 
 # Lopuksi

@@ -60,10 +60,12 @@
 ## Funktio
 
 - mitä varten visualisointi tehdään?
+- mitkä kohteet ovat tarpeeksi tärkeitä?
 - turha informaatio pois
 
 ## Abstraktiotaso
 
+- mitkä kohteet ovat tarpeeksi suuria?
 - äärimmäisen tärkeä asia visualisoinnissa, etenkin kartoissa
 - turha informaatio pois
 
@@ -124,7 +126,7 @@ erityisen härski esimerkki
 ## Syy-yhteydet
 
 - ekologinen harha
-- pelkästään kahden teemakartan vertaamisella ei voi löytää kausaalisia suhteita
+- pelkästään kahden teemakartan vertaamisella ei voi todeta kausaalisia suhteita!
 - esimerkki: Pähkinäsaaren rauhan raja ___ei___ vaikuta suomalaisten terveyteen
 
 # Lopuksi

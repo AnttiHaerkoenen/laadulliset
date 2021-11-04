@@ -8,7 +8,7 @@ Katso apua [ohjeista](https://voyant-tools.org/docs/#!/guide/start).
 # Harjoitus 2
 
 Etsi talonpoikaissäädyn valtiopäiväaineistosta mainintoja Karjalasta. 
-Aineisto on ladattavissa Kungliga Biblioteketin avoimen datan palvelun
+Aineisto on ladattavissa _Kungliga Biblioteketin_ avoimen datan palvelun
 [sivulta](https://data.kb.se/datasets/2017/09/riksdagstryck).
 
 # Harjoitus 3
