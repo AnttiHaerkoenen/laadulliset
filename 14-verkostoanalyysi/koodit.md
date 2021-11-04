@@ -1,7 +1,7 @@
 # Verkostojen visualisoimiseen käytetty Python-koodi
 
 Alla oleva Python-koodi ei toimi ilman kolmen siinä käytetyn moduulin eli ohjelmistokirjaston asentamista.
-Tämä tapahtuu terminaalikomennolla `pip install matplotlib, pandas, networkx`. Jos asennusta ei ole tehty oikein,
+Tämä tapahtuu terminaalikomennolla `pip install matplotlib pandas networkx`. Jos asennusta ei ole tehty oikein,
 Python-tulkki antaa virheilmoituksen `ModuleNotFoundError`.
 
 ```

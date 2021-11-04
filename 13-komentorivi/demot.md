@@ -68,17 +68,17 @@ Lisää tietokoneelle käyttäjätilisi ympäristömuuttujiin uusi muuttuja nime
 
 `cd ~\mallet-2.0.8`
 
-`bin\mallet import-dir
+`bin\mallet import-dir 
 --input sample-data\web\en 
 --output tutorial.mallet 
 --keep-sequence 
 --remove-stopwords`
 
 `bin\mallet train-topics 
---input tutorial.mallet
+--input tutorial.mallet 
 --num-topics 20 
 --optimize-interval 20 
---output-state topic-state.gz  
+--output-state topic-state.gz 
 --output-topic-keys tutorial_keys.txt 
 --output-doc-topics tutorial_composition.txt`
 

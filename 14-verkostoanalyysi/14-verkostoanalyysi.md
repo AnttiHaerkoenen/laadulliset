@@ -31,6 +31,7 @@
 ## Visualisointi
 
 - graafi piirretään yleensä palloina ja viivoina
+- yhden verkoston voi visualisoida lukemattomilla eri tavoilla
 
 ## Keskeisyys
 
@@ -74,4 +75,4 @@
 
 # Lopuksi
 
-- Verkostoja löytyy kaikkialta jos jaksaa etsiä
+- verkostoja löytyy kaikkialta
