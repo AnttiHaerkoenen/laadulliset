@@ -51,7 +51,7 @@
 ## Sosiaaliset verkostot
 
 - välillisyyden avulla voi löytyä yllättäviä vallankäyttäjiä verkostojen sisällä
-- keskeisyyksien avulla voi löytää verkoston rakenteesta asioita, jotka eivät ole ilmiselviä
+- keskeisyyksien avulla voi löytää verkoston rakenteesta piirteitä, jotka eivät ole ilmiselviä
 
 ## Historiassa
 

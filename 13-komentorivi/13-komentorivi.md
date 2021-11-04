@@ -103,7 +103,7 @@ ja helpommin muunnettavissa formaatista toiseen
 
 ## Powershell
 
-- Microsoftin monelle alustalle tarkoitettu komentokehote
+- Microsoftin monelle alustalle tarkoitettu pääte
 - omat komennot, ymmärtää myös monet bash-komennot
 - Programming historian -sivustolla [artikkeli](https://programminghistorian.org/en/lessons/intro-to-powershell)
 
