@@ -25,6 +25,7 @@ ja helpommin muunnettavissa formaatista toiseen
 
 - erottava tieto nimen loppuun
 - välilyönnit ovat esim. komentorivillä merkitseviä erottajia, siksi niitä kannattaa välttää
+- monet järjestelmät eivät tue unicodea, ASCII-merkit suositeltavia
 
 ##
 
@@ -41,8 +42,8 @@ ja helpommin muunnettavissa formaatista toiseen
 
 ##
 
-- `/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun.csv`
-- `/artikkelit/2021/Tohmajarven_historiaa/data/raaka/1991-06-02_Punkalaidun_raty.csv`
+- `/artikkelit/2021/raty_artikkeli/data/raaka/1991-06-02_Punkalaidun.csv`
+- `/artikkelit/2021/raty_artikkeli/data/raaka/1991-06-02_Punkalaidun_raty.csv`
 
 # Tekstinlouhinta
 

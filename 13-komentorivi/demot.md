@@ -57,7 +57,7 @@ Lataa riksdagtryckistä säätyvaltiopäivien talonpoikaissäädyn valtiopäivä
 
 `cat finland_bonde_1720-1727.txt`
 
-`sls -Path .\data\bondeståndet\*.txt -Pattern "landtdag" | select Filename, LineNumber, Line, Path > lantdag.csv`
+`sls -Path .\data\bondeståndet\*.txt -Pattern "[LilI]an(d)tdag" | select Filename, LineNumber, Line, Path > lantdag.csv`
 
 `Import-Csv lantdag.csv`
 
