@@ -9,6 +9,9 @@ Vertaillaan kahta 1800-luvun lopun henkikirjoitusasetusta. Nämä löytyvät esi
 
 # Demo 2
 
+Tässä demossa tarkoituksena on oppia lukemaan ja kirjoittamaan tekstejä tiedostoon.
+Kirjoita nämä komennot komentokehotteeseen yksi kerrallaan.
+
 `pwd`
 
 `echo ”Saksa on paska maa” > raty_1.txt`
@@ -29,13 +32,17 @@ Vertaillaan kahta 1800-luvun lopun henkikirjoitusasetusta. Nämä löytyvät esi
 
 `cat raty_3.txt`
 
-`cat raty_1.txt, raty_2.txt, raty_3.txt`
+Kaksi seuraavaa komentoa tekevät samat asiat:
+
+`cat raty_1.txt, raty_2.txt, raty_3.txt > raty_kaikki.txt`
 
 `cat raty_*.txt > raty_kaikki.txt`
 
 Systemaattinen nimeäminen kannattaa!
 
 # Demo 3
+
+Measure-komennon avulla voidaan laskea rivien, sanojen ja merkkien määrää tekstitiedostoissa.
 
 `cat raty_1.txt | measure`
 
@@ -50,6 +57,7 @@ Systemaattinen nimeäminen kannattaa!
 # Demo 4
 
 Lataa riksdagtryckistä säätyvaltiopäivien talonpoikaissäädyn valtiopäiväaineisto ja pura se kansion **data** sisään.
+Kansion nimi kannattaa lyhentää, esimerkiksi `bondeståndet` koko nimen sijaan.
 
 `sls -Path .\data\bondeståndet\*.txt -Pattern “finland” | echo`
 
