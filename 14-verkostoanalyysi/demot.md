@@ -1,6 +1,6 @@
 # Demo 1
 
-Tuotetaan verkosto Palladion avulla ja analysoidaan sitä.
+Tuotetaan verkosto [Palladion](https://hdlab.stanford.edu/palladio/) avulla ja analysoidaan sitä.
 
 1. Kopioi tiedosto [verkosto.csv](../data/verkosto.csv) ja liitä se Palladion datakenttään. Paina `Load`. 
 2. Mene **Graph**-välilehteen ja aseta **Source**- ja **Target**-kohtiin oikeiden sarakkeiden nimet. 
