@@ -11,11 +11,11 @@ Kokeile poistaa linkkejä solmujen välillä, ja katso kuinka se vaikuttaa verko
 
 # Demo 2
 
-Tämän demon tarkoituksena on tehdä verkostoa kuvaava kartta Palladio-ohjelmiston avulla. 
+Tämän demon tarkoituksena on tehdä muuttoliikettä kuvaava graafi-kartta Palladio-ohjelmiston avulla. 
 
 1. Mene Tilastokeskuksen sivuille ja sieltä StatFin tietokantaan. 
 2. Etsi tilasto _11a1 -- Kuntien välinen muutto tulo- ja lähtöalueittain, 1990–2020_. 
-3. Tee PX-Webin kautta haku, jossa valitset tuloalueeksi kaikki kunnat ja lähtöalueeksi Tohmajärven. 
+3. Tee PX-Webin kautta haku, jossa valitset tuloalueeksi kaikki kunnat, lähtöalueeksi Tohmajärven ja vuodeksi 2010. 
 4. Lataa data xlsx-tiedostona. 
 5. Käytä Excelin etsi ja korvaa –työkaluja kuntien nimien yksinkertaistamiseen. 
 6. Hanki kuntakeskusten koordinaatit muodossa `lat,lon` (piste desimaalierottimena). 
