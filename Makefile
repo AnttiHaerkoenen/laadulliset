@@ -3,17 +3,17 @@
 #    Commands                                                                   #
 #################################################################################
 
-# Komentorivi
+## Komentorivi
 komentorivi: ./13-komentorivi/13-komentorivi.md
 	pandoc -t revealjs -s ./13-komentorivi/13-komentorivi.md -o ./13-komentorivi/13-komentorivi.html -i --slide-level 2 -V theme=white -V lang=fi
 	pandoc -s ./13-komentorivi/13-komentorivi.md -o ./13-komentorivi/13-komentorivi_print.html
 
-# Verkostoanalyysi
+## Verkostoanalyysi
 verkostoanalyysi: ./14-verkostoanalyysi/14-verkostoanalyysi.md
 	pandoc -t revealjs -s ./14-verkostoanalyysi/14-verkostoanalyysi.md -o ./14-verkostoanalyysi/14-verkostoanalyysi.html -i --slide-level 2 -V theme=white -V lang=fi
 	pandoc -s ./14-verkostoanalyysi/14-verkostoanalyysi.md -o ./14-verkostoanalyysi/14-verkostoanalyysi_print.html
 
-# Teemakartat
+## Teemakartat
 teemakartat: ./15-teemakartat/15-teemakartat.md
 	pandoc -t revealjs -s ./15-teemakartat/15-teemakartat.md -o ./15-teemakartat/15-teemakartat.html -i --slide-level 2 -V theme=white -V lang=fi
 	pandoc -s ./15-teemakartat/15-teemakartat.md -o ./15-teemakartat/15-teemakartat_print.html
