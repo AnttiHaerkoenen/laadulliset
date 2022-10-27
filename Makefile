@@ -1,3 +1,4 @@
+.PHONY: komentorivi teemakartat verkostoanalyysi
 #################################################################################
 #    Commands                                                                   #
 #################################################################################
@@ -16,7 +17,6 @@ verkostoanalyysi: ./14-verkostoanalyysi/14-verkostoanalyysi.md
 teemakartat: ./15-teemakartat/15-teemakartat.md
 	pandoc -t revealjs -s ./15-teemakartat/15-teemakartat.md -o ./15-teemakartat/15-teemakartat.html -i --slide-level 2 -V theme=white -V lang=fi
 	pandoc -s ./15-teemakartat/15-teemakartat.md -o ./15-teemakartat/15-teemakartat_print.html
-
 
 #################################################################################
 # Self Documenting Commands                                                     #
