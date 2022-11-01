@@ -12,12 +12,20 @@
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
   <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/white.css" id="theme">
@@ -33,38 +41,49 @@
 </section>
 
 <section>
-<section id="tutkimusdatan-organisointi" class="title-slide slide level1">
+<section id="tutkimusdatan-organisointi"
+class="title-slide slide level1">
 <h1>Tutkimusdatan organisointi</h1>
 
 </section>
 <section id="datan-muoto" class="slide level2">
 <h2>Datan muoto</h2>
 <ul>
-<li class="fragment">data tiedostossa: onko koneen luettavissa -&gt; silloin yleensä myös saavutettava ja helpommin muunnettavissa formaatista toiseen</li>
-<li class="fragment">avoimet ja ”agnostiset” (platform agnostic) formaatit suositeltavia</li>
-<li class="fragment">esimerkki: <a href="https://www.youtube.com/watch?v=MijmeoH9LT4">utf-8</a> ja mojibake (korjattavissa pythonilla: ftfy)</li>
+<li class="fragment">data tiedostossa: onko koneen luettavissa -&gt;
+silloin yleensä myös saavutettava ja helpommin muunnettavissa
+formaatista toiseen</li>
+<li class="fragment">avoimet ja ”agnostiset” (platform agnostic)
+formaatit suositeltavia</li>
+<li class="fragment">esimerkki: <a
+href="https://www.youtube.com/watch?v=MijmeoH9LT4">utf-8</a> ja mojibake
+(korjattavissa pythonilla: ftfy)</li>
 </ul>
 </section>
 <section id="tekstidata" class="slide level2">
 <h2>Tekstidata</h2>
 <ul>
-<li class="fragment">jos data on pelkkää tekstiä ja numeroita, kannattaa käyttää tekstipohjaisia formaatteja (md, txt, csv)</li>
-<li class="fragment">binäärimuotoinen tekstidata (docx) on vaikeampaa käyttää</li>
+<li class="fragment">jos data on pelkkää tekstiä ja numeroita, kannattaa
+käyttää tekstipohjaisia formaatteja (md, txt, csv)</li>
+<li class="fragment">binäärimuotoinen tekstidata (docx) on vaikeampaa
+käyttää</li>
 </ul>
 </section>
 <section id="datan-tallennus" class="slide level2">
 <h2>Datan tallennus</h2>
 <ul>
 <li class="fragment">merkityksellinen ja looginen kansiorakenne</li>
-<li class="fragment">kansiorakenne voi sisältää informaatiota datan keskinäisistä suhteista</li>
+<li class="fragment">kansiorakenne voi sisältää informaatiota datan
+keskinäisistä suhteista</li>
 </ul>
 </section>
 <section id="tiedostojen-nimeäminen" class="slide level2">
 <h2>Tiedostojen nimeäminen</h2>
 <ul>
 <li class="fragment">erottava tieto nimen loppuun</li>
-<li class="fragment">välilyönnit ovat esim. komentorivillä merkitseviä erottajia, siksi niitä kannattaa välttää</li>
-<li class="fragment">monet järjestelmät eivät tue unicodea, ASCII-merkit suositeltavia</li>
+<li class="fragment">välilyönnit ovat esim. komentorivillä merkitseviä
+erottajia, siksi niitä kannattaa välttää</li>
+<li class="fragment">monet järjestelmät eivät tue unicodea, ASCII-merkit
+suositeltavia</li>
 </ul>
 </section>
 <section id="section" class="slide level2">
@@ -95,15 +114,20 @@
 <section id="päivämäärät" class="slide level2">
 <h2>Päivämäärät</h2>
 <ul>
-<li class="fragment"><a href="https://fi.wikipedia.org/wiki/ISO_8601">ISO-standardin 8601</a> mukainen päivämäärä: vvvv-kk-pp</li>
-<li class="fragment">pvm alussa, vvvv-kk-pp -&gt; tietokone laittaa tiedostot automaattisesti kronologiseen järjestykseen</li>
+<li class="fragment"><a
+href="https://fi.wikipedia.org/wiki/ISO_8601">ISO-standardin 8601</a>
+mukainen päivämäärä: vvvv-kk-pp</li>
+<li class="fragment">pvm alussa, vvvv-kk-pp -&gt; tietokone laittaa
+tiedostot automaattisesti kronologiseen järjestykseen</li>
 </ul>
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
 <ul>
-<li class="fragment"><code>/artikkelit/2021/raty_artikkeli/data/raaka/1991-06-02_Punkalaidun.csv</code></li>
-<li class="fragment"><code>/artikkelit/2021/raty_artikkeli/data/raaka/1991-06-02_Punkalaidun_raty.csv</code></li>
+<li
+class="fragment"><code>/artikkelit/2021/raty_artikkeli/data/raaka/1991-06-02_Punkalaidun.csv</code></li>
+<li
+class="fragment"><code>/artikkelit/2021/raty_artikkeli/data/raaka/1991-06-02_Punkalaidun_raty.csv</code></li>
 </ul>
 </section></section>
 <section>
@@ -115,15 +139,20 @@
 <h2>Kaukoluenta</h2>
 <ul>
 <li class="fragment">makroskooppinen katsaus tekstiin</li>
-<li class="fragment">Suomessa käyttänyt mm. Risto Turunen (<a href="https://trepo.tuni.fi/handle/10024/130891">väitöskirja</a>)</li>
+<li class="fragment">Suomessa käyttänyt mm. Risto Turunen (<a
+href="https://trepo.tuni.fi/handle/10024/130891">väitöskirja</a>)</li>
 </ul>
 </section>
 <section id="tekstinlouhinta-1" class="slide level2">
 <h2>Tekstinlouhinta</h2>
 <ul>
-<li class="fragment">tekstimassojen automaattista lukemista (esim. hakuja)</li>
-<li class="fragment"><a href="https://voyant-tools.org/">Voyant</a>: OS-työkalu, yleisesti käytetty digitaalisen humanismin projekteissa</li>
-<li class="fragment"><a href="https://agricolaverkko.fi/tietosanomat/milta-ursula-von-der-leyenin-puhe-nayttaa-etaalta-luettuna">von der Leyenin puhe</a></li>
+<li class="fragment">tekstimassojen automaattista lukemista (esim.
+hakuja)</li>
+<li class="fragment"><a href="https://voyant-tools.org/">Voyant</a>:
+OS-työkalu, yleisesti käytetty digitaalisen humanismin projekteissa</li>
+<li class="fragment"><a
+href="https://agricolaverkko.fi/tietosanomat/milta-ursula-von-der-leyenin-puhe-nayttaa-etaalta-luettuna">von
+der Leyenin puhe</a></li>
 </ul>
 </section>
 <section id="korpus" class="slide level2">
@@ -131,21 +160,28 @@
 <ul>
 <li class="fragment">kokoelma tekstejä</li>
 <li class="fragment">suurehko aineisto</li>
-<li class="fragment"><a href="https://hfroehli.ch/2014/05/11/intro-bibliography-corpus-linguistics/">Johdatus korpuslingvistiikkaan</a></li>
+<li class="fragment"><a
+href="https://hfroehli.ch/2014/05/11/intro-bibliography-corpus-linguistics/">Johdatus
+korpuslingvistiikkaan</a></li>
 </ul>
 </section>
 <section id="regex-haut" class="slide level2">
 <h2>Regex-haut</h2>
 <ul>
-<li class="fragment">säännölliset lausekkeet (regex) mahdollistavat sumeat haut</li>
-<li class="fragment">esimerkiksi <code>1991*</code> löytää kaikki sanat, joissa 4 ensimmäistä merkkiä ovat 1991</li>
-<li class="fragment"><a href="https://programminghistorian.org/en/lessons/understanding-regular-expressions">Understanding Regular Expressions</a></li>
+<li class="fragment">säännölliset lausekkeet (regex) mahdollistavat
+sumeat haut</li>
+<li class="fragment">esimerkiksi <code>1991*</code> löytää kaikki sanat,
+joissa 4 ensimmäistä merkkiä ovat 1991</li>
+<li class="fragment"><a
+href="https://programminghistorian.org/en/lessons/understanding-regular-expressions">Understanding
+Regular Expressions</a></li>
 </ul>
 </section>
 <section id="big-data" class="slide level2">
 <h2>Big data</h2>
 <ul>
-<li class="fragment">liian suuri aineisto perinteisille analyysimenetelmille</li>
+<li class="fragment">liian suuri aineisto perinteisille
+analyysimenetelmille</li>
 </ul>
 </section>
 <section id="siisti-data" class="slide level2">
@@ -155,7 +191,9 @@
 <li class="fragment">rivi on havainto</li>
 <li class="fragment">solussa vain yksi arvo</li>
 <li class="fragment">ei poikkeuksia!</li>
-<li class="fragment"><a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">tidy data</a></li>
+<li class="fragment"><a
+href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">tidy
+data</a></li>
 </ul>
 </section></section>
 <section>
@@ -166,7 +204,8 @@
 <section id="section-2" class="slide level2">
 <h2></h2>
 <figure>
-<img data-src="../img/leikkurit.png" alt="Vertauskuva" /><figcaption aria-hidden="true">Vertauskuva</figcaption>
+<img data-src="../img/leikkurit.png" alt="Vertauskuva" />
+<figcaption aria-hidden="true">Vertauskuva</figcaption>
 </figure>
 <p style="font-size: small">
 Wikimedia Commons
@@ -177,13 +216,15 @@ Wikimedia Commons
 <ul>
 <li class="fragment">yksi ohjelma tekee yhden asian hyvin</li>
 <li class="fragment">GNU/Linux noudattaa tätä periaatetta</li>
-<li class="fragment">Windowsin ohjelmistot ovat sen sijaan monoliittisia</li>
+<li class="fragment">Windowsin ohjelmistot ovat sen sijaan
+monoliittisia</li>
 </ul>
 </section>
 <section id="section-3" class="slide level2">
 <h2></h2>
 <figure>
-<img data-src="../img/pipeline.png" alt="Komentoriviputki" /><figcaption aria-hidden="true">Komentoriviputki</figcaption>
+<img data-src="../img/pipeline.png" alt="Komentoriviputki" />
+<figcaption aria-hidden="true">Komentoriviputki</figcaption>
 </figure>
 <p style="font-size: small">
 TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
@@ -192,9 +233,12 @@ TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
 <section id="powershell" class="slide level2">
 <h2>Powershell</h2>
 <ul>
-<li class="fragment">Microsoftin monelle alustalle tarkoitettu pääte</li>
-<li class="fragment">omat komennot, ymmärtää myös monet bash-komennot</li>
-<li class="fragment">Programming historian -sivustolla <a href="https://programminghistorian.org/en/lessons/intro-to-powershell">artikkeli</a></li>
+<li class="fragment">Microsoftin monelle alustalle tarkoitettu
+pääte</li>
+<li class="fragment">omat komennot, ymmärtää myös monet
+bash-komennot</li>
+<li class="fragment">Programming historian -sivustolla <a
+href="https://programminghistorian.org/en/lessons/intro-to-powershell">artikkeli</a></li>
 </ul>
 </section>
 <section id="navigointi" class="slide level2">
@@ -226,7 +270,8 @@ TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
 <h2>Tärkeitä työkaluja</h2>
 <ul>
 <li class="fragment">putkioperaattori <code>|</code></li>
-<li class="fragment">uudelleenohjausoperaattori, <code>&gt;</code> ja <code>&gt;&gt;</code></li>
+<li class="fragment">uudelleenohjausoperaattori, <code>&gt;</code> ja
+<code>&gt;&gt;</code></li>
 <li class="fragment">ohjelman keskeytys <strong>CTRL-C</strong></li>
 </ul>
 </section>
@@ -239,7 +284,8 @@ TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
 <ul>
 <li class="fragment">silmukka: <code>for</code></li>
 <li class="fragment">rekursio: hyödyllistä mutta vaarallista</li>
-<li class="fragment">Monte Carlo -simulaatio (iteroidaan kunnes malli näyttää tarpeeksi hyvältä)</li>
+<li class="fragment">Monte Carlo -simulaatio (iteroidaan kunnes malli
+näyttää tarpeeksi hyvältä)</li>
 </ul>
 </section>
 <section id="section-4" class="slide level2">
@@ -311,10 +357,14 @@ TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
 <section id="select-string" class="slide level2">
 <h2>Select-String</h2>
 <ul>
-<li class="fragment"><code>Select-String</code> mahdollistaa säännöllisten hakulausekkeiden käytön</li>
-<li class="fragment"><code>sls tiedosto.txt -Pattern '\d{4}'</code> löytää kaikki neljän numeron ryhmät</li>
-<li class="fragment">myös tiedostojen nimissä voi käyttää vastaavia temppuja: <code>sls kansio\*.txt -Pattern '\d{4}'</code></li>
-<li class="fragment">operaattorin <code>&gt;</code> avulla hakutulokset voi kirjoittaa tiedostoon</li>
+<li class="fragment"><code>Select-String</code> mahdollistaa
+säännöllisten hakulausekkeiden käytön</li>
+<li class="fragment"><code>sls tiedosto.txt -Pattern '\d{4}'</code>
+löytää kaikki neljän numeron ryhmät</li>
+<li class="fragment">myös tiedostojen nimissä voi käyttää vastaavia
+temppuja: <code>sls kansio\*.txt -Pattern '\d{4}'</code></li>
+<li class="fragment">operaattorin <code>&gt;</code> avulla hakutulokset
+voi kirjoittaa tiedostoon</li>
 </ul>
 </section></section>
 <section>
@@ -325,15 +375,20 @@ TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
 <section id="koneoppiminen" class="slide level2">
 <h2>Koneoppiminen</h2>
 <ul>
-<li class="fragment">“tekoäly” koostuu yleensä melko yksinkertaisista algoritmeista, mutta vaatii paljon laskutehoa</li>
+<li class="fragment">“tekoäly” koostuu yleensä melko yksinkertaisista
+algoritmeista, mutta vaatii paljon laskutehoa</li>
 <li class="fragment">koneoppiminen vaatii suuria aineistoja</li>
-<li class="fragment">esim. Transcribuksessa käytetyt HTR-mallit vaativat 500 sivua ihmisen tunnistamaa tekstiä opetusdataksi</li>
+<li class="fragment">esim. Transcribuksessa käytetyt HTR-mallit vaativat
+500 sivua ihmisen tunnistamaa tekstiä opetusdataksi</li>
 </ul>
 </section>
 <section id="section-5" class="slide level2">
 <h2></h2>
 <figure>
-<img data-src="../img/597px-Task-guidance.png" alt="Ohjattu ja ohjaamaton oppiminen" /><figcaption aria-hidden="true">Ohjattu ja ohjaamaton oppiminen</figcaption>
+<img data-src="../img/597px-Task-guidance.png"
+alt="Ohjattu ja ohjaamaton oppiminen" />
+<figcaption aria-hidden="true">Ohjattu ja ohjaamaton
+oppiminen</figcaption>
 </figure>
 <p style="font-size: small">
 Numiri, jaettu Wikimedia Commonsissa
@@ -342,7 +397,8 @@ Numiri, jaettu Wikimedia Commonsissa
 <section id="aihemallinnus" class="slide level2">
 <h2>Aihemallinnus</h2>
 <ul>
-<li class="fragment">samanlaisissa yhteyksissä esiintyvät sanat ovat todennäköisimmin osa samaa diskurssia</li>
+<li class="fragment">samanlaisissa yhteyksissä esiintyvät sanat ovat
+todennäköisimmin osa samaa diskurssia</li>
 <li class="fragment">ohjaamatonta oppimista</li>
 </ul>
 </section>
@@ -350,14 +406,17 @@ Numiri, jaettu Wikimedia Commonsissa
 <h2>Latentti Dirichlet-allokaatio (LDA)</h2>
 <ul>
 <li class="fragment">yleisin aihemalli</li>
-<li class="fragment">optimaalinen malli lasketaan Monte Carlo -menetelmällä</li>
+<li class="fragment">optimaalinen malli lasketaan Monte Carlo
+-menetelmällä</li>
 <li class="fragment">tulokset voivat siis vaihdella!</li>
 </ul>
 </section>
 <section id="section-6" class="slide level2">
 <h2></h2>
 <figure>
-<img data-src="../img/Smoothed_LDA.png" alt="Laattakaavio LDA-mallista" /><figcaption aria-hidden="true">Laattakaavio LDA-mallista</figcaption>
+<img data-src="../img/Smoothed_LDA.png"
+alt="Laattakaavio LDA-mallista" />
+<figcaption aria-hidden="true">Laattakaavio LDA-mallista</figcaption>
 </figure>
 <p style="font-size: small">
 Slxu.public, jaettu Wikimedia Commonsissa
@@ -367,15 +426,19 @@ Slxu.public, jaettu Wikimedia Commonsissa
 <h2>MALLET</h2>
 <ul>
 <li class="fragment">komentorivipohjainen työkalu</li>
-<li class="fragment">Programming historian -sivustolla on aiheesta <a href="https://programminghistorian.org/en/lessons/topic-modeling-and-mallet">artikkeli</a></li>
-<li class="fragment">korpus on ensin muutettava Malletin ymmärtämään muotoon</li>
-<li class="fragment">tämän jälkeen aineiston avulla voi kouluttaa LDA-mallin</li>
+<li class="fragment">Programming historian -sivustolla on aiheesta <a
+href="https://programminghistorian.org/en/lessons/topic-modeling-and-mallet">artikkeli</a></li>
+<li class="fragment">korpus on ensin muutettava Malletin ymmärtämään
+muotoon</li>
+<li class="fragment">tämän jälkeen aineiston avulla voi kouluttaa
+LDA-mallin</li>
 </ul>
 </section></section>
 <section id="lopuksi" class="title-slide slide level1">
 <h1>Lopuksi</h1>
 <ul>
-<li class="fragment">Tietokone on työkalu. Se ei tunne totuutta sen enempää kuin ruohonleikkuri.</li>
+<li class="fragment">Tietokone on työkalu. Se ei tunne totuutta sen
+enempää kuin ruohonleikkuri.</li>
 </ul>
 </section>
     </div>
@@ -383,7 +446,7 @@ Slxu.public, jaettu Wikimedia Commonsissa
 
   <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
 
-  // reveal.js plugins
+  <!-- reveal.js plugins -->
   <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
   <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
   <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
@@ -393,8 +456,145 @@ Slxu.public, jaettu Wikimedia Commonsissa
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
         // Push each slide change to the browser history
-        history: true,
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
 
         // reveal.js plugins
         plugins: [

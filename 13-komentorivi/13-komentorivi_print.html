@@ -9,7 +9,7 @@
   <title>Komentorivi ja tekstinlouhinta</title>
   <style>
     html {
-      line-height: 1.7;
+      line-height: 1.5;
       font-family: Georgia, serif;
       font-size: 20px;
       color: #1a1a1a;
@@ -17,13 +17,13 @@
     }
     body {
       margin: 0 auto;
-      max-width: 40em;
+      max-width: 36em;
       padding-left: 50px;
       padding-right: 50px;
       padding-top: 50px;
       padding-bottom: 50px;
       hyphens: auto;
-      word-wrap: break-word;
+      overflow-wrap: break-word;
       text-rendering: optimizeLegibility;
       font-kerning: normal;
     }
@@ -32,11 +32,15 @@
         font-size: 0.9em;
         padding: 1em;
       }
+      h1 {
+        font-size: 1.8em;
+      }
     }
     @media print {
       body {
         background-color: transparent;
         color: black;
+        font-size: 12pt;
       }
       p, h2, h3 {
         orphans: 3;
@@ -47,7 +51,7 @@
       }
     }
     p {
-      margin-top: 1.7em;
+      margin: 1em 0;
     }
     a {
       color: #1a1a1a;
@@ -59,67 +63,102 @@
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.7em;
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
     }
     ol, ul {
       padding-left: 1.7em;
-      margin-top: 1.7em;
+      margin-top: 1em;
     }
     li > ol, li > ul {
       margin-top: 0;
     }
     blockquote {
-      margin: 1.7em 0 1.7em 1.7em;
+      margin: 1em 0 1em 1.7em;
       padding-left: 1em;
       border-left: 2px solid #e6e6e6;
-      font-style: italic;
+      color: #606060;
     }
     code {
       font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
-      background-color: #f0f0f0;
       font-size: 85%;
       margin: 0;
-      padding: .2em .4em;
     }
     pre {
-      line-height: 1.5em;
-      padding: 1em;
-      background-color: #f0f0f0;
+      margin: 1em 0;
       overflow: auto;
     }
     pre code {
       padding: 0;
       overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
     }
     hr {
       background-color: #1a1a1a;
       border: none;
       height: 1px;
-      margin-top: 1.7em;
+      margin: 1em 0;
     }
     table {
+      margin: 1em 0;
       border-collapse: collapse;
       width: 100%;
       overflow-x: auto;
       display: block;
+      font-variant-numeric: lining-nums tabular-nums;
     }
-    th, td {
-      border-bottom: 1px solid lightgray;
-      padding: 1em 3em 1em 0;
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
     }
     header {
-      margin-bottom: 6em;
+      margin-bottom: 4em;
       text-align: center;
     }
-    nav a:not(:hover) {
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
       text-decoration: none;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <!--[if lt IE 9]>
@@ -135,25 +174,33 @@
 <h1 id="tutkimusdatan-organisointi">Tutkimusdatan organisointi</h1>
 <h2 id="datan-muoto">Datan muoto</h2>
 <ul>
-<li>data tiedostossa: onko koneen luettavissa -&gt; silloin yleensä myös saavutettava ja helpommin muunnettavissa formaatista toiseen</li>
-<li>avoimet ja ”agnostiset” (platform agnostic) formaatit suositeltavia</li>
-<li>esimerkki: <a href="https://www.youtube.com/watch?v=MijmeoH9LT4">utf-8</a> ja mojibake (korjattavissa pythonilla: ftfy)</li>
+<li>data tiedostossa: onko koneen luettavissa -&gt; silloin yleensä myös
+saavutettava ja helpommin muunnettavissa formaatista toiseen</li>
+<li>avoimet ja ”agnostiset” (platform agnostic) formaatit
+suositeltavia</li>
+<li>esimerkki: <a
+href="https://www.youtube.com/watch?v=MijmeoH9LT4">utf-8</a> ja mojibake
+(korjattavissa pythonilla: ftfy)</li>
 </ul>
 <h2 id="tekstidata">Tekstidata</h2>
 <ul>
-<li>jos data on pelkkää tekstiä ja numeroita, kannattaa käyttää tekstipohjaisia formaatteja (md, txt, csv)</li>
+<li>jos data on pelkkää tekstiä ja numeroita, kannattaa käyttää
+tekstipohjaisia formaatteja (md, txt, csv)</li>
 <li>binäärimuotoinen tekstidata (docx) on vaikeampaa käyttää</li>
 </ul>
 <h2 id="datan-tallennus">Datan tallennus</h2>
 <ul>
 <li>merkityksellinen ja looginen kansiorakenne</li>
-<li>kansiorakenne voi sisältää informaatiota datan keskinäisistä suhteista</li>
+<li>kansiorakenne voi sisältää informaatiota datan keskinäisistä
+suhteista</li>
 </ul>
 <h2 id="tiedostojen-nimeäminen">Tiedostojen nimeäminen</h2>
 <ul>
 <li>erottava tieto nimen loppuun</li>
-<li>välilyönnit ovat esim. komentorivillä merkitseviä erottajia, siksi niitä kannattaa välttää</li>
-<li>monet järjestelmät eivät tue unicodea, ASCII-merkit suositeltavia</li>
+<li>välilyönnit ovat esim. komentorivillä merkitseviä erottajia, siksi
+niitä kannattaa välttää</li>
+<li>monet järjestelmät eivät tue unicodea, ASCII-merkit
+suositeltavia</li>
 </ul>
 <h2 id="section"></h2>
 <table>
@@ -180,8 +227,10 @@
 </table>
 <h2 id="päivämäärät">Päivämäärät</h2>
 <ul>
-<li><a href="https://fi.wikipedia.org/wiki/ISO_8601">ISO-standardin 8601</a> mukainen päivämäärä: vvvv-kk-pp</li>
-<li>pvm alussa, vvvv-kk-pp -&gt; tietokone laittaa tiedostot automaattisesti kronologiseen järjestykseen</li>
+<li><a href="https://fi.wikipedia.org/wiki/ISO_8601">ISO-standardin
+8601</a> mukainen päivämäärä: vvvv-kk-pp</li>
+<li>pvm alussa, vvvv-kk-pp -&gt; tietokone laittaa tiedostot
+automaattisesti kronologiseen järjestykseen</li>
 </ul>
 <h2 id="section-1"></h2>
 <ul>
@@ -192,25 +241,34 @@
 <h2 id="kaukoluenta">Kaukoluenta</h2>
 <ul>
 <li>makroskooppinen katsaus tekstiin</li>
-<li>Suomessa käyttänyt mm. Risto Turunen (<a href="https://trepo.tuni.fi/handle/10024/130891">väitöskirja</a>)</li>
+<li>Suomessa käyttänyt mm. Risto Turunen (<a
+href="https://trepo.tuni.fi/handle/10024/130891">väitöskirja</a>)</li>
 </ul>
 <h2 id="tekstinlouhinta-1">Tekstinlouhinta</h2>
 <ul>
 <li>tekstimassojen automaattista lukemista (esim. hakuja)</li>
-<li><a href="https://voyant-tools.org/">Voyant</a>: OS-työkalu, yleisesti käytetty digitaalisen humanismin projekteissa</li>
-<li><a href="https://agricolaverkko.fi/tietosanomat/milta-ursula-von-der-leyenin-puhe-nayttaa-etaalta-luettuna">von der Leyenin puhe</a></li>
+<li><a href="https://voyant-tools.org/">Voyant</a>: OS-työkalu,
+yleisesti käytetty digitaalisen humanismin projekteissa</li>
+<li><a
+href="https://agricolaverkko.fi/tietosanomat/milta-ursula-von-der-leyenin-puhe-nayttaa-etaalta-luettuna">von
+der Leyenin puhe</a></li>
 </ul>
 <h2 id="korpus">Korpus</h2>
 <ul>
 <li>kokoelma tekstejä</li>
 <li>suurehko aineisto</li>
-<li><a href="https://hfroehli.ch/2014/05/11/intro-bibliography-corpus-linguistics/">Johdatus korpuslingvistiikkaan</a></li>
+<li><a
+href="https://hfroehli.ch/2014/05/11/intro-bibliography-corpus-linguistics/">Johdatus
+korpuslingvistiikkaan</a></li>
 </ul>
 <h2 id="regex-haut">Regex-haut</h2>
 <ul>
 <li>säännölliset lausekkeet (regex) mahdollistavat sumeat haut</li>
-<li>esimerkiksi <code>1991*</code> löytää kaikki sanat, joissa 4 ensimmäistä merkkiä ovat 1991</li>
-<li><a href="https://programminghistorian.org/en/lessons/understanding-regular-expressions">Understanding Regular Expressions</a></li>
+<li>esimerkiksi <code>1991*</code> löytää kaikki sanat, joissa 4
+ensimmäistä merkkiä ovat 1991</li>
+<li><a
+href="https://programminghistorian.org/en/lessons/understanding-regular-expressions">Understanding
+Regular Expressions</a></li>
 </ul>
 <h2 id="big-data">Big data</h2>
 <ul>
@@ -222,12 +280,15 @@
 <li>rivi on havainto</li>
 <li>solussa vain yksi arvo</li>
 <li>ei poikkeuksia!</li>
-<li><a href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">tidy data</a></li>
+<li><a
+href="https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html">tidy
+data</a></li>
 </ul>
 <h1 id="terminaali">Terminaali</h1>
 <h2 id="section-2"></h2>
 <figure>
-<img src="../img/leikkurit.png" alt="Vertauskuva" /><figcaption aria-hidden="true">Vertauskuva</figcaption>
+<img src="../img/leikkurit.png" alt="Vertauskuva" />
+<figcaption aria-hidden="true">Vertauskuva</figcaption>
 </figure>
 <p style="font-size: small">
 Wikimedia Commons
@@ -240,7 +301,8 @@ Wikimedia Commons
 </ul>
 <h2 id="section-3"></h2>
 <figure>
-<img src="../img/pipeline.png" alt="Komentoriviputki" /><figcaption aria-hidden="true">Komentoriviputki</figcaption>
+<img src="../img/pipeline.png" alt="Komentoriviputki" />
+<figcaption aria-hidden="true">Komentoriviputki</figcaption>
 </figure>
 <p style="font-size: small">
 TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
@@ -249,7 +311,8 @@ TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
 <ul>
 <li>Microsoftin monelle alustalle tarkoitettu pääte</li>
 <li>omat komennot, ymmärtää myös monet bash-komennot</li>
-<li>Programming historian -sivustolla <a href="https://programminghistorian.org/en/lessons/intro-to-powershell">artikkeli</a></li>
+<li>Programming historian -sivustolla <a
+href="https://programminghistorian.org/en/lessons/intro-to-powershell">artikkeli</a></li>
 </ul>
 <h2 id="navigointi">Navigointi</h2>
 <table>
@@ -277,7 +340,8 @@ TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
 <h2 id="tärkeitä-työkaluja">Tärkeitä työkaluja</h2>
 <ul>
 <li>putkioperaattori <code>|</code></li>
-<li>uudelleenohjausoperaattori, <code>&gt;</code> ja <code>&gt;&gt;</code></li>
+<li>uudelleenohjausoperaattori, <code>&gt;</code> ja
+<code>&gt;&gt;</code></li>
 <li>ohjelman keskeytys <strong>CTRL-C</strong></li>
 </ul>
 <h2 id="kopioiminen">Kopioiminen</h2>
@@ -286,7 +350,8 @@ TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
 <ul>
 <li>silmukka: <code>for</code></li>
 <li>rekursio: hyödyllistä mutta vaarallista</li>
-<li>Monte Carlo -simulaatio (iteroidaan kunnes malli näyttää tarpeeksi hyvältä)</li>
+<li>Monte Carlo -simulaatio (iteroidaan kunnes malli näyttää tarpeeksi
+hyvältä)</li>
 </ul>
 <h2 id="section-4"></h2>
 <div style="font-size: smaller">
@@ -354,31 +419,42 @@ TuukkaH, XcepticZP, jaettu Wikimedia Commonsissa
 </div>
 <h2 id="select-string">Select-String</h2>
 <ul>
-<li><code>Select-String</code> mahdollistaa säännöllisten hakulausekkeiden käytön</li>
-<li><code>sls tiedosto.txt -Pattern '\d{4}'</code> löytää kaikki neljän numeron ryhmät</li>
-<li>myös tiedostojen nimissä voi käyttää vastaavia temppuja: <code>sls kansio\*.txt -Pattern '\d{4}'</code></li>
-<li>operaattorin <code>&gt;</code> avulla hakutulokset voi kirjoittaa tiedostoon</li>
+<li><code>Select-String</code> mahdollistaa säännöllisten
+hakulausekkeiden käytön</li>
+<li><code>sls tiedosto.txt -Pattern '\d{4}'</code> löytää kaikki neljän
+numeron ryhmät</li>
+<li>myös tiedostojen nimissä voi käyttää vastaavia temppuja:
+<code>sls kansio\*.txt -Pattern '\d{4}'</code></li>
+<li>operaattorin <code>&gt;</code> avulla hakutulokset voi kirjoittaa
+tiedostoon</li>
 </ul>
 <h1 id="tekoäly">Tekoäly</h1>
 <h2 id="koneoppiminen">Koneoppiminen</h2>
 <ul>
-<li>“tekoäly” koostuu yleensä melko yksinkertaisista algoritmeista, mutta vaatii paljon laskutehoa</li>
+<li>“tekoäly” koostuu yleensä melko yksinkertaisista algoritmeista,
+mutta vaatii paljon laskutehoa</li>
 <li>koneoppiminen vaatii suuria aineistoja</li>
-<li>esim. Transcribuksessa käytetyt HTR-mallit vaativat 500 sivua ihmisen tunnistamaa tekstiä opetusdataksi</li>
+<li>esim. Transcribuksessa käytetyt HTR-mallit vaativat 500 sivua
+ihmisen tunnistamaa tekstiä opetusdataksi</li>
 </ul>
 <h2 id="section-5"></h2>
 <figure>
-<img src="../img/597px-Task-guidance.png" alt="Ohjattu ja ohjaamaton oppiminen" /><figcaption aria-hidden="true">Ohjattu ja ohjaamaton oppiminen</figcaption>
+<img src="../img/597px-Task-guidance.png"
+alt="Ohjattu ja ohjaamaton oppiminen" />
+<figcaption aria-hidden="true">Ohjattu ja ohjaamaton
+oppiminen</figcaption>
 </figure>
 <p style="font-size: small">
 Numiri, jaettu Wikimedia Commonsissa
 </p>
 <h2 id="aihemallinnus">Aihemallinnus</h2>
 <ul>
-<li>samanlaisissa yhteyksissä esiintyvät sanat ovat todennäköisimmin osa samaa diskurssia</li>
+<li>samanlaisissa yhteyksissä esiintyvät sanat ovat todennäköisimmin osa
+samaa diskurssia</li>
 <li>ohjaamatonta oppimista</li>
 </ul>
-<h2 id="latentti-dirichlet-allokaatio-lda">Latentti Dirichlet-allokaatio (LDA)</h2>
+<h2 id="latentti-dirichlet-allokaatio-lda">Latentti Dirichlet-allokaatio
+(LDA)</h2>
 <ul>
 <li>yleisin aihemalli</li>
 <li>optimaalinen malli lasketaan Monte Carlo -menetelmällä</li>
@@ -386,7 +462,8 @@ Numiri, jaettu Wikimedia Commonsissa
 </ul>
 <h2 id="section-6"></h2>
 <figure>
-<img src="../img/Smoothed_LDA.png" alt="Laattakaavio LDA-mallista" /><figcaption aria-hidden="true">Laattakaavio LDA-mallista</figcaption>
+<img src="../img/Smoothed_LDA.png" alt="Laattakaavio LDA-mallista" />
+<figcaption aria-hidden="true">Laattakaavio LDA-mallista</figcaption>
 </figure>
 <p style="font-size: small">
 Slxu.public, jaettu Wikimedia Commonsissa
@@ -394,13 +471,15 @@ Slxu.public, jaettu Wikimedia Commonsissa
 <h2 id="mallet">MALLET</h2>
 <ul>
 <li>komentorivipohjainen työkalu</li>
-<li>Programming historian -sivustolla on aiheesta <a href="https://programminghistorian.org/en/lessons/topic-modeling-and-mallet">artikkeli</a></li>
+<li>Programming historian -sivustolla on aiheesta <a
+href="https://programminghistorian.org/en/lessons/topic-modeling-and-mallet">artikkeli</a></li>
 <li>korpus on ensin muutettava Malletin ymmärtämään muotoon</li>
 <li>tämän jälkeen aineiston avulla voi kouluttaa LDA-mallin</li>
 </ul>
 <h1 id="lopuksi">Lopuksi</h1>
 <ul>
-<li>Tietokone on työkalu. Se ei tunne totuutta sen enempää kuin ruohonleikkuri.</li>
+<li>Tietokone on työkalu. Se ei tunne totuutta sen enempää kuin
+ruohonleikkuri.</li>
 </ul>
 </body>
 </html>

@@ -12,12 +12,20 @@
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
   <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/white.css" id="theme">
@@ -40,15 +48,19 @@
 <section id="sosiaalinen-verkostoanalyysi" class="slide level2">
 <h2>Sosiaalinen verkostoanalyysi</h2>
 <ul>
-<li class="fragment">joukko lähestymistapoja ihmisten välisten suhteiden tutkimiseen</li>
-<li class="fragment">perustuu graafiteoriaan, joka on matematiikan osa-alue</li>
-<li class="fragment">verkosto on graafi, toisin kuin toimijaverkkoteoriassa (ANT)</li>
+<li class="fragment">joukko lähestymistapoja ihmisten välisten suhteiden
+tutkimiseen</li>
+<li class="fragment">perustuu graafiteoriaan, joka on matematiikan
+osa-alue</li>
+<li class="fragment">verkosto on graafi, toisin kuin
+toimijaverkkoteoriassa (ANT)</li>
 </ul>
 </section></section>
 <section id="section" class="title-slide slide level1">
 <h1></h1>
 <figure>
-<img data-src="../img/network_1.png" alt="verkosto" /><figcaption aria-hidden="true">verkosto</figcaption>
+<img data-src="../img/network_1.png" alt="verkosto" />
+<figcaption aria-hidden="true">verkosto</figcaption>
 </figure>
 </section>
 
@@ -84,45 +96,55 @@
 <h2>Visualisointi</h2>
 <ul>
 <li class="fragment">graafi piirretään yleensä palloina ja viivoina</li>
-<li class="fragment">yhden verkoston voi visualisoida lukemattomilla eri tavoilla</li>
+<li class="fragment">yhden verkoston voi visualisoida lukemattomilla eri
+tavoilla</li>
 </ul>
 </section>
 <section id="keskeisyys" class="slide level2">
 <h2>Keskeisyys</h2>
 <ul>
 <li class="fragment">keskeisyys</li>
-<li class="fragment">keskeisyyden ominaisvektori (Eigenvector centrality)</li>
+<li class="fragment">keskeisyyden ominaisvektori (Eigenvector
+centrality)</li>
 <li class="fragment">välillisyyskeskeisyys</li>
 <li class="fragment">läheisyyskeskeisyys</li>
 <li class="fragment">tiheys</li>
 </ul>
 </section></section>
 <section>
-<section id="verkostoanalyysi-ihmisillä" class="title-slide slide level1">
+<section id="verkostoanalyysi-ihmisillä"
+class="title-slide slide level1">
 <h1>Verkostoanalyysi ihmisillä</h1>
 
 </section>
 <section id="sosiaaliset-verkostot" class="slide level2">
 <h2>Sosiaaliset verkostot</h2>
 <ul>
-<li class="fragment">välillisyyden avulla voi löytyä yllättäviä vallankäyttäjiä verkostojen sisällä</li>
-<li class="fragment">keskeisyyksien avulla voi löytää verkoston rakenteesta piirteitä, jotka eivät ole ilmiselviä</li>
+<li class="fragment">välillisyyden avulla voi löytyä yllättäviä
+vallankäyttäjiä verkostojen sisällä</li>
+<li class="fragment">keskeisyyksien avulla voi löytää verkoston
+rakenteesta piirteitä, jotka eivät ole ilmiselviä</li>
 </ul>
 </section>
 <section id="historiassa" class="slide level2">
 <h2>Historiassa</h2>
 <ul>
 <li class="fragment">poliittiset verkostot</li>
-<li class="fragment"><a href="https://jhnr.uni.lu/index.php/jhnr/index">Journal of Historical Network Research</a></li>
-<li class="fragment">esim. Itä-Saksan opposition verkostot (Kimmo Elo)</li>
+<li class="fragment"><a
+href="https://jhnr.uni.lu/index.php/jhnr/index">Journal of Historical
+Network Research</a></li>
+<li class="fragment">esim. Itä-Saksan opposition verkostot (Kimmo
+Elo)</li>
 </ul>
 </section>
 <section id="esimerkkejä" class="slide level2">
 <h2>Esimerkkejä</h2>
 <ul>
 <li class="fragment">sukupuut</li>
-<li class="fragment">solmut voivat olla ihmisiä, kaupunkeja tai muita organisaatioita</li>
-<li class="fragment">yhteydet voivat olla muuttoliikettä, kirjeenvaihtoa, luotonantoa, kummisuhteita</li>
+<li class="fragment">solmut voivat olla ihmisiä, kaupunkeja tai muita
+organisaatioita</li>
+<li class="fragment">yhteydet voivat olla muuttoliikettä,
+kirjeenvaihtoa, luotonantoa, kummisuhteita</li>
 </ul>
 </section></section>
 <section>
@@ -133,17 +155,22 @@
 <section id="taustaa" class="slide level2">
 <h2>Taustaa</h2>
 <ul>
-<li class="fragment">selainpohjainen <a href="https://hdlab.stanford.edu/palladio-app">sovellus</a></li>
-<li class="fragment">Stanfordin yliopiston <em>Humanities + Design</em> -keskuksen työkalu</li>
-<li class="fragment">tarkoitettu avaamaan verkostot, kartat ja aikajanat humanisteille</li>
+<li class="fragment">selainpohjainen <a
+href="https://hdlab.stanford.edu/palladio-app">sovellus</a></li>
+<li class="fragment">Stanfordin yliopiston <em>Humanities + Design</em>
+-keskuksen työkalu</li>
+<li class="fragment">tarkoitettu avaamaan verkostot, kartat ja aikajanat
+humanisteille</li>
 </ul>
 </section>
 <section id="data" class="slide level2">
 <h2>Data</h2>
 <ul>
-<li class="fragment">näissä harjoituksissa käytetään vain csv-muotoisia aineistoja verkostojen kuvaamiseen</li>
+<li class="fragment">näissä harjoituksissa käytetään vain csv-muotoisia
+aineistoja verkostojen kuvaamiseen</li>
 <li class="fragment">geojson-formaatissa oleva vektoridata</li>
-<li class="fragment">saman datan voi esittää graafina, karttana, aikajanana tai näiden yhdistelmänä</li>
+<li class="fragment">saman datan voi esittää graafina, karttana,
+aikajanana tai näiden yhdistelmänä</li>
 </ul>
 </section></section>
 <section id="lopuksi" class="title-slide slide level1">
@@ -157,7 +184,7 @@
 
   <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
 
-  // reveal.js plugins
+  <!-- reveal.js plugins -->
   <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
   <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
   <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
@@ -167,8 +194,145 @@
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
         // Push each slide change to the browser history
-        history: true,
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
 
         // reveal.js plugins
         plugins: [

@@ -9,7 +9,7 @@
   <title>Verkostoanalyysi</title>
   <style>
     html {
-      line-height: 1.7;
+      line-height: 1.5;
       font-family: Georgia, serif;
       font-size: 20px;
       color: #1a1a1a;
@@ -17,13 +17,13 @@
     }
     body {
       margin: 0 auto;
-      max-width: 40em;
+      max-width: 36em;
       padding-left: 50px;
       padding-right: 50px;
       padding-top: 50px;
       padding-bottom: 50px;
       hyphens: auto;
-      word-wrap: break-word;
+      overflow-wrap: break-word;
       text-rendering: optimizeLegibility;
       font-kerning: normal;
     }
@@ -32,11 +32,15 @@
         font-size: 0.9em;
         padding: 1em;
       }
+      h1 {
+        font-size: 1.8em;
+      }
     }
     @media print {
       body {
         background-color: transparent;
         color: black;
+        font-size: 12pt;
       }
       p, h2, h3 {
         orphans: 3;
@@ -47,7 +51,7 @@
       }
     }
     p {
-      margin-top: 1.7em;
+      margin: 1em 0;
     }
     a {
       color: #1a1a1a;
@@ -59,67 +63,102 @@
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.7em;
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
     }
     ol, ul {
       padding-left: 1.7em;
-      margin-top: 1.7em;
+      margin-top: 1em;
     }
     li > ol, li > ul {
       margin-top: 0;
     }
     blockquote {
-      margin: 1.7em 0 1.7em 1.7em;
+      margin: 1em 0 1em 1.7em;
       padding-left: 1em;
       border-left: 2px solid #e6e6e6;
-      font-style: italic;
+      color: #606060;
     }
     code {
       font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
-      background-color: #f0f0f0;
       font-size: 85%;
       margin: 0;
-      padding: .2em .4em;
     }
     pre {
-      line-height: 1.5em;
-      padding: 1em;
-      background-color: #f0f0f0;
+      margin: 1em 0;
       overflow: auto;
     }
     pre code {
       padding: 0;
       overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
     }
     hr {
       background-color: #1a1a1a;
       border: none;
       height: 1px;
-      margin-top: 1.7em;
+      margin: 1em 0;
     }
     table {
+      margin: 1em 0;
       border-collapse: collapse;
       width: 100%;
       overflow-x: auto;
       display: block;
+      font-variant-numeric: lining-nums tabular-nums;
     }
-    th, td {
-      border-bottom: 1px solid lightgray;
-      padding: 1em 3em 1em 0;
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
     }
     header {
-      margin-bottom: 6em;
+      margin-bottom: 4em;
       text-align: center;
     }
-    nav a:not(:hover) {
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
       text-decoration: none;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <!--[if lt IE 9]>
@@ -141,7 +180,8 @@
 </ul>
 <h1 id="section"></h1>
 <figure>
-<img src="../img/network_1.png" alt="verkosto" /><figcaption aria-hidden="true">verkosto</figcaption>
+<img src="../img/network_1.png" alt="verkosto" />
+<figcaption aria-hidden="true">verkosto</figcaption>
 </figure>
 <h1 id="graafiteoria">Graafiteoria</h1>
 <h2 id="graafi">Graafi</h2>
@@ -177,33 +217,43 @@
 <h1 id="verkostoanalyysi-ihmisillä">Verkostoanalyysi ihmisillä</h1>
 <h2 id="sosiaaliset-verkostot">Sosiaaliset verkostot</h2>
 <ul>
-<li>välillisyyden avulla voi löytyä yllättäviä vallankäyttäjiä verkostojen sisällä</li>
-<li>keskeisyyksien avulla voi löytää verkoston rakenteesta piirteitä, jotka eivät ole ilmiselviä</li>
+<li>välillisyyden avulla voi löytyä yllättäviä vallankäyttäjiä
+verkostojen sisällä</li>
+<li>keskeisyyksien avulla voi löytää verkoston rakenteesta piirteitä,
+jotka eivät ole ilmiselviä</li>
 </ul>
 <h2 id="historiassa">Historiassa</h2>
 <ul>
 <li>poliittiset verkostot</li>
-<li><a href="https://jhnr.uni.lu/index.php/jhnr/index">Journal of Historical Network Research</a></li>
+<li><a href="https://jhnr.uni.lu/index.php/jhnr/index">Journal of
+Historical Network Research</a></li>
 <li>esim. Itä-Saksan opposition verkostot (Kimmo Elo)</li>
 </ul>
 <h2 id="esimerkkejä">Esimerkkejä</h2>
 <ul>
 <li>sukupuut</li>
-<li>solmut voivat olla ihmisiä, kaupunkeja tai muita organisaatioita</li>
-<li>yhteydet voivat olla muuttoliikettä, kirjeenvaihtoa, luotonantoa, kummisuhteita</li>
+<li>solmut voivat olla ihmisiä, kaupunkeja tai muita
+organisaatioita</li>
+<li>yhteydet voivat olla muuttoliikettä, kirjeenvaihtoa, luotonantoa,
+kummisuhteita</li>
 </ul>
 <h1 id="palladio">Palladio</h1>
 <h2 id="taustaa">Taustaa</h2>
 <ul>
-<li>selainpohjainen <a href="https://hdlab.stanford.edu/palladio-app">sovellus</a></li>
-<li>Stanfordin yliopiston <em>Humanities + Design</em> -keskuksen työkalu</li>
-<li>tarkoitettu avaamaan verkostot, kartat ja aikajanat humanisteille</li>
+<li>selainpohjainen <a
+href="https://hdlab.stanford.edu/palladio-app">sovellus</a></li>
+<li>Stanfordin yliopiston <em>Humanities + Design</em> -keskuksen
+työkalu</li>
+<li>tarkoitettu avaamaan verkostot, kartat ja aikajanat
+humanisteille</li>
 </ul>
 <h2 id="data">Data</h2>
 <ul>
-<li>näissä harjoituksissa käytetään vain csv-muotoisia aineistoja verkostojen kuvaamiseen</li>
+<li>näissä harjoituksissa käytetään vain csv-muotoisia aineistoja
+verkostojen kuvaamiseen</li>
 <li>geojson-formaatissa oleva vektoridata</li>
-<li>saman datan voi esittää graafina, karttana, aikajanana tai näiden yhdistelmänä</li>
+<li>saman datan voi esittää graafina, karttana, aikajanana tai näiden
+yhdistelmänä</li>
 </ul>
 <h1 id="lopuksi">Lopuksi</h1>
 <ul>

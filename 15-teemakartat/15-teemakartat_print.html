@@ -8,13 +8,162 @@
   <meta name="dcterms.date" content="2021-11-23" />
   <title>Teemakartat</title>
   <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
 <body>
 <header id="title-block-header">
@@ -41,7 +190,8 @@
 <li>kaksi paikkatiedon päätyyppiä</li>
 <li>rasteridata vie paljon enemmän muistia</li>
 <li>vektoridataa on helpompi käyttää</li>
-<li>vektoridata on helppo muuttaa rasteriksi, mutta rasterin muuttaminen vektoriksi vaatii joko käsityötä tai tekoälyä</li>
+<li>vektoridata on helppo muuttaa rasteriksi, mutta rasterin muuttaminen
+vektoriksi vaatii joko käsityötä tai tekoälyä</li>
 </ul>
 <h2 id="rasteri">Rasteri</h2>
 <ul>
@@ -53,19 +203,22 @@
 <ul>
 <li>yksinkertainen formaatti</li>
 <li>piste, viiva, monikulmio, tai näiden yhdistelmä</li>
-<li>vektoreiden välisten spatiaalisten suhteiden määrittäminen on helppoa</li>
+<li>vektoreiden välisten spatiaalisten suhteiden määrittäminen on
+helppoa</li>
 <li>formaatit: ESRI shapefile, geojson</li>
 </ul>
 <h1 id="kartografia">Kartografia</h1>
 <h2 id="historiaa">Historiaa</h2>
 <ul>
 <li>karttojen piirtäminen on vanhin tapa esittää paikkatietoa</li>
-<li>perinteisiä ongelmia: kuinka esittää maapallo kaksiulotteisella paperilla, mitä informaatiota sisällyttää</li>
+<li>perinteisiä ongelmia: kuinka esittää maapallo kaksiulotteisella
+paperilla, mitä informaatiota sisällyttää</li>
 <li>geoidit, projektiot ja koordinaattijärjestelmät</li>
 </ul>
 <h2 id="moderni-kartografia">Moderni kartografia</h2>
 <ul>
-<li>geoinformatiikan ansiosta kartat voidaan vapauttaa paperin staattisuudesta</li>
+<li>geoinformatiikan ansiosta kartat voidaan vapauttaa paperin
+staattisuudesta</li>
 <li>interaktiiviset ja päivittyvät kartat, myös kartta-animaatiot</li>
 <li>kaukokartoitus mahdollistaa nopeat pikakartoitukset</li>
 </ul>
@@ -91,30 +244,40 @@
 <h2 id="taustaa">Taustaa</h2>
 <ul>
 <li>vapaa ja avoin työpöytäsovellus</li>
-<li>käytössä tutkimuksessa, yrityksissä, kansalaisjärjestöissä, julkishallinnossa ympäri maailmaa</li>
-<li>avoin lähdekoodi on tärkeää tieteen ja päätöksenteon läpinäkyvyyden kannalta!</li>
+<li>käytössä tutkimuksessa, yrityksissä, kansalaisjärjestöissä,
+julkishallinnossa ympäri maailmaa</li>
+<li>avoin lähdekoodi on tärkeää tieteen ja päätöksenteon läpinäkyvyyden
+kannalta!</li>
 <li>QField mobiililaitteisiin</li>
 </ul>
 <h2 id="työkalut">Työkalut</h2>
 <ul>
-<li>työkaluja on niin paljon, ettei kaikkia voi esittää samaan aikaan käyttöliittymässä</li>
+<li>työkaluja on niin paljon, ettei kaikkia voi esittää samaan aikaan
+käyttöliittymässä</li>
 <li>paljon työkaluja saatavilla lisäosina</li>
 </ul>
 <h2 id="georeferointi">Georeferointi</h2>
 <ul>
 <li>paikkatiedon yhdistäminen oikeaan sijaintitietoon</li>
-<li>vanhojen karttojen ja asemakaavojen georeferointi vaatii oikaisupisteita (<em>Ground Control Point, gcp</em>)</li>
-<li>vaatii pisteitä, jotka sijainti tiedetään muun paikkatiedon, kuten vertailukartan, avulla</li>
+<li>vanhojen karttojen ja asemakaavojen georeferointi vaatii
+oikaisupisteita (<em>Ground Control Point, gcp</em>)</li>
+<li>vaatii pisteitä, jotka sijainti tiedetään muun paikkatiedon, kuten
+vertailukartan, avulla</li>
 </ul>
 <h2 id="vektorointi">Vektorointi</h2>
 <ul>
-<li>rasterimuotoisen datan (vanha kartta tai ilmakuva) muuttaminen vektorimuotoon</li>
-<li>tapahtuu käytännössä luomalla joukko uusia vektoritasoja, ja piirtämällä ne kartan päälle</li>
+<li>rasterimuotoisen datan (vanha kartta tai ilmakuva) muuttaminen
+vektorimuotoon</li>
+<li>tapahtuu käytännössä luomalla joukko uusia vektoritasoja, ja
+piirtämällä ne kartan päälle</li>
 </ul>
 <h1 id="teemakartat">Teemakartat</h1>
 <h2 id="section"></h2>
 <figure>
-<img src="../img/teemakartat.png" alt="" /><figcaption>Teemakarttojen visuaaliset muuttujat ja tiedon mitta-asteikot</figcaption>
+<img src="../img/teemakartat.png"
+alt="Teemakarttojen visuaaliset muuttujat ja tiedon mitta-asteikot" />
+<figcaption aria-hidden="true">Teemakarttojen visuaaliset muuttujat ja
+tiedon mitta-asteikot</figcaption>
 </figure>
 <p style="font-size: small">
 Helsingin yliopisto. Kvalitatiiviset ja kvantitatiiviset esitystavat
@@ -124,26 +287,33 @@ Helsingin yliopisto. Kvalitatiiviset ja kvantitatiiviset esitystavat
 <li>todennäköisesti yleisin tilastoteemakarttatyyppi</li>
 <li>sanomalehdissä viikoittain</li>
 <li>värillä kuvataan tilastointialueen muuttujan arvoa</li>
-<li><a href="https://anttihaerkoenen.github.io/muuttovoitto.html">Suomen kuntien muuttovoitto ja -tappio 2016</a></li>
+<li><a href="https://anttihaerkoenen.github.io/muuttovoitto.html">Suomen
+kuntien muuttovoitto ja -tappio 2016</a></li>
 </ul>
 <h1 id="karttojen-tulkinta">Karttojen tulkinta</h1>
 <h2 id="kartan-luonne">Kartan luonne</h2>
 <ul>
 <li>kaikki kartat ja muut visualisoinnit ovat valetta</li>
-<li>sekä nykyiset että historialliset kartat on tehty palvelemaan tiettyä tarkoitusta</li>
+<li>sekä nykyiset että historialliset kartat on tehty palvelemaan
+tiettyä tarkoitusta</li>
 <li>lähdekritiikki on äärimmäisen tärkeää</li>
 </ul>
 <h2 id="maup">MAUP</h2>
 <ul>
 <li>muunnettavien alueyksiköiden ongelma</li>
-<li>aluerajaus vaikuttaa tilastointiin, samoin käytettyjen alueiden koko!</li>
-<li>USAn vaalipiirien <a href="https://fi.wikipedia.org/wiki/Gerrymanderointi">gerrymanderointi</a> on tästä erityisen härski esimerkki</li>
+<li>aluerajaus vaikuttaa tilastointiin, samoin käytettyjen alueiden
+koko!</li>
+<li>USAn vaalipiirien <a
+href="https://fi.wikipedia.org/wiki/Gerrymanderointi">gerrymanderointi</a>
+on tästä erityisen härski esimerkki</li>
 </ul>
 <h2 id="syy-yhteydet">Syy-yhteydet</h2>
 <ul>
 <li>ekologinen harha</li>
-<li>pelkästään kahden teemakartan vertaamisella ei voi todeta kausaalisia suhteita!</li>
-<li>esimerkki: Pähkinäsaaren rauhan raja <strong><em>ei</em></strong> vaikuta suomalaisten terveyteen</li>
+<li>pelkästään kahden teemakartan vertaamisella ei voi todeta
+kausaalisia suhteita!</li>
+<li>esimerkki: Pähkinäsaaren rauhan raja <strong><em>ei</em></strong>
+vaikuta suomalaisten terveyteen</li>
 </ul>
 <h1 id="lopuksi">Lopuksi</h1>
 <ul>
