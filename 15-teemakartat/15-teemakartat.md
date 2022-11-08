@@ -1,6 +1,20 @@
 % Teemakartat
 % Antti Härkönen
-% 2021-11-23
+% 2022-11-13
+
+# Teemakartat-moduuli
+
+## Rakenne
+
+- luento-osio
+- 3 demoa kädestä pitäen
+- 3 harjoitusta itsenäisesti
+
+## Oppimistavoitteet
+
+- yksinkertaisen teemakartan luominen
+- yksinkertaisen paikkatiedon tuottaminen historiallisista aineistoista
+- paikkatiedon hankkiminen internetistä
 
 # Geoinformatiikka
 
