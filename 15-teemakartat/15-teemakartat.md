@@ -1,6 +1,6 @@
 % Teemakartat
 % Antti Härkönen
-% 2022-11-13
+% 2022-11-15
 
 # Teemakartat-moduuli
 
@@ -15,6 +15,74 @@
 - yksinkertaisen teemakartan luominen
 - yksinkertaisen paikkatiedon tuottaminen historiallisista aineistoista
 - paikkatiedon hankkiminen internetistä
+
+# Kartografia
+
+## Historiaa
+
+- karttojen piirtäminen on vanhin tapa esittää paikkatietoa
+- perinteisiä ongelmia: kuinka esittää maapallo kaksiulotteisella paperilla, mitä informaatiota sisällyttää
+- geoidit, projektiot ja koordinaattijärjestelmät
+
+## Moderni kartografia
+
+- geoinformatiikan ansiosta kartat voidaan vapauttaa paperin staattisuudesta
+- interaktiiviset ja päivittyvät kartat, myös kartta-animaatiot
+- kaukokartoitus mahdollistaa nopeat pikakartoitukset
+
+## Datavisualisointi
+
+- kattokäsite, johon myös kartografia kuuluu
+- tilastolliset kaaviot ja muut esitykset
+- esteettinen näkökulma
+
+## Funktio
+
+- mitä varten visualisointi tehdään?
+- mitkä kohteet ovat tarpeeksi tärkeitä?
+- turha informaatio pois
+
+## Abstraktiotaso
+
+- mitkä kohteet ovat tarpeeksi suuria?
+- äärimmäisen tärkeä asia visualisoinnissa, etenkin kartoissa
+- turha informaatio pois
+
+# Karttojen tulkinta
+
+## Kartan luonne
+
+- kaikki kartat ja muut visualisoinnit ovat valetta
+- sekä nykyiset että historialliset kartat on tehty palvelemaan tiettyä tarkoitusta
+- lähdekritiikki on äärimmäisen tärkeää
+
+## MAUP
+
+- muunnettavien alueyksiköiden ongelma
+- aluerajaus vaikuttaa tilastointiin, samoin käytettyjen alueiden koko!
+- USAn vaalipiirien [gerrymanderointi](https://fi.wikipedia.org/wiki/Gerrymanderointi) on tästä 
+erityisen härski esimerkki
+
+## Syy-yhteydet
+
+- ekologinen harha
+- pelkästään kahden teemakartan vertaamisella ei voi todeta kausaalisia suhteita!
+- esimerkki: Pähkinäsaaren rauhan raja ___ei___ vaikuta suomalaisten terveyteen
+
+# Teemakartat
+
+##
+
+![Teemakarttojen visuaaliset muuttujat ja tiedon mitta-asteikot](../img/teemakartat.png)
+
+<p style="font-size: small">Helsingin yliopisto. Kvalitatiiviset ja kvantitatiiviset esitystavat</p>
+
+## Koropleettikartat
+
+- todennäköisesti yleisin tilastoteemakarttatyyppi 
+- sanomalehdissä viikoittain
+- värillä kuvataan tilastointialueen muuttujan arvoa
+- [Suomen kuntien muuttovoitto ja -tappio 2016](https://anttihaerkoenen.github.io/muuttovoitto.html)
 
 # Geoinformatiikka
 
@@ -51,38 +119,6 @@
 - vektoreiden välisten spatiaalisten suhteiden määrittäminen on helppoa
 - formaatit: ESRI shapefile, geojson
 
-# Kartografia
-
-## Historiaa
-
-- karttojen piirtäminen on vanhin tapa esittää paikkatietoa
-- perinteisiä ongelmia: kuinka esittää maapallo kaksiulotteisella paperilla, mitä informaatiota sisällyttää
-- geoidit, projektiot ja koordinaattijärjestelmät
-
-## Moderni kartografia
-
-- geoinformatiikan ansiosta kartat voidaan vapauttaa paperin staattisuudesta
-- interaktiiviset ja päivittyvät kartat, myös kartta-animaatiot
-- kaukokartoitus mahdollistaa nopeat pikakartoitukset
-
-## Datavisualisointi
-
-- kattokäsite, johon myös kartografia kuuluu
-- tilastolliset kaaviot ja muut esitykset
-- esteettinen näkökulma
-
-## Funktio
-
-- mitä varten visualisointi tehdään?
-- mitkä kohteet ovat tarpeeksi tärkeitä?
-- turha informaatio pois
-
-## Abstraktiotaso
-
-- mitkä kohteet ovat tarpeeksi suuria?
-- äärimmäisen tärkeä asia visualisoinnissa, etenkin kartoissa
-- turha informaatio pois
-
 # QGIS
 
 ## Taustaa
@@ -107,42 +143,6 @@
 
 - rasterimuotoisen datan (vanha kartta tai ilmakuva) muuttaminen vektorimuotoon
 - tapahtuu käytännössä luomalla joukko uusia vektoritasoja, ja piirtämällä ne kartan päälle
-
-# Teemakartat
-
-##
-
-![Teemakarttojen visuaaliset muuttujat ja tiedon mitta-asteikot](../img/teemakartat.png)
-
-<p style="font-size: small">Helsingin yliopisto. Kvalitatiiviset ja kvantitatiiviset esitystavat</p>
-
-## Koropleettikartat
-
-- todennäköisesti yleisin tilastoteemakarttatyyppi 
-- sanomalehdissä viikoittain
-- värillä kuvataan tilastointialueen muuttujan arvoa
-- [Suomen kuntien muuttovoitto ja -tappio 2016](https://anttihaerkoenen.github.io/muuttovoitto.html)
-
-# Karttojen tulkinta
-
-## Kartan luonne
-
-- kaikki kartat ja muut visualisoinnit ovat valetta
-- sekä nykyiset että historialliset kartat on tehty palvelemaan tiettyä tarkoitusta
-- lähdekritiikki on äärimmäisen tärkeää
-
-## MAUP
-
-- muunnettavien alueyksiköiden ongelma
-- aluerajaus vaikuttaa tilastointiin, samoin käytettyjen alueiden koko!
-- USAn vaalipiirien [gerrymanderointi](https://fi.wikipedia.org/wiki/Gerrymanderointi) on tästä 
-erityisen härski esimerkki
-
-## Syy-yhteydet
-
-- ekologinen harha
-- pelkästään kahden teemakartan vertaamisella ei voi todeta kausaalisia suhteita!
-- esimerkki: Pähkinäsaaren rauhan raja ___ei___ vaikuta suomalaisten terveyteen
 
 # Lopuksi
 
