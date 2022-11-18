@@ -27,26 +27,27 @@ Suomen kartan pitäisi ilmestyä keskelle.
 12. Kavenna karttaelementtiä 40 mm oikealta, jotta pienemmälle kartalle jäisi enemmän tilaa. 
 13. Valitse kartta, mene **Elementin ominaisuudet** –kohtaan ja aseta mittakaavaksi _1:4 000 000_. 
 Paina sen jälkeen **Update Preview**. 
-14. Lukitse taso: **Elementin ominaisuudet > Taso > Lukitse taso**
-15. Klikkaa ![Uusi karttaelementti](../img/uusi_karttaelementti.png) ja piirrä hiirellä uusi karttaelementti 
+14. Elementin ominaisuuksissa on  työkalupalkki, jonka avulla kartan mittakaavaa ja sijaintia voi säätää taitossa. ![kartan asettelu](../img/kartan_asettelu.png)
+15. Lukitse taso: **Elementit > Rasti ruutuun lukun kuvan alapuolla**
+16. Klikkaa ![Uusi karttaelementti](../img/uusi_karttaelementti.png) ja piirrä hiirellä uusi karttaelementti 
 Suomen kartan viereen. 
-16. Mene takaisin karttaikkunaan, ja laita nimiöt päälle. Käytä nimiöiden perustana NIMI-saraketta 
+17. Mene takaisin karttaikkunaan, ja laita nimiöt päälle. Käytä nimiöiden perustana NIMI-saraketta 
 (**hiiren oikea näppäin > Ominaisuudet > Nimiöt**). Aseta teksti-kohdasta nimiöiden kooksi 12. 
-17. Jotta kuntien nimet eivät näkyisi muualla kuin pienessä kartassa, asetetaan nimiöille rajoitettu mittakaava. 
+18. Jotta kuntien nimet eivät näkyisi muualla kuin pienessä kartassa, asetetaan nimiöille rajoitettu mittakaava. 
 **Ominaisuudet > Nimiöt > Piirtäminen > Nimiön valinnat > Mittakaavaperustainen näkyvyys**. 
 Aseta pienimmäksi näkyväksi mittakaavaksi _1:1 000 000_. 
-18. Zoomaa karttaikkunassa Tohmajärven kunnan kohdalle. 
-19. Mene takaisin taittoon, aseta mittakaavaksi _1:1 000 000_ ja klikkaa uudestaan **Update preview**. 
-20. Valitse isompi kartta ja mene **Elementin ominaisuudet > Yleiskatsaukset**. 
+19. Zoomaa karttaikkunassa Tohmajärven kunnan kohdalle. 
+20. Mene takaisin taittoon, aseta mittakaavaksi _1:1 000 000_ ja klikkaa uudestaan **Update preview**. 
+21. Valitse isompi kartta ja mene **Elementin ominaisuudet > Yleiskatsaukset**. 
 Paina merkkiä ![Lisää yleiskatsaus](../img/lisaa_yleiskatsaus.png), 
 jolloin alla olevaan laatikkoon ilmestyy Yleisnäkymä 1. Aseta Kartan kehys –kohtaan pienempi kartta. 
-21. Kun olet tyytyväinen karttaikkunoihin, lukitse molemmat. 
-22. Lisää mittakaavajana karttaan ![lisaa mittakaavajana](../img/lisaa_mittakaavajana.png). 
+22. Kun olet tyytyväinen karttaikkunoihin, lukitse molemmat. 
+23. Lisää mittakaavajana karttaan ![lisaa mittakaavajana](../img/lisaa_mittakaavajana.png). 
 Käytä mittakaavan perusteena isompaa karttaa, 
 ja säädä janan kokoa säätämällä kohtaa **kiinteä leveys**. Kun olet tyytyväinen, lukitse mittakaavataso. 
-23. Lisää pohjoisnuoli ![Lisää uusi kuva taittoon](../img/lisaa_uusi_kuva_taittoon.png) –painikkeesta.
+24. Lisää pohjoisnuoli ![Lisää uusi kuva taittoon](../img/lisaa_uusi_kuva_taittoon.png) –painikkeesta.
 Piirrä nuolen alue ja mene kohtaan **Elementin ominaisuudet > Hakemistopolut** ja valitse sopiva nuoli. 
-24. Tallenna kartta kuvaksi kohdasta **Taitto > Vie kuvaksi**. Valmiin kartan pitäisi näyttää suunnilleen tältä:
+25. Tallenna kartta kuvaksi kohdasta **Taitto > Vie kuvaksi**. Valmiin kartan pitäisi näyttää suunnilleen tältä:
 
 ![Tohmajärven sijainti Suomen kartalla](../img/kartta_demo_1.png)
 
@@ -113,4 +114,4 @@ Aseta tallennuspaikaksi projektin kansio.
 uusia monikulmioita. Muista tallentaa tekemäsi muutokset välillä. 
 12. Kun olet digitoinut joen itäpuolen, poista alkuperäinen kartta näkymästä,
 ja lisää karttaan Paitulin WMS:n kautta Maanmittauslaitoksen peruskartta vuodelta 2015. 
-13. Muuta korttelit ja tontit läpinäkyviksi ja vertaa niitä peruskarttaan ja OpenStreetMapin rakennuksen.
+13. Muuta korttelit ja tontit läpinäkyviksi ja vertaa niitä peruskarttaan.

@@ -117,7 +117,7 @@ erityisen härski esimerkki
 - yksinkertainen formaatti
 - piste, viiva, monikulmio, tai näiden yhdistelmä
 - vektoreiden välisten spatiaalisten suhteiden määrittäminen on helppoa
-- formaatit: ESRI shapefile, geojson
+- formaatit: Geopackage, ESRI shapefile, geojson
 
 # QGIS
 
