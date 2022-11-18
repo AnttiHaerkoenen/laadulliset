@@ -89,8 +89,8 @@ Lisää Pirkanmaan tilastoyhteenveto Pohjois-Karjalan rinnalle ja tallenna taulu
 Tässä harjoituksessa opetellaan luomaan omaa vektorimuotoista dataa vanhoista kartoista tai ilmakuvista.
 
 1. Mene Astian sivulle, tee haku sanoilla joensuu kartat ja avaa [Joensuun kaupungin asemakaava. 
-(Joensuu Ieb* 3/- -)](https://astia.narc.fi/uusiastia/). 
-2. Lataa asemakaava projektikansioon. 
+(Joensuu Ieb* 3/- -)](https://astia.narc.fi/uusiastia/).
+2. Lataa asemakaava projektikansioon.
 3. Mikäli georeferointi-työkalu ei ole näkyvissä (**Rasteri > Georeferointi**), se on aktivoitava Lisäosat-valikosta
 **Lisäosat > Hallitse ja asenna lisäosia** ruksaamalla listalta **Georeferoija**-lisäosa.
 4. Georeferointia varten tarvitaan oikaisupisteitä. Helpointa tämä on toisen kartan avulla. Etsi jostain lähteestä 
