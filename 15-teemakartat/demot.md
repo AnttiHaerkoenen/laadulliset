@@ -92,12 +92,12 @@ Tässä harjoituksessa opetellaan luomaan omaa vektorimuotoista dataa vanhoista 
 1. Mene Astian sivulle, tee haku sanoilla joensuu kartat ja avaa [Joensuun kaupungin asemakaava. 
 (Joensuu Ieb* 3/- -)](https://astia.narc.fi/uusiastia/).
 2. Lataa asemakaava projektikansioon.
-3. Mikäli georeferointi-työkalu ei ole näkyvissä (**Rasteri > Georeferointi**), se on aktivoitava Lisäosat-valikosta
+3. Mikäli georeferointi-työkalu ei ole näkyvissä (**Tasot > Georeferointi** tai, versiosta riippuen, **Rasteri > Georeferoija**), se on aktivoitava Lisäosat-valikosta
 **Lisäosat > Hallitse ja asenna lisäosia** ruksaamalla listalta **Georeferoija**-lisäosa.
 4. Georeferointia varten tarvitaan oikaisupisteitä. Helpointa tämä on toisen kartan avulla. Etsi jostain lähteestä 
 valmis paikkatietoaineisto georeferointia varten. Vertailuaineiston on oltava niin tarkka, että siitä erottaa 
 rakennusten sijainnin.
-5. Avaa **Rasteri > Georeferointi** ja lisää napista ![lisää rasteri](../img/lisaa_rasteri.png) Joensuun kaava 
+5. Avaa **Tasot > Georeferointi** ja lisää napista ![lisää rasteri](../img/lisaa_rasteri.png) Joensuun kaava 
 georeferoitavaksi. Aseta koordinaattijärjestelmäksi _ETRS 1989 TM35_. 
 6. Lisää oikaisupiste käyttämällä nappia ![lisää oikaisupiste](../img/lisaa_oikaisupiste.png). 
 Pisteitä voi poistaa napista ![poista oikaisupiste](../img/poista_oikaisupiste.png) ja 
