@@ -1,6 +1,6 @@
 % Teemakartat
 % Antti Härkönen
-% 2022-11-15
+% 2023-11-06
 
 # Teemakartat-moduuli
 
@@ -146,4 +146,5 @@ erityisen härski esimerkki
 
 # Lopuksi
 
+- visualisointi on tärkeää!
 - älä usko karttoja
