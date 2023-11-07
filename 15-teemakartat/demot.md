@@ -67,14 +67,14 @@ nimellä Tilastointialueet. Tämä toimii samalla tavalla kuin edellinen kohta, 
 6. Lisää _Väestö 2017 vuoden 2018 kuntajaolla ja maakuntajaolla_ –tasot karttaan. 
 7. Siirrä kuntataso päällimmäiseksi ja muuta ontoksi 
 (**Ominaisuudet > Kuvaustekniikka > Täyttö > Yksinkertainen täyttö > Symbolitason tyyppi > Ääriviivat**). 
-Valitse viiva ja aseta sen leveydeksi 1 mm. 
+Valitse viiva ja aseta sen leveydeksi 0.2 mm. 
 8. Valitse Pohjois-Karjalan maakunta maakuntatasosta. Avaa **Valitse kohteita kentän arvon perusteella** 
 ![valitse kohteita kentän arvon perusteella](../img/valitse_kentan_mukaan.png) ja pane nimikenttään Pohjois-Karjala. 
 9. Tallenna valittu Pohjois-Karjala projektikansioosi GeoPackage-tiedostona 
 (**hiiren oikea näppäin > Vie > Tallenna valitut kohteet nimellä**). 
-10. Valitse Pohjois-Karjalan kunnat käyttämällä luomaasi GeoPackage-tiedostoa. Avaa **Vektori > Tutkimuksen työkalut > Valitse sijainnin perusteella** ja valitse ainoastaan sisältyvät kohteet. 
+10. Valitse Pohjois-Karjalan kunnat käyttämällä luomaasi GeoPackage-tiedostoa. Avaa **Valitse sijainnin perusteella** ja valitse ainoastaan _sisältyvät_ kohteet. 
 11. Aktivoi kuntataso Tasot-valikosta ja klikkaa ∑-symbolia. 
-12. Valitse vaesto-sarake valikosta. Klikkaa **Käytetään vain valittuja kohteita**. 
+12. Valitse _vaesto_-sarake valikosta. Klikkaa **Käytetään vain valittuja kohteita**. 
 13. Kopio tilastoyhteenveto, ja tallenna se vapaavalintaisella taulukkolaskentaohjelmistolla. 
 14. Toista vaiheet 8–13, tällä kertaa Pirkanmaan maakunnalla. 
 Lisää Pirkanmaan tilastoyhteenveto Pohjois-Karjalan rinnalle ja tallenna taulukko. 
