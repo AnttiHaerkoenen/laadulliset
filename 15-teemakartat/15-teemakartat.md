@@ -22,6 +22,7 @@
 
 - karttojen piirtäminen on vanhin tapa esittää paikkatietoa
 - perinteisiä ongelmia: kuinka esittää maapallo kaksiulotteisella paperilla, mitä informaatiota sisällyttää
+- yhä käytännönläheisempää Renessanssista alkaen
 - geoidit, projektiot ja koordinaattijärjestelmät
 
 ## Moderni kartografia

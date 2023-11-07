@@ -35,7 +35,7 @@ Suomen kartan viereen.
 (**hiiren oikea näppäin > Ominaisuudet > Nimiöt**). Aseta teksti-kohdasta nimiöiden kooksi 12. 
 18. Jotta kuntien nimet eivät näkyisi muualla kuin pienessä kartassa, asetetaan nimiöille rajoitettu mittakaava. 
 **Ominaisuudet > Nimiöt > Piirtäminen > Nimiön valinnat > Mittakaavaperustainen näkyvyys**. 
-Aseta pienimmäksi näkyväksi mittakaavaksi _1:1 000 000_. 
+Aseta pienimmäksi näkyväksi mittakaavaksi _1:1 250 000_. 
 19. Zoomaa karttaikkunassa Tohmajärven kunnan kohdalle. 
 20. Mene takaisin taittoon, aseta mittakaavaksi _1:1 000 000_ ja klikkaa uudestaan **Update preview**. 
 21. Valitse isompi kartta ja mene **Elementin ominaisuudet > Yleiskatsaukset**. 
@@ -53,8 +53,7 @@ Piirrä nuolen alue ja mene kohtaan **Elementin ominaisuudet > Hakemistopolut** 
 
 # Demo 2
 
-Tässä harjoituksessa opetellaan käyttämään WFS- ja WMS-rajapintoja sekä tekemään vektoritiedostoista valintoja eri 
-menetelmillä.
+Tässä harjoituksessa opetellaan käyttämään WFS- ja WMS-rajapintoja sekä tekemään vektoritiedostoista valintoja eri menetelmillä.
 
 1. Avaa uusi projekti QGISillä. 
 2. Etsi ja kopioi netistä Paikkatietopalvelu Paitulin WMS-rajapinnan URL-osoite. 
@@ -70,11 +69,10 @@ nimellä Tilastointialueet. Tämä toimii samalla tavalla kuin edellinen kohta, 
 (**Ominaisuudet > Kuvaustekniikka > Täyttö > Yksinkertainen täyttö > Symbolitason tyyppi > Ääriviivat**). 
 Valitse viiva ja aseta sen leveydeksi 1 mm. 
 8. Valitse Pohjois-Karjalan maakunta maakuntatasosta. Avaa **Valitse kohteita kentän arvon perusteella** 
-![valitse kentän arvon perusteella](../img/valitse_kentan_mukaan.png) ja pane nimikenttään Pohjois-Karjala. 
+![valitse kohteita kentän arvon perusteella](../img/valitse_kentan_mukaan.png) ja pane nimikenttään Pohjois-Karjala. 
 9. Tallenna valittu Pohjois-Karjala projektikansioosi GeoPackage-tiedostona 
 (**hiiren oikea näppäin > Vie > Tallenna valitut kohteet nimellä**). 
-10. Valitse Pohjois-Karjalan kunnat käyttämällä luomaasi GeoPackage-tiedostoa. Avaa **Vektori > Tutkimuksen työkalut > 
-Valitse sijainnin perusteella** ja valitse ainoastaan sisältyvät kohteet. 
+10. Valitse Pohjois-Karjalan kunnat käyttämällä luomaasi GeoPackage-tiedostoa. Avaa **Vektori > Tutkimuksen työkalut > Valitse sijainnin perusteella** ja valitse ainoastaan sisältyvät kohteet. 
 11. Aktivoi kuntataso Tasot-valikosta ja klikkaa ∑-symbolia. 
 12. Valitse vaesto-sarake valikosta. Klikkaa **Käytetään vain valittuja kohteita**. 
 13. Kopio tilastoyhteenveto, ja tallenna se vapaavalintaisella taulukkolaskentaohjelmistolla. 
@@ -86,7 +84,6 @@ Lisää Pirkanmaan tilastoyhteenveto Pohjois-Karjalan rinnalle ja tallenna taulu
 ![Pohjois-Karjalan kartta](../img/pk_kartta.png)
 
 # Demo 3
-
 Tässä harjoituksessa opetellaan luomaan omaa vektorimuotoista dataa vanhoista kartoista tai ilmakuvista.
 
 1. Mene Astian sivulle, tee haku sanoilla joensuu kartat ja avaa [Joensuun kaupungin asemakaava. 
@@ -98,20 +95,20 @@ Tässä harjoituksessa opetellaan luomaan omaa vektorimuotoista dataa vanhoista 
 valmis paikkatietoaineisto georeferointia varten. Vertailuaineiston on oltava niin tarkka, että siitä erottaa 
 rakennusten sijainnin.
 5. Avaa **Tasot > Georeferointi** ja lisää napista ![lisää rasteri](../img/lisaa_rasteri.png) Joensuun kaava 
-georeferoitavaksi. Aseta koordinaattijärjestelmäksi _ETRS 1989 TM35_. 
+georeferoitavaksi. Aseta koordinaattijärjestelmäksi _EPSG:3067_. 
 6. Lisää oikaisupiste käyttämällä nappia ![lisää oikaisupiste](../img/lisaa_oikaisupiste.png). 
 Pisteitä voi poistaa napista ![poista oikaisupiste](../img/poista_oikaisupiste.png) ja 
 siirtää napista ![siirrä oikaisupiste](../img/siirra_oikaisupiste.png). 
 7. Kun olet lisännyt 5-10 hyvää pistettä, voit tallentaa pisteet napista 
-![tallenna oikaisupisteet](../img/tallenna_oikaisupisteet.png). 
+![tallenna oikaisupisteet](../img/tallenna_oikaisupisteet.png).
+8. Ennen oikaisua tarkista **Muunnoksen asetuksista** ![muunnoksen asetukset](../img/muunnoksen_asetukset.png) että **Muunnoksen tyyppi** on _Helmert_ ja että **Tulostiedosto** ja **Tulostiedoston koordinaattijärjestelmä** on määritelty.
 8. Tee oikaisu painamalla ![tee oikaisu](../img/oikaisu.png). Lisää oikaistu kuva karttaan. 
-9. Luo uusi GeoPackage-tiedosto nimeltä korttelit. Katso että sen tyyppi on _polygoni_ ja lisää uudeksi 
-attribuuttikentäksi _numero_.
+9. Luo uusi GeoPackage-tiedosto nimeltä korttelit. Katso että sen tyyppi on _polygoni_ ja lisää uudeksi attribuuttikentäksi _numero_.
 Aseta tallennuspaikaksi projektin kansio. 
 10. Tee samanlainen taso nimellä tontit. 
 11. Digitoi Pielisen itäpuolisen alueen korttelit ja tontit. Aloita valitsemalla taso ja painamalla 
 ![muokkaa](../img/muokkaa.png). Painikkeesta ![lisää monikulmio](../img/lisaa_polygoni.png) pääset piirtämään 
-uusia monikulmioita. Muista tallentaa tekemäsi muutokset välillä. 
+uusia monikulmioita. Hiiren vasemmalla painikkeella tehdään uusi kulma, ja piirtäminen lopetetaan hiiren oikealla painikkeella. Muista tallentaa tekemäsi muutokset välillä. 
 12. Kun olet digitoinut joen itäpuolen, poista alkuperäinen kartta näkymästä,
 ja lisää karttaan Paitulin WMS:n kautta Maanmittauslaitoksen peruskartta vuodelta 2015. 
-13. Muuta korttelit ja tontit läpinäkyviksi ja vertaa niitä peruskarttaan.
+13. Muuta korttelit ja tontit läpinäkyviksi (**Ominaisuudet > Kuvaustekniikka > Peittävyys**) ja vertaa niitä peruskarttaan.
