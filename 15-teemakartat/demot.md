@@ -76,7 +76,7 @@ Pisteitä voi poistaa napista ![poista oikaisupiste](../img/poista_oikaisupiste.
 7. Kun olet lisännyt 5-10 hyvää pistettä, voit tallentaa pisteet napista ![tallenna oikaisupisteet](../img/tallenna_oikaisupisteet.png).
 8. Ennen oikaisua tarkista **Muunnoksen asetuksista** ![muunnoksen asetukset](../img/muunnoksen_asetukset.png) että **Muunnoksen tyyppi** on _Helmert_ ja että **Tulostiedosto** ja **Tulostiedoston koordinaattijärjestelmä** on määritelty.
 9. Tee oikaisu painamalla ![tee oikaisu](../img/oikaisu.png). Lisää oikaistu kuva karttaan. 
-10. Luo uusi GeoPackage-tiedosto nimeltä korttelit. Katso että sen tyyppi on _polygoni_ ja lisää uudeksi attribuuttikentäksi _numero_. Aseta tallennuspaikaksi projektin kansio. 
+10. Luo uusi GeoPackage-tiedosto nimeltä korttelit. Katso että sen tyyppi on _monikulmio_ (tai _polygoni_) ja lisää uudeksi attribuuttikentäksi _numero_. Aseta tallennuspaikaksi projektin kansio. 
 11. Tee samanlainen taso nimellä tontit. 
 12. Digitoi Pielisen itäpuolisen alueen korttelit ja tontit. Aloita valitsemalla taso ja painamalla 
 ![muokkaa](../img/muokkaa.png). Painikkeesta ![lisää monikulmio](../img/lisaa_polygoni.png) pääset piirtämään uusia monikulmioita. Hiiren vasemmalla painikkeella tehdään uusi kulma, ja piirtäminen lopetetaan hiiren oikealla painikkeella. Muista tallentaa tekemäsi muutokset välillä. 
