@@ -1,6 +1,23 @@
-% Teemakartat
-% Antti Härkönen
-% 2023-11-06
+---
+title: 'Teemakartat'
+subtitle: '5111228 Laadullisten aineistojen menetelmät historiatieteessä'
+author: 'Antti Härkönen'
+institute: UEF
+date: 2024-10
+echo: false
+warning: false
+execute:
+    enabled: true
+format: 
+    revealjs:
+        embed-resources: true
+        theme: simple
+        lang: fi
+        incremental: true
+        navigation-mode: vertical
+        transition: convex
+        logo: UEF_logo.jpg
+---
 
 # Teemakartat-moduuli
 
@@ -61,8 +78,11 @@
 
 - muunnettavien alueyksiköiden ongelma
 - aluerajaus vaikuttaa tilastointiin, samoin käytettyjen alueiden koko!
-- USAn vaalipiirien [gerrymanderointi](https://fi.wikipedia.org/wiki/Gerrymanderointi) on tästä 
-erityisen härski esimerkki
+- USAn vaalipiirien [gerrymanderointi](https://fi.wikipedia.org/wiki/Gerrymanderointi) on tästä erityisen härski esimerkki
+
+## 
+
+{{< video https://youtu.be/cwBslntC3xg?si=koqxTgKWd5FtI2yg width="100%" height="85%" >}}
 
 ## Syy-yhteydet
 
@@ -83,7 +103,8 @@ erityisen härski esimerkki
 - todennäköisesti yleisin tilastoteemakarttatyyppi 
 - sanomalehdissä viikoittain
 - värillä kuvataan tilastointialueen muuttujan arvoa
-- [Suomen kuntien muuttovoitto ja -tappio 2016](https://anttihaerkoenen.github.io/muuttovoitto.html)
+
+## {background-iframe="https://anttihaerkoenen.github.io/muuttovoitto.html" background-interactive="true" width="100%" height="100%"}
 
 # Geoinformatiikka
 

@@ -14,9 +14,8 @@ verkostoanalyysi: ./14-verkostoanalyysi/14-verkostoanalyysi.md
 	pandoc -s ./14-verkostoanalyysi/14-verkostoanalyysi.md -o ./14-verkostoanalyysi/14-verkostoanalyysi_print.html
 
 ## Teemakartat
-teemakartat: ./15-teemakartat/15-teemakartat.md
-	pandoc -t revealjs -s ./15-teemakartat/15-teemakartat.md -o ./15-teemakartat/15-teemakartat.html -i --slide-level 2 -V theme=white -V lang=fi
-	pandoc -s ./15-teemakartat/15-teemakartat.md -o ./15-teemakartat/15-teemakartat_print.html
+teemakartat: ./15-teemakartat/15-teemakartat.qmd
+	quarto render ./15-teemakartat/15-teemakartat.qmd
 
 #################################################################################
 # Self Documenting Commands                                                     #

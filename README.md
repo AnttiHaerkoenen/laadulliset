@@ -20,7 +20,7 @@ Esimerkkiverkosto ([lataa](data/verkosto.csv))
 
 # Teemakartat
 
-[Luento](./15-teemakartat/15-teemakartat.html) ([tulostettava](./15-teemakartat/15-teemakartat_print.html))
+[Luento](./15-teemakartat/15-teemakartat.html)
 
 [Demot](./15-teemakartat/demot.md)
 
