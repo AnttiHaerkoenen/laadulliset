@@ -7,7 +7,7 @@ kotikuntansa Suomen kartalla.
 1. Tarkista, että koneelle on asennettu QGIS 3.x
 2. Tee itsellesi karttaa varten projektikansio sopivaan paikkaan.
 3. Avaa QGIS ja luo uusi projekti (**Projekti > Uusi**). Tallenna projekti nimellä Harjoitus 1. 
-4. Mene Paituli-paikkatietopalveluun ja lataa Tilastokeskuksen _Kuntien avainluvut vuodelta 2017_. Pura zip-tiedosto projektikansioon. __**HUOM! shp-tiedosto koostuu useasta saman nimisestä tiedostosta!**__
+4. Mene Paituli-paikkatietopalveluun ja lataa Tilastokeskuksen _Kuntien avainluvut vuodelta 2017_. Pura zip-tiedosto projektikansioon. **HUOM! shp-tiedosto koostuu useasta saman nimisestä tiedostosta!**
 5. Lisää _kuntienAvainluvut_2017.shp_ tasoksi karttaan (**Selain > oikea klikkaus > Add selected layer to canvas**). Ruudulla pitäisi nyt näkyä Suomen kartta kuntarajoineen. 
 6. Voit liikutella karttaa **raahaus**- ja **zoomaus**-työkaluilla. Jos kartta häviää näkyvistä, saat sen takaisin komennolla **hiiren oikea päällä > Zoomaa tasoon**. 
 7. Kokeile vaihtaa kartan projektiota (**Projekti > Ominaisuudet > Koordinaattijärjestelmä** > ![koordinaatistopainike](../img/koordinaatistopainike.png)). Mitkä projektiot sopivat mihinkin parhaiten?
@@ -20,7 +20,7 @@ Suomen kartan pitäisi ilmestyä keskelle.
 12. Kavenna karttaelementtiä 40 mm oikealta, jotta pienemmälle kartalle jäisi enemmän tilaa. 
 13. Valitse kartta, mene **Elementin ominaisuudet** –kohtaan ja aseta mittakaavaksi _1:4 000 000_. 
 Paina sen jälkeen **Update Preview**. 
-14. Elementin ominaisuuksissa on  työkalupalkki, jonka avulla kartan mittakaavaa ja sijaintia voi säätää taitossa. ![kartan asettelu](../img/kartan_asettelu.png)
+14. Elementin ominaisuuksissa on  työkalupalkki, jonka avulla kartan mittakaavaa ja sijaintia voi säätää taitossa. ![kartan asettelu](../img/kartan_asettelu.png) Napista ![siirrä elementin sisältöä](../img/siirra_sisaltoa.png) voi siirtää elementin sisältöä raahaamalla ja zoomaamalla.
 15. Lukitse taso: **Elementit > Rasti ruutuun lukun kuvan alapuolla**
 16. Klikkaa ![Uusi karttaelementti](../img/uusi_karttaelementti.png) ja piirrä hiirellä uusi karttaelementti Suomen kartan viereen. 
 17. Mene takaisin karttaikkunaan, ja laita nimiöt päälle. Käytä nimiöiden perustana NIMI-saraketta
