@@ -21,7 +21,7 @@ Suomen kartan pitäisi ilmestyä keskelle.
 13. Valitse kartta, mene **Elementin ominaisuudet** –kohtaan ja aseta mittakaavaksi _1:4 000 000_. 
 Paina sen jälkeen **Update Preview**. 
 14. Elementin ominaisuuksissa on  työkalupalkki, jonka avulla kartan mittakaavaa ja sijaintia voi säätää taitossa. ![kartan asettelu](../img/kartan_asettelu.png) Napista ![siirrä elementin sisältöä](../img/siirra_sisaltoa.png) voi siirtää elementin sisältöä raahaamalla ja zoomaamalla.
-15. Lukitse taso: **Elementit > Rasti ruutuun lukun kuvan alapuolla**
+15. Lukitse taso: **Elementit > Rasti ruutuun lukon kuvan alapuolla**
 16. Klikkaa ![Uusi karttaelementti](../img/uusi_karttaelementti.png) ja piirrä hiirellä uusi karttaelementti Suomen kartan viereen. 
 17. Mene takaisin karttaikkunaan, ja laita nimiöt päälle. Käytä nimiöiden perustana NIMI-saraketta
 (**hiiren oikea näppäin > Ominaisuudet > Nimiöt**; Eri kuin KUNTA!) Aseta **Teksti**-kohdasta nimiöiden kooksi 12.
