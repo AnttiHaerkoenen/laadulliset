@@ -50,7 +50,7 @@ Tässä harjoituksessa opetellaan käyttämään WFS- ja WMS-rajapintoja sekä t
 6. Lisää _Väestö 2017 vuoden 2018 kuntajaolla ja maakuntajaolla_ –tasot karttaan. 
 7. Siirrä kuntataso päällimmäiseksi ja muuta ontoksi (**Ominaisuudet > Kuvaustekniikka > Täyttö > Yksinkertainen täyttö > Symbolitason tyyppi > Ääriviivat**). Valitse viiva ja aseta sen leveydeksi 0.2 mm. 
 8. Valitse Pohjois-Karjalan maakunta maakuntatasosta. Avaa **Valitse kohteita kentän arvon perusteella** ![valitse kohteita kentän arvon perusteella](../img/valitse_kentan_mukaan.png) ja pane nimikenttään Pohjois-Karjala. 
-9. Tallenna valittu Pohjois-Karjala projektikansioosi GeoPackage-tiedostona (**hiiren oikea näppäin > Vie > Tallenna VALITUT kohteet nimellä**). 
+9. Tallenna valittu Pohjois-Karjala projektikansioosi (navigoi oikeaan kansioon **selaa**-kohdassa) GeoPackage-tiedostona (**hiiren oikea näppäin > Vie > Tallenna VALITUT kohteet nimellä**).
 10. Valitse Pohjois-Karjalan kunnat käyttämällä luomaasi GeoPackage-tiedostoa. Avaa **Valitse sijainnin perusteella** ja valitse ainoastaan _sisältyvät_ kohteet. 
 11. Aktivoi kuntataso Tasot-valikosta ja klikkaa ∑-symbolia. 
 12. Valitse _vaesto_-sarake valikosta. Klikkaa **Käytetään vain valittuja kohteita**. 
@@ -62,6 +62,7 @@ Tässä harjoituksessa opetellaan käyttämään WFS- ja WMS-rajapintoja sekä t
 ![Pohjois-Karjalan kartta](../img/pk_kartta.png)
 
 # Demo 3
+
 Tässä harjoituksessa opetellaan luomaan omaa vektorimuotoista dataa vanhoista kartoista tai ilmakuvista.
 
 1. Mene Astian sivulle, tee haku sanoilla joensuu kartat ja avaa [Joensuun kaupungin asemakaava. 
