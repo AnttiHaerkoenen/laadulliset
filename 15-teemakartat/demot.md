@@ -20,7 +20,8 @@ Suomen kartan pitäisi ilmestyä keskelle.
 12. Kavenna karttaelementtiä 40 mm oikealta, jotta pienemmälle kartalle jäisi enemmän tilaa. 
 13. Valitse kartta, mene **Elementin ominaisuudet** –kohtaan ja aseta mittakaavaksi _1:4 000 000_. 
 Paina sen jälkeen **Update Preview**. 
-14. Elementin ominaisuuksissa on  työkalupalkki, jonka avulla kartan mittakaavaa ja sijaintia voi säätää taitossa. ![kartan asettelu](../img/kartan_asettelu.png) Napista ![siirrä elementin sisältöä](../img/siirra_sisaltoa.png) voi siirtää elementin sisältöä raahaamalla ja zoomaamalla.
+14. Elementin ominaisuuksissa on  työkalupalkki, jonka avulla kartan mittakaavaa ja sijaintia voi säätää taitossa. ![kartan asettelu](../img/kartan_asettelu.png) 
+Napista ![siirrä elementin sisältöä](../img/siirra_sisaltoa.png) voi siirtää elementin sisältöä raahaamalla ja zoomaamalla.
 15. Lukitse taso: **Elementit > Rasti ruutuun lukon kuvan alapuolla**
 16. Klikkaa ![Uusi karttaelementti](../img/uusi_karttaelementti.png) ja piirrä hiirellä uusi karttaelementti Suomen kartan viereen. 
 17. Mene takaisin karttaikkunaan, ja laita nimiöt päälle. Käytä nimiöiden perustana NIMI-saraketta
@@ -29,7 +30,8 @@ Paina sen jälkeen **Update Preview**.
 **Ominaisuudet > Nimiöt > Karttanäyttö > Nimiön valinnat > Mittakaavaperustainen näkyvyys**. Aseta pienimmäksi näkyväksi mittakaavaksi _1:1 250 000_. 
 19. Zoomaa karttaikkunassa Tohmajärven kunnan kohdalle. 
 20. Mene takaisin taittoon, aseta mittakaavaksi _1:1 000 000_ ja klikkaa uudestaan **Update preview**. 
-21. Valitse isompi kartta ja mene **Elementin ominaisuudet > Yleiskatsaukset**. Paina merkkiä ![Lisää yleiskatsaus](../img/lisaa_yleiskatsaus.png), jolloin alla olevaan laatikkoon ilmestyy Yleisnäkymä 1. Aseta Kartan kehys –kohtaan pienempi kartta. 
+21. Valitse isompi kartta ja mene **Elementin ominaisuudet > Yleiskatsaukset**. Paina merkkiä ![Lisää yleiskatsaus](../img/lisaa_yleiskatsaus.png), jolloin alla olevaan laatikkoon ilmestyy Yleisnäkymä 1. 
+Aseta Kartan kehys –kohtaan pienempi kartta. 
 22. Kun olet tyytyväinen karttaikkunoihin, lukitse molemmat. 
 23. Lisää mittakaavajana karttaan ![lisaa mittakaavajana](../img/lisaa_mittakaavajana.png). 
 Käytä mittakaavan perusteena isompaa karttaa, ja säädä janan kokoa säätämällä kohtaa **kiinteä leveys**. Kun olet tyytyväinen, lukitse mittakaavataso. 
@@ -45,7 +47,8 @@ Tässä harjoituksessa opetellaan käyttämään WFS- ja WMS-rajapintoja sekä t
 1. Avaa uusi projekti QGISillä. 
 2. Etsi ja kopioi netistä Paikkatietopalvelu Paitulin WMS-rajapinnan URL-osoite. 
 3. Paina QGISin painiketta ![lisää taso](../img/lisaa_taso.png) ja valitse **WMS/WMTS**. Luo uusi tietolähde, anna sille nimeksi Paituli, ja URLiksi etsimäsi rajapinnan osoite. 
-4. Lisää Tilastokeskuksen WFS-palvelu ([http://geo.stat.fi/geoserver/tilastointialueet/wfs](http://geo.stat.fi/geoserver/tilastointialueet/wfs)) nimellä Tilastointialueet. Tämä toimii samalla tavalla kuin edellinen kohta, paitsi että valikosta valitaan **WFS**.
+4. Lisää Tilastokeskuksen WFS-palvelu ([http://geo.stat.fi/geoserver/tilastointialueet/wfs](http://geo.stat.fi/geoserver/tilastointialueet/wfs)) nimellä Tilastointialueet. 
+Tämä toimii samalla tavalla kuin edellinen kohta, paitsi että valikosta valitaan **WFS**.
 5. Lisää samalla tavalla Tilastokeskuksen WFS-palvelu ([http://geo.stat.fi/geoserver/vaestoalue/wfs](http://geo.stat.fi/geoserver/vaestoalue/wfs)) nimellä Väestöalueet. Tarkista, että tämäkin on WFS-yhteys.
 6. Lisää _Väestö 2017 vuoden 2018 kuntajaolla ja maakuntajaolla_ –tasot karttaan. 
 7. Siirrä kuntataso päällimmäiseksi ja muuta ontoksi (**Ominaisuudet > Kuvaustekniikka > Täyttö > Yksinkertainen täyttö > Symbolitason tyyppi > Ääriviivat**). Valitse viiva ja aseta sen leveydeksi 0.2 mm. 
@@ -80,6 +83,7 @@ Pisteitä voi poistaa napista ![poista oikaisupiste](../img/poista_oikaisupiste.
 10. Luo uusi GeoPackage-tiedosto nimeltä korttelit. Katso että sen tyyppi on _monikulmio_ (tai _polygoni_) ja lisää uudeksi attribuuttikentäksi _numero_ (**Uusi kenttä**). Aseta tallennuspaikaksi projektin kansio. 
 11. Tee samanlainen taso nimellä tontit. 
 12. Digitoi Pielisen itäpuolisen alueen korttelit ja tontit. Aloita valitsemalla taso ja painamalla 
-![muokkaa](../img/muokkaa.png). Painikkeesta ![lisää monikulmio](../img/lisaa_polygoni.png) pääset piirtämään uusia monikulmioita. Hiiren vasemmalla painikkeella tehdään uusi kulma, ja piirtäminen lopetetaan hiiren oikealla painikkeella. Muista tallentaa tekemäsi muutokset välillä. 
+![muokkaa](../img/muokkaa.png). Painikkeesta ![lisää monikulmio](../img/lisaa_polygoni.png) pääset piirtämään uusia monikulmioita. Hiiren vasemmalla painikkeella tehdään uusi kulma, ja piirtäminen lopetetaan hiiren oikealla painikkeella. 
+Muista tallentaa tekemäsi muutokset välillä. 
 13. Kun olet digitoinut joen itäpuolen, poista alkuperäinen kartta näkymästä, ja lisää karttaan Paitulin WMS:n kautta Maanmittauslaitoksen peruskartta vuodelta 2015. 
 14. Muuta korttelit ja tontit läpinäkyviksi (**Ominaisuudet > Kuvaustekniikka > Peittävyys**) ja vertaa niitä peruskarttaan.
