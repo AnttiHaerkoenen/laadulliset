@@ -46,7 +46,7 @@ Tässä harjoituksessa opetellaan käyttämään WFS- ja WMS-rajapintoja sekä t
 2. Etsi ja kopioi netistä Paikkatietopalvelu Paitulin WMS-rajapinnan URL-osoite. 
 3. Paina QGISin painiketta ![lisää taso](../img/lisaa_taso.png) ja valitse **WMS/WMTS**. Luo uusi tietolähde, anna sille nimeksi Paituli, ja URLiksi etsimäsi rajapinnan osoite. 
 4. Lisää Tilastokeskuksen WFS-palvelu ([http://geo.stat.fi/geoserver/tilastointialueet/wfs](http://geo.stat.fi/geoserver/tilastointialueet/wfs)) nimellä Tilastointialueet. Tämä toimii samalla tavalla kuin edellinen kohta, paitsi että valikosta valitaan **WFS**.
-5. Lisää samalla tavalla Tilastokeskuksen WFS-palvelu ([http://geo.stat.fi/geoserver/vaestoalue/wfs](http://geo.stat.fi/geoserver/vaestoalue/wfs)) nimellä Väestöalueet. 
+5. Lisää samalla tavalla Tilastokeskuksen WFS-palvelu ([http://geo.stat.fi/geoserver/vaestoalue/wfs](http://geo.stat.fi/geoserver/vaestoalue/wfs)) nimellä Väestöalueet. Tarkista, että tämäkin on WFS-yhteys.
 6. Lisää _Väestö 2017 vuoden 2018 kuntajaolla ja maakuntajaolla_ –tasot karttaan. 
 7. Siirrä kuntataso päällimmäiseksi ja muuta ontoksi (**Ominaisuudet > Kuvaustekniikka > Täyttö > Yksinkertainen täyttö > Symbolitason tyyppi > Ääriviivat**). Valitse viiva ja aseta sen leveydeksi 0.2 mm. 
 8. Valitse Pohjois-Karjalan maakunta maakuntatasosta. Avaa **Valitse kohteita kentän arvon perusteella** ![valitse kohteita kentän arvon perusteella](../img/valitse_kentan_mukaan.png) ja pane nimikenttään Pohjois-Karjala. 
@@ -72,12 +72,12 @@ Tässä harjoituksessa opetellaan luomaan omaa vektorimuotoista dataa vanhoista 
 **Lisäosat > Hallitse ja asenna lisäosia** ruksaamalla listalta **Georeferoija**-lisäosa.
 4. Georeferointia varten tarvitaan oikaisupisteitä. Helpointa tämä on toisen kartan avulla. Etsi jostain lähteestä valmis paikkatietoaineisto georeferointia varten. Vertailuaineiston on oltava niin tarkka, että siitä erottaa rakennusten sijainnin.
 5. Avaa **Tasot > Georeferointi** ja lisää napista ![lisää rasteri](../img/lisaa_rasteri.png) Joensuun kaava georeferoitavaksi. Aseta koordinaattijärjestelmäksi _EPSG:3067_. 
-6. Lisää oikaisupiste käyttämällä nappia ![lisää oikaisupiste](../img/lisaa_oikaisupiste.png). 
+6. Lisää oikaisupiste käyttämällä nappia ![lisää oikaisupiste](../img/lisaa_oikaisupiste.png). Klikkaa ensin georeferoitavasta kartasta, sen jälkeen ota koordinaatit **Karttaikkunasta**-kohdasta ja klikkaamalla vertailukarttaa.
 Pisteitä voi poistaa napista ![poista oikaisupiste](../img/poista_oikaisupiste.png) ja siirtää napista ![siirrä oikaisupiste](../img/siirra_oikaisupiste.png). 
 7. Kun olet lisännyt 5-10 hyvää pistettä, voit tallentaa pisteet napista ![tallenna oikaisupisteet](../img/tallenna_oikaisupisteet.png).
 8. Ennen oikaisua tarkista **Muunnoksen asetuksista** ![muunnoksen asetukset](../img/muunnoksen_asetukset.png) että **Muunnoksen tyyppi** on _Helmert_ ja että **Tulostiedosto** ja **Tulostiedoston koordinaattijärjestelmä** on määritelty.
 9. Tee oikaisu painamalla ![tee oikaisu](../img/oikaisu.png). Lisää oikaistu kuva karttaan. 
-10. Luo uusi GeoPackage-tiedosto nimeltä korttelit. Katso että sen tyyppi on _monikulmio_ (tai _polygoni_) ja lisää uudeksi attribuuttikentäksi _numero_. Aseta tallennuspaikaksi projektin kansio. 
+10. Luo uusi GeoPackage-tiedosto nimeltä korttelit. Katso että sen tyyppi on _monikulmio_ (tai _polygoni_) ja lisää uudeksi attribuuttikentäksi _numero_ (**Uusi kenttä**). Aseta tallennuspaikaksi projektin kansio. 
 11. Tee samanlainen taso nimellä tontit. 
 12. Digitoi Pielisen itäpuolisen alueen korttelit ja tontit. Aloita valitsemalla taso ja painamalla 
 ![muokkaa](../img/muokkaa.png). Painikkeesta ![lisää monikulmio](../img/lisaa_polygoni.png) pääset piirtämään uusia monikulmioita. Hiiren vasemmalla painikkeella tehdään uusi kulma, ja piirtäminen lopetetaan hiiren oikealla painikkeella. Muista tallentaa tekemäsi muutokset välillä. 
