@@ -313,12 +313,12 @@ fig.show()
 
 - paikkatiedon yhdistäminen oikeaan sijaintitietoon
 - vanhojen karttojen ja asemakaavojen georeferointi vaatii oikaisupisteita (_Ground Control Point, gcp_)
-- vaatii pisteitä, jotka sijainti tiedetään muun paikkatiedon, kuten vertailukartan, avulla
+- vaatii pisteitä, joiden sijainti tiedetään muun paikkatiedon, kuten vertailukartan, avulla
 
 ## Vektorointi
 
 - rasterimuotoisen datan (vanha kartta tai ilmakuva) muuttaminen vektorimuotoon
-- tapahtuu käytännössä luomalla joukko uusia vektoritasoja, ja piirtämällä ne kartan päälle
+- tehdään luomalla joukko uusia vektoritasoja ja piirtämällä ne kartan päälle
 
 # Lopuksi
 
