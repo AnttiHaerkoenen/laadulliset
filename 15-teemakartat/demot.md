@@ -19,7 +19,7 @@ Anna taitolle nimi Tohmajärvi.
 Suomen kartan pitäisi ilmestyä keskelle. 
 12. Kavenna karttaelementtiä 40 mm oikealta, jotta pienemmälle kartalle jäisi enemmän tilaa. 
 13. Valitse kartta, mene **Elementin ominaisuudet** –kohtaan ja aseta mittakaavaksi _1:4 000 000_. 
-Paina sen jälkeen **Update Preview**. 
+Paina sen jälkeen **Päivitä**. 
 14. Elementin ominaisuuksissa on  työkalupalkki, jonka avulla kartan mittakaavaa ja sijaintia voi säätää taitossa. ![kartan asettelu](../img/kartan_asettelu.png) 
 Napista ![siirrä elementin sisältöä](../img/siirra_sisaltoa.png) voi siirtää elementin sisältöä raahaamalla ja zoomaamalla.
 15. Lukitse taso: **Elementit > Rasti ruutuun lukon kuvan alapuolla**
@@ -29,7 +29,7 @@ Napista ![siirrä elementin sisältöä](../img/siirra_sisaltoa.png) voi siirtä
 18. Jotta kuntien nimet eivät näkyisi muualla kuin pienessä kartassa, asetetaan nimiöille rajoitettu mittakaava. 
 **Ominaisuudet > Nimiöt > Karttanäyttö > Nimiön valinnat > Mittakaavaperustainen näkyvyys**. Aseta pienimmäksi näkyväksi mittakaavaksi _1:1 250 000_. 
 19. Zoomaa karttaikkunassa Tohmajärven kunnan kohdalle. 
-20. Mene takaisin taittoon, aseta mittakaavaksi _1:1 000 000_ ja klikkaa uudestaan **Update preview**. 
+20. Mene takaisin taittoon, aseta mittakaavaksi _1:1 000 000_ ja klikkaa uudestaan **Päivitä**. 
 21. Valitse isompi kartta ja mene **Elementin ominaisuudet > Yleiskatsaukset**. Paina merkkiä ![Lisää yleiskatsaus](../img/lisaa_yleiskatsaus.png), jolloin alla olevaan laatikkoon ilmestyy Yleisnäkymä 1. 
 Aseta Kartan kehys –kohtaan pienempi kartta. 
 22. Kun olet tyytyväinen karttaikkunoihin, lukitse molemmat. 
@@ -69,7 +69,7 @@ Tämä toimii samalla tavalla kuin edellinen kohta, paitsi että valikosta valit
 Tässä harjoituksessa opetellaan luomaan omaa vektorimuotoista dataa vanhoista kartoista tai ilmakuvista.
 
 1. Mene Astian sivulle, tee haku sanoilla joensuu kartat ja avaa [Joensuun kaupungin asemakaava. 
-(Joensuu Ieb* 3/- -)](https://astia.narc.fi/uusiastia/).
+(Joensuu Ieb* 3/- -)](https://astia.narc.fi/).
 2. Lataa asemakaava projektikansioon.
 3. Mikäli georeferointi-työkalu ei ole näkyvissä (**Tasot > Georeferointi** tai, versiosta riippuen, **Rasteri > Georeferoija**), se on aktivoitava Lisäosat-valikosta
 **Lisäosat > Hallitse ja asenna lisäosia** ruksaamalla listalta **Georeferoija**-lisäosa.
