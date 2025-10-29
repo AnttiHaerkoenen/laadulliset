@@ -68,9 +68,9 @@ Tämä toimii samalla tavalla kuin edellinen kohta, paitsi että valikosta valit
 
 Tässä harjoituksessa opetellaan luomaan omaa vektorimuotoista dataa vanhoista kartoista tai ilmakuvista.
 
-1. Mene Astian sivulle, tee haku sanoilla joensuu kartat ja avaa [Joensuun kaupungin asemakaava. 
+1. Mene Astian sivulle, tee haku sanoilla _joensuu asemakaava_ ja avaa [Joensuun kaupungin asemakaava. 
 (Joensuu Ieb* 3/- -)](https://astia.narc.fi/).
-2. Lataa asemakaava projektikansioon.
+2. Lataa asemakaava JPG-tiedostona projektikansioon.
 3. Mikäli georeferointi-työkalu ei ole näkyvissä (**Tasot > Georeferointi** tai, versiosta riippuen, **Rasteri > Georeferoija**), se on aktivoitava Lisäosat-valikosta
 **Lisäosat > Hallitse ja asenna lisäosia** ruksaamalla listalta **Georeferoija**-lisäosa.
 4. Georeferointia varten tarvitaan oikaisupisteitä. Helpointa tämä on toisen kartan avulla. Etsi jostain lähteestä valmis paikkatietoaineisto georeferointia varten. Vertailuaineiston on oltava niin tarkka, että siitä erottaa rakennusten sijainnin.
