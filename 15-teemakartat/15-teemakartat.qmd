@@ -3,7 +3,7 @@ title: 'Teemakartat'
 subtitle: 'Laadullisten aineistojen menetelmät historiatieteessä'
 author: 'Antti Härkönen'
 institute: 'antti.harkonen@uef.fi'
-date: 2025-10-27
+date: 2026-11-09
 echo: false
 warning: false
 execute:
