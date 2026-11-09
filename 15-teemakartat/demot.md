@@ -47,20 +47,19 @@ Tässä harjoituksessa opetellaan käyttämään WFS- ja WMS-rajapintoja sekä t
 1. Avaa uusi projekti QGISillä. 
 2. Etsi ja kopioi netistä Paikkatietopalvelu Paitulin WMS-rajapinnan URL-osoite. 
 3. Paina QGISin painiketta ![lisää taso](../img/lisaa_taso.png) ja valitse **WMS/WMTS**. Luo uusi tietolähde, anna sille nimeksi Paituli, ja URLiksi etsimäsi rajapinnan osoite. 
-4. Lisää Tilastokeskuksen WFS-palvelu ([http://geo.stat.fi/geoserver/tilastointialueet/wfs](http://geo.stat.fi/geoserver/tilastointialueet/wfs)) nimellä Tilastointialueet. 
+4. Lisää Tilastokeskuksen WFS-palvelu ([https://geo.stat.fi/geoserver/wfs](https://geo.stat.fi/geoserver/wfs)). 
 Tämä toimii samalla tavalla kuin edellinen kohta, paitsi että valikosta valitaan **WFS**.
-5. Lisää samalla tavalla Tilastokeskuksen WFS-palvelu ([http://geo.stat.fi/geoserver/vaestoalue/wfs](http://geo.stat.fi/geoserver/vaestoalue/wfs)) nimellä Väestöalueet. Tarkista, että tämäkin on WFS-yhteys.
-6. Lisää _Väestö 2017 vuoden 2018 kuntajaolla ja maakuntajaolla_ –tasot karttaan. 
-7. Siirrä kuntataso päällimmäiseksi ja muuta ontoksi (**Ominaisuudet > Kuvaustekniikka > Täyttö > Yksinkertainen täyttö > Symbolitason tyyppi > Ääriviivat**). Valitse viiva ja aseta sen leveydeksi 0.2 mm. 
-8. Valitse Pohjois-Karjalan maakunta maakuntatasosta. Avaa **Valitse kohteita kentän arvon perusteella** ![valitse kohteita kentän arvon perusteella](../img/valitse_kentan_mukaan.png) ja pane nimikenttään Pohjois-Karjala. 
-9. Tallenna valittu Pohjois-Karjala projektikansioosi (navigoi oikeaan kansioon **selaa**-kohdassa) GeoPackage-tiedostona (**hiiren oikea näppäin > Vie > Tallenna VALITUT kohteet nimellä**).
-10. Valitse Pohjois-Karjalan kunnat käyttämällä luomaasi GeoPackage-tiedostoa. Avaa **Valitse sijainnin perusteella** ja valitse ainoastaan _sisältyvät_ kohteet. 
-11. Aktivoi kuntataso Tasot-valikosta ja klikkaa ∑-symbolia. 
-12. Valitse _vaesto_-sarake valikosta. Klikkaa **Käytetään vain valittuja kohteita**. 
-13. Kopio tilastoyhteenveto, ja tallenna se vapaavalintaisella taulukkolaskentaohjelmistolla. 
-14. Toista vaiheet 8–13, tällä kertaa Pirkanmaan maakunnalla. Lisää Pirkanmaan tilastoyhteenveto Pohjois-Karjalan rinnalle ja tallenna taulukko. 
-15. Tallenna Pohjois-Karjalan kunnat omaksi GeoPackage-tiedostokseen. 
-16. Tee Pohjois-Karjalan kartta edellisen demon ohjeiden mukaan.
+5. Lisää _Väestö 2017 vuoden 2018 kuntajaolla_ ja _Väestö 2017 vuoden 2018 maakuntajaolla_ –tasot karttaan.
+6. Siirrä kuntataso päällimmäiseksi ja muuta se ontoksi (**Ominaisuudet > Kuvaustekniikka > Täyttö > Yksinkertainen täyttö > Symbolitason tyyppi > Ääriviivat**). Valitse viiva ja aseta sen leveydeksi 0.2 mm.
+7. Valitse Pohjois-Karjalan maakunta maakuntatasosta. Avaa **Valitse kohteita kentän arvon perusteella** ![valitse kohteita kentän arvon perusteella](../img/valitse_kentan_mukaan.png) ja pane nimikenttään Pohjois-Karjala.
+8. Tallenna valittu Pohjois-Karjala projektikansioosi (navigoi oikeaan kansioon **selaa**-kohdassa) GeoPackage-tiedostona (**hiiren oikea näppäin > Vie > Tallenna VALITUT kohteet nimellä**).
+9. Valitse Pohjois-Karjalan kunnat käyttämällä luomaasi GeoPackage-tiedostoa. Avaa **Valitse sijainnin perusteella** ja valitse ainoastaan _sisältyvät_ kohteet. 
+10. Aktivoi kuntataso Tasot-valikosta ja klikkaa ∑-symbolia. 
+11. Valitse _vaesto_-sarake valikosta. Klikkaa **Käytetään vain valittuja kohteita**. 
+12. Kopio tilastoyhteenveto, ja tallenna se vapaavalintaisella taulukkolaskentaohjelmistolla. 
+13. Toista vaiheet 8–13, tällä kertaa Pirkanmaan maakunnalla. Lisää Pirkanmaan tilastoyhteenveto Pohjois-Karjalan rinnalle ja tallenna taulukko. 
+14. Tallenna Pohjois-Karjalan kunnat omaksi GeoPackage-tiedostokseen. 
+15. Tee Pohjois-Karjalan kartta edellisen demon ohjeiden mukaan.
 
 ![Pohjois-Karjalan kartta](../img/pk_kartta.png)
 
