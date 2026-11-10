@@ -44,22 +44,25 @@ Käytä mittakaavan perusteena isompaa karttaa, ja säädä janan kokoa säätä
 
 Tässä harjoituksessa opetellaan käyttämään WFS- ja WMS-rajapintoja sekä tekemään vektoritiedostoista valintoja eri menetelmillä.
 
-1. Avaa uusi projekti QGISillä. 
-2. Etsi ja kopioi netistä Paikkatietopalvelu Paitulin WMS-rajapinnan URL-osoite. 
-3. Paina QGISin painiketta ![lisää taso](../img/lisaa_taso.png) ja valitse **WMS/WMTS**. Luo uusi tietolähde, anna sille nimeksi Paituli, ja URLiksi etsimäsi rajapinnan osoite. 
-4. Lisää Tilastokeskuksen WFS-palvelu ([https://geo.stat.fi/geoserver/wfs](https://geo.stat.fi/geoserver/wfs)). 
-Tämä toimii samalla tavalla kuin edellinen kohta, paitsi että valikosta valitaan **WFS**.
-5. Lisää _Väestö 2017 vuoden 2018 kuntajaolla_ ja _Väestö 2017 vuoden 2018 maakuntajaolla_ –tasot karttaan.
-6. Siirrä kuntataso päällimmäiseksi ja muuta se ontoksi (**Ominaisuudet > Kuvaustekniikka > Täyttö > Yksinkertainen täyttö > Symbolitason tyyppi > Ääriviivat**). Valitse viiva ja aseta sen leveydeksi 0.2 mm.
-7. Valitse Pohjois-Karjalan maakunta maakuntatasosta. Avaa **Valitse kohteita kentän arvon perusteella** ![valitse kohteita kentän arvon perusteella](../img/valitse_kentan_mukaan.png) ja pane nimikenttään Pohjois-Karjala.
-8. Tallenna valittu Pohjois-Karjala projektikansioosi (navigoi oikeaan kansioon **selaa**-kohdassa) GeoPackage-tiedostona (**hiiren oikea näppäin > Vie > Tallenna VALITUT kohteet nimellä**).
-9. Valitse Pohjois-Karjalan kunnat käyttämällä luomaasi GeoPackage-tiedostoa. Avaa **Valitse sijainnin perusteella** ja valitse ainoastaan _sisältyvät_ kohteet. 
-10. Aktivoi kuntataso Tasot-valikosta ja klikkaa ∑-symbolia. 
-11. Valitse _vaesto_-sarake valikosta. Klikkaa **Käytetään vain valittuja kohteita**. 
-12. Kopio tilastoyhteenveto, ja tallenna se vapaavalintaisella taulukkolaskentaohjelmistolla. 
-13. Toista vaiheet 8–13, tällä kertaa Pirkanmaan maakunnalla. Lisää Pirkanmaan tilastoyhteenveto Pohjois-Karjalan rinnalle ja tallenna taulukko. 
-14. Tallenna Pohjois-Karjalan kunnat omaksi GeoPackage-tiedostokseen. 
-15. Tee Pohjois-Karjalan kartta edellisen demon ohjeiden mukaan.
+1. Avaa uusi projekti QGISillä. Tallenna se omaan kansioonsa.
+2. Etsi ja kopioi netistä Paikkatietopalvelu Paitulin WMS-rajapinnan URL-osoite. (**Paituli > Rajapinnat**)
+3. Paina QGISin painiketta ![lisää taso](../img/lisaa_taso.png) ja valitse ikkunan vasemmasta laidasta **WMS/WMTS**. Luo **Uusi** tietolähde, anna sille nimeksi Paituli WMS, ja URLiksi kopioimasi rajapinnan osoite. Klikkaa **Yhdistä** ja sulje ikkuna. Rajapinta ilmestyy **Selain**-panelin kohtaan **WMS/WMTS**.
+4. Lisää Tilastokeskuksen WFS-palvelu kopioimalla tämä linkki: [https://geo.stat.fi/geoserver/wfs](https://geo.stat.fi/geoserver/wfs). 
+Tämä toimii samalla tavalla kuin kohta 3, paitsi että ikkunan vasemmasta laidasta valitaan **WFS/OGC API - Features** välilehti ja yhteyden nimeksi tulee Tilastokeskus WFS.
+5. Lisää _Väestö 2017 vuoden 2018 kuntajaolla_ ja _Väestö 2017 vuoden 2018 maakuntajaolla_ –tasot karttaan **Selain**-panelin **WFS > Tilastokeskus WFS**-rajapinnan alta.
+6. Siirrä kuntataso päällimmäiseksi raahaamalla se ylimmäksi **Tasot**-panelissa. Ylimääräiset tasot voi muuttaa näkymättömiksi klikkaamalla raksia niiden nimen vierestä.
+7. Muuta kuntataso ontoksi (**Ominaisuudet > Kuvaustekniikka > Täyttö > Yksinkertainen täyttö > Symbolitason tyyppi > Ääriviivat**). Valitse viiva ja aseta sen leveydeksi 0.2 mm.
+8. Valitse Pohjois-Karjalan maakunta maakuntatasosta. Avaa **Valitse kohteita kentän arvon perusteella** ![valitse kohteita kentän arvon perusteella](../img/valitse_kentan_mukaan.png) ja pane _NIMI_-kenttään (HUOM! Ei ylimpään) Pohjois-Karjala ja klikkaa **Valitse kohteita**. Tämän jälkeen valintaikkunan voi sulkea.
+9. Tallenna valittu Pohjois-Karjala projektikansioosi GeoPackage-tiedostona esim. nimellä _pk_ (**hiiren oikea näppäin tason nimen päällä > Vie > Tallenna VALITUT kohteet nimellä**). HUOM! Navigoi ENSIN oikeaan kansioon **...**-kohdassa. Anna myös tasolle  nimi _pk_.
+10. Valitse Pohjois-Karjalan kunnat käyttämällä luomaasi GeoPackage-tiedostoa. Avaa **Valitse sijainnin perusteella** ja valitse ainoastaan _SISÄLTYVÄT_ kohteet. 
+   Varmista, että _Väestö 2017 vuoden 2018 kuntajaolla_ on valittu ylemmässä valikossa ja _pk_ keskimmäisessä valikossa, ja että alimmassa valikossa on _luodaan uusi valinta_.
+   Paina **Suorita** ja sulje valintaikkuna.
+11. Tallenna Pohjois-Karjalan kunnat omaksi GeoPackage-tiedostokseen esim. nimellä _pkkunnat_. Noudata kohdan 9. ohjeita.
+12. Klikkaa **∑**-symbolia yläpanelista. **Tilastoyhteenveto**-paneli ilmestyy käyttöliittymän vasempaan alalaitaan.
+13. **Tilastoyhteenveto**-panelissa valitse _pkkunnat_ ylemmässä valikosta ja _vaesto_-sarake alemmasta valikosta.
+14. Kopio tilastoyhteenveto (painike alhaalla), ja tallenna se vapaavalintaisella taulukkolaskentaohjelmistolla.
+15. Toista vaiheet 8–14, tällä kertaa Pirkanmaan maakunnalla. Lisää Pirkanmaan tilastoyhteenveto Pohjois-Karjalan rinnalle ja tallenna taulukko.
+16. Tee alla olevan kaltainen Pohjois-Karjalan kartta edellisen ja tämän demon ohjeita soveltamalla.
 
 ![Pohjois-Karjalan kartta](../img/pk_kartta.png)
 
@@ -79,7 +82,7 @@ Pisteitä voi poistaa napista ![poista oikaisupiste](../img/poista_oikaisupiste.
 7. Kun olet lisännyt 5-10 hyvää pistettä, voit tallentaa pisteet napista ![tallenna oikaisupisteet](../img/tallenna_oikaisupisteet.png).
 8. Ennen oikaisua tarkista **Muunnoksen asetuksista** ![muunnoksen asetukset](../img/muunnoksen_asetukset.png) että **Muunnoksen tyyppi** on _Helmert_ ja että **Tulostiedosto** ja **Tulostiedoston koordinaattijärjestelmä** on määritelty.
 9. Tee oikaisu painamalla ![tee oikaisu](../img/oikaisu.png). Lisää oikaistu kuva karttaan. 
-10. Luo uusi GeoPackage-tiedosto nimeltä korttelit. Katso että sen tyyppi on _monikulmio_ (tai _polygoni_) ja lisää uudeksi attribuuttikentäksi _numero_ (**Uusi kenttä**). Aseta tallennuspaikaksi projektin kansio. 
+10. Luo uusi GeoPackage-tiedosto nimeltä korttelit. Katso että sen tyyppi on _monikulmio_ (tai _polygoni_) ja lisää uudeksi attribuuttikentäksi _numero_ (**Uusi kenttä**). Aseta tallennuspaikaksi projektin kansio.
 11. Tee samanlainen taso nimellä tontit. Sijoita tontit korttelien päälle.
 12. Digitoi Pielisen itäpuolisen alueen korttelit ja tontit. Aloita valitsemalla taso ja painamalla 
 ![muokkaa](../img/muokkaa.png). Painikkeesta ![lisää monikulmio](../img/lisaa_polygoni.png) pääset piirtämään uusia monikulmioita. Hiiren vasemmalla painikkeella tehdään uusi kulma, ja piirtäminen lopetetaan hiiren oikealla painikkeella. 
